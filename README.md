@@ -1,10 +1,8 @@
-[![MasterHead](https://www.isical.ac.in/~cvpr/ICDARWML23/images/deepLearning.gif)](https://rishavchanda.io)
+[![MasterHead](https://www.isical.ac.in/~cvpr/ICDARWML23/images/deepLearning.gif)](www.linkedin.com/in/devanik)
 <h1 align="center">Hi, I'm Devanik</h1>
 <h3 align="center">Aspiring AI-ML Researcher</h3>
-<img align="right" alt="Coding" width="400" src="https://www.isical.ac.in/~cvpr/ICDARWML23/images/deepLearning.gif">
 
 <p align="left"> <img src="https://komarev.com/ghpvc/?username=devanik21&label=Profile%20views&color=0e75b6&style=flat" alt="devanik21" /> </p>
-
 <p align="left"> <a href="www.linkedin.com/in/devanik" target="blank"><img src="https://img.shields.io/twitter/follow/devanik2005?logo=twitter&style=for-the-badge" alt="devanik2005     
 " /></a> </p>
 
@@ -28,12 +26,11 @@
 
 <h3 align="left">Connect with me:</h3>
 <p align="left">
-<a href="https://twitter.com/devanik2005" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/twitter.svg" alt="devanik2005" height="30" width="40" /></a>
 <a href="https://linkedin.com/in/devanik debnath" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg" alt="devanik debnath" height="30" width="40" /></a>
 <a href="https://stackoverflow.com/users/devanik debnath" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/stack-overflow.svg" alt="devanik debnath" height="30" width="40" /></a>
 <a href="https://kaggle.com/devanik debnath" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/kaggle.svg" alt="devanik debnath" height="30" width="40" /></a>
 <a href="https://www.youtube.com/c/debanikdebnath8426" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/youtube.svg" alt="debanikdebnath8426" height="30" width="40" /></a>
-<a href="https://www.codechef.com/users/devanik" target="blank"><img align="center" src="https://cdn.jsdelivr.net/npm/simple-icons@3.1.0/icons/codechef.svg" alt="devanik" height="30" width="40" /></a>
+
 <a href="https://www.leetcode.com/devnic" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/leet-code.svg" alt="devnic" height="30" width="40" /></a>
 <a href="https://auth.geeksforgeeks.org/user/debnathra907r" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/geeks-for-geeks.svg" alt="debnathra907r" height="30" width="40" /></a>
 </p>
