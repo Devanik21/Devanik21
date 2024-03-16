@@ -28,7 +28,7 @@
 <p align="left">
 <a href="https://linkedin.com/in/devanik debnath" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg" alt="devanik debnath" height="30" width="40" /></a>
 <a href="https://stackoverflow.com/users/devanik debnath" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/stack-overflow.svg" alt="devanik debnath" height="30" width="40" /></a>
-<a href="https://kaggle.com/devanik debnath" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/kaggle.svg" alt="devanik debnath" height="30" width="40" /></a>
+<a href="https://kaggle.com/devanik debnath" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/kaggle.svg" alt="devanikdebnath " height="30" width="40" /></a>
 <a href="https://www.youtube.com/c/debanikdebnath8426" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/youtube.svg" alt="debanikdebnath8426" height="30" width="40" /></a>
 
 <a href="https://www.leetcode.com/devnic" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/leet-code.svg" alt="devnic" height="30" width="40" /></a>
