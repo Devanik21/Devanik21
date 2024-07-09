@@ -8,7 +8,7 @@
 
 - 🔭 I’m currently working on [Deep Learning (RNNs)](https://drive.google.com/file/d/1gk_2cJrcSJH_XLlqIO1eeJejWZiZIFR6/view?usp=drive_link)
 
-- 🌱 I’m currently learning **DSA(c++), unsupervised ML**
+- 🌱 I’m currently learning **DSA(c++), DL**
 
 - 👯 I’m looking to collaborate on [Kaggle](https://www.kaggle.com/devanikdebnath)
 
