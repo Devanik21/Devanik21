@@ -6,7 +6,7 @@
 <p align="left"> <a href="www.linkedin.com/in/devanik" target="blank"><img src="https://img.shields.io/twitter/follow/devanik2005?logo=twitter&style=for-the-badge" alt="devanik2005     
 " /></a> </p>
 
-- 🔭 I’m currently working on [Model Selection (supervised ML)](https://drive.google.com/file/d/1gk_2cJrcSJH_XLlqIO1eeJejWZiZIFR6/view?usp=drive_link)
+- 🔭 I’m currently working on [Deep Learning (RNNs)](https://drive.google.com/file/d/1gk_2cJrcSJH_XLlqIO1eeJejWZiZIFR6/view?usp=drive_link)
 
 - 🌱 I’m currently learning **DSA(c++), unsupervised ML**
 
