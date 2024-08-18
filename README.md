@@ -2,13 +2,14 @@
 <h1 align="center">Hi, I'm Devanik</h1>
 <h3 align="center">Aspiring AI-ML Researcher</h3>
 
+
 <p align="left"> <img src="https://komarev.com/ghpvc/?username=devanik21&label=Profile%20views&color=0e75b6&style=flat" alt="devanik21" /> </p>
 <p align="left"> <a href="www.linkedin.com/in/devanik" target="blank"><img src="https://img.shields.io/twitter/follow/devanik2005?logo=twitter&style=for-the-badge" alt="devanik2005     
 " /></a> </p>
 
 - 🔭 I’m currently working on [Deep Learning (RNNs)](https://drive.google.com/file/d/1gk_2cJrcSJH_XLlqIO1eeJejWZiZIFR6/view?usp=drive_link)
 
-- 🌱 I’m currently learning **DSA(c++), DL**
+- 🌱 I’m currently learning **DSA(c++),DL,RL**
 
 - 👯 I’m looking to collaborate on [Kaggle](https://www.kaggle.com/devanikdebnath)
 
@@ -21,8 +22,19 @@
 - 📫 How to reach me **devanik2005@gmail.com**
 
 - 📄 Know about my experiences [https://docs.google.com/document/d/1gEcT11jWvIx3YUNRBTBoqFwQRa3gLkZr/edit?usp=drive_link&ouid=116860042702134146093&rtpof=true&sd=true](https://docs.google.com/document/d/1gEcT11jWvIx3YUNRBTBoqFwQRa3gLkZr/edit?usp=drive_link&ouid=116860042702134146093&rtpof=true&sd=true)
+## GSSOC(24) Badges 🪶
+<div style='display:flex; align-items:center; gap: 10px;' align='center'><a href="https://gssoc.girlscript.tech/leaderboard">
+<img src="https://raw.githubusercontent.com/girlscript/gssoc-website-new/main/public/badges/postman.png" width="100px" height="100px" />
+  <img src="https://github.com/girlscript/gssoc-website-new/blob/main/public/badges/1.png" width="100px" height="100px" />
+  <img src="https://github.com/girlscript/gssoc-website-new/blob/main/public/badges/2.png" width="100px" height="100px" />
+  <img src="https://github.com/girlscript/gssoc-website-new/blob/main/public/badges/3.png" width="100px" height="100px" />
+  <img src="https://github.com/girlscript/gssoc-website-new/blob/main/public/badges/4.png" width="100px" height="100px" />
+  <img src="https://github.com/girlscript/gssoc-website-new/blob/main/public/badges/5.png" width="100px" height="100px" />
+  <img src="https://github.com/girlscript/gssoc-website-new/blob/main/public/badges/6.png" width="105px" height="105px" />
+  <img src="https://github.com/girlscript/gssoc-website-new/blob/main/public/badges/7.png" width="100px" height="100px" />
+  <img src="https://github.com/girlscript/gssoc-website-new/blob/main/public/badges/8.png" width="100px" height="100px" /></a>
+</div>
 
-- ⚡ Fun fact **Did you know that the human brain's storage capacity is virtually limitless?**
 
 <h3 align="left">Connect with me:</h3>
 <p align="left">
