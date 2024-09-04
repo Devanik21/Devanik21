@@ -2,7 +2,7 @@
 ---
 
 
-![MasterHead](bio.jpeg)
+![MasterHead](2151329542.jpg)
 
 <h1 align="center">Hi, I'm Devanik</h1>
 <h3 align="center">Aspiring AI & ML Researcher | ECE Undergrad at NIT Agartala</h3>
