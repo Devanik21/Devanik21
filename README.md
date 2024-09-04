@@ -1,4 +1,3 @@
-To make your GitHub README more professional and colorful, you can enhance it with some design improvements, structured content, and visual elements. Here’s an updated version:
 
 ---
 
