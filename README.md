@@ -1,7 +1,8 @@
 
 ---
 
-![MasterHead]([https://www.isical.ac.in/~cvpr/ICDARWML23/images/deepLearning.gif](https://www.cognex.com/library/media/blogs/deep-learning-blogs/2019/what-is-deep-learning-large.jpg?sc_lang=en&h=300&w=945&la=en&hash=2701661E1DB5BB88BFB7815323BF9479))
+
+![MasterHead](https://www.isical.ac.in/~cvpr/ICDARWML23/images/deepLearning.gif)
 
 <h1 align="center">Hi, I'm Devanik</h1>
 <h3 align="center">Aspiring AI & ML Researcher | ECE Undergrad at NIT Agartala</h3>
