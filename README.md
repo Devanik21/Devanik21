@@ -2,7 +2,7 @@
 ---
 
 
-![MasterHead](https://www.isical.ac.in/~cvpr/ICDARWML23/images/deepLearning.gif)
+![MasterHead](bio.jpeg)
 
 <h1 align="center">Hi, I'm Devanik</h1>
 <h3 align="center">Aspiring AI & ML Researcher | ECE Undergrad at NIT Agartala</h3>
