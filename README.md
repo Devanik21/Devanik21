@@ -5,7 +5,7 @@
 ![MasterHead](2151329542.jpg)
 
 <h1 align="center">Hi, I'm Devanik</h1>
-<h3 align="center">Aspiring AI & ML Researcher | ECE Undergrad at NIT Agartala</h3>
+<h3 align="center">Aspiring ML Researcher and AI Ops Engineer | ECE'26 - NIT Agartala</h3>
 
 <p align="center">
   <img src="https://komarev.com/ghpvc/?username=devanik21&label=Profile%20views&color=0e75b6&style=flat" alt="Profile Views" />
