@@ -1,3 +1,6 @@
+
+
+
 <h1 align="center">Hi, I'm Devanik</h1> <h3 align="center">Aspiring ML Researcher | AI Ops Engineer | ECE'26 - NIT Agartala</h3> <p align="center"> <img src="https://komarev.com/ghpvc/?username=devanik21&label=Profile%20views&color=0e75b6&style=flat" alt="Profile Views" /> </p>
 🚀 About Me
 🔭 Currently focusing on Reinforcement Learning and Generative AI.
@@ -41,3 +44,4 @@ Libraries/Frameworks: Pandas, NumPy, Matplotlib, Seaborn, Scikit-Learn, TensorFl
 <p align="center"> <img src="https://github-readme-stats.vercel.app/api/top-langs?username=devanik21&show_icons=true&locale=en&layout=compact" alt="Top Languages" /> <img src="https://github-readme-stats.vercel.app/api?username=devanik21&show_icons=true&locale=en" alt="GitHub Stats" /> <img src="https://github-readme-streak-stats.herokuapp.com/?user=devanik21&" alt="GitHub Streak" /> </p>
 💡 Fun Fact
 I believe AI has the potential to extend human lifespan indefinitely. Let's dive into this idea together and see where we can take it!
+
