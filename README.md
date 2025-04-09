@@ -103,10 +103,10 @@ class Devanik:
 ## 🧠 Recent Projects
 
 <div align="center">
-  <a href="https://github.com/devanik21/supervised-ml-model">
+  <a href="[https://github.com/devanik21/supervised-ml-model](https://github.com/Devanik21/AI-Tools-)">
     <img src="https://github-readme-stats.vercel.app/api/pin/?username=devanik21&repo=supervised-ml-model&theme=radical" />
   </a>
-  <a href="https://github.com/devanik21/unsupervised-clustering">
+  <a href="[https://github.com/devanik21/unsupervised-clustering](https://github.com/Devanik21/--AI-Search---QA-Agents)">
     <img src="https://github-readme-stats.vercel.app/api/pin/?username=devanik21&repo=unsupervised-clustering&theme=radical" />
   </a>
 </div>
