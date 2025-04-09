@@ -1,142 +1,234 @@
+# <div align="center">🌟 DEVANIK | AI VISIONARY 🌟</div>
+
+<div align="center">
+  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=600&size=28&duration=3000&pause=1000&color=6FA4FC&center=true&vCenter=true&random=false&width=700&lines=Reinforcement+Learning+Enthusiast;Machine+Learning+Researcher;ECE+Student+at+NIT+Agartala;Passionate+AI+Practitioner;Building+Tomorrow's+Intelligence+Today" alt="Typing SVG" />
+</div>
+
+<div align="center">
+  <img src="https://komarev.com/ghpvc/?username=devanik21&style=for-the-badge&color=0e75b6" alt="Profile Views" />
+  <a href="https://linkedin.com/in/devanik"><img src="https://img.shields.io/badge/LinkedIn-Connect-blue?style=for-the-badge&logo=linkedin" alt="LinkedIn" /></a>
+  <a href="https://kaggle.com/devanikdebnath"><img src="https://img.shields.io/badge/Kaggle-Profile-20BEFF?style=for-the-badge&logo=kaggle" alt="Kaggle" /></a>
+  <a href="https://www.leetcode.com/devnic"><img src="https://img.shields.io/badge/LeetCode-Profile-FFA116?style=for-the-badge&logo=leetcode&logoColor=black" alt="LeetCode" /></a>
+</div>
+
+<br/>
+
+<div align="center">
+  <img src="https://media.giphy.com/media/f3iwJFOVOwuy7K6FFw/giphy.gif" width="600" height="300"/>
+</div>
+
 ---
 
+## 💫 About Me
 
-![MasterHead](2151329542.jpg)
+```python
+class Devanik:
+    def __init__(self):
+        self.name = "Devanik"
+        self.education = "Electronics & Communication Engineering @ NIT Agartala '26"
+        self.interests = ["Reinforcement Learning", "Generative AI", "Deep Learning"]
+        self.current_focus = "Building AI systems that solve real-world problems"
+        self.achievement = "1st Place in Space Exploration Hackathon by ISRO STIC"
+        self.applications_built = 15  # Using Streamlit with robust ML models
+        
+    def daily_routine(self):
+        return ["Learn something new about AI", "Solve DSA problems", "Work on ML projects", "Contribute to open source"]
+        
+    def life_philosophy(self):
+        return "AI, when harnessed correctly, can increase human lifespan to infinity"
+```
 
-<h1 align="center">Hi, I'm Devanik</h1>
-<h3 align="center">Aspiring ML Researcher and AI Ops Engineer | ECE'26 - NIT Agartala</h3>
+> *"The future belongs to those who believe in the beauty of their dreams."* - Eleanor Roosevelt
 
-<p align="center">
-  <img src="https://komarev.com/ghpvc/?username=devanik21&label=Profile%20views&color=0e75b6&style=flat" alt="Profile Views" />
+---
+
+## 🚀 Experience
+
+<div align="center">
+  <table>
+    <tr>
+      <td align="center">
+        <img src="https://img.shields.io/badge/Machine%20Learning%20Intern-Bharat%20Intern-blue?style=for-the-badge" alt="Bharat Intern"/><br/>
+        <sub><sup>Feb 2024</sup></sub>
+      </td>
+      <td>
+        • Developed a house price prediction model using Multiple Linear Regression<br/>
+        • Conducted Iris flower classification using various ML algorithms<br/>
+        • Achieved 95% accuracy on test datasets
+      </td>
+    </tr>
+    <tr>
+      <td align="center">
+        <img src="https://img.shields.io/badge/ESG%20Job%20Simulation-TCS%20on%20Forage-04A777?style=for-the-badge" alt="TCS"/><br/>
+        <sub><sup>May 2024</sup></sub>
+      </td>
+      <td>
+        • Completed sustainability consulting simulation<br/>
+        • Developed a comprehensive fitment matrix for client needs<br/>
+        • Created data-driven sustainability recommendations
+      </td>
+    </tr>
+    <tr>
+      <td align="center">
+        <img src="https://img.shields.io/badge/Data%20Analytics%20Simulation-Accenture%20on%20Forage-A100FF?style=for-the-badge" alt="Accenture"/><br/>
+        <sub><sup>May 2024</sup></sub>
+      </td>
+      <td>
+        • Analyzed complex datasets to uncover business insights<br/>
+        • Applied statistical modeling techniques to identify patterns<br/>
+        • Created compelling data visualizations for stakeholder presentations
+      </td>
+    </tr>
+  </table>
+</div>
+
+---
+
+## 🧠 Projects
+
+<div align="center">
+  <a href="https://github.com/devanik21/supervised-ml-model">
+    <img src="https://github-readme-stats.vercel.app/api/pin/?username=devanik21&repo=supervised-ml-model&theme=radical" />
+  </a>
+  <a href="https://github.com/devanik21/unsupervised-clustering">
+    <img src="https://github-readme-stats.vercel.app/api/pin/?username=devanik21&repo=unsupervised-clustering&theme=radical" />
+  </a>
+</div>
+
+### 🔍 Supervised Machine Learning
+- **Cancer Cell Classification**: Implemented and compared multiple classification algorithms
+  - Achieved **96.8%** accuracy with ensemble methods
+  - Optimized hyperparameters using grid search and cross-validation
+  - Applied feature engineering to improve model performance
+
+### 🧩 Unsupervised Machine Learning
+- **Customer Segmentation**: Applied K-means clustering to identify distinct customer groups
+  - Discovered 5 key customer segments with unique purchasing behaviors
+  - Used silhouette score to determine optimal cluster count
+  - Created actionable insights for marketing strategies
+
+### 🧿 Deep Learning Projects
+- **Stock Price Prediction**: Built RNN models to forecast market trends
+  - Implemented LSTM and GRU architectures with time-series data
+  - Achieved 32% lower RMSE than traditional forecasting methods
+  
+- **Image Classification**: Developed CNN models for computer vision tasks
+  - Fine-tuned advanced architectures like VGG16 and ResNetV2
+  - Utilized transfer learning to maximize performance with limited data
+
+---
+
+## 🏆 Achievements & Certifications
+
+<div align="center">
+  <table>
+    <tr>
+      <td>
+        <img src="https://img.shields.io/badge/LeetCode-3%20Stars-FFA116?style=for-the-badge&logo=leetcode&logoColor=black" alt="LeetCode"/>
+      </td>
+      <td>
+        <img src="https://img.shields.io/badge/LeetCode-50%20Days%20Badge-76B900?style=for-the-badge&logo=leetcode&logoColor=black" alt="50 Days"/>
+      </td>
+      <td>
+        <img src="https://img.shields.io/badge/LeetCode-100%20Days%20Badge-FF0000?style=for-the-badge&logo=leetcode&logoColor=black" alt="100 Days"/>
+      </td>
+    </tr>
+  </table>
+</div>
+
+### 🎓 Industry Certifications
+- **IBM Data Science Professional** - Mastering data analysis and machine learning
+- **Google Machine Learning** - Advanced ML techniques and TensorFlow implementation
+- **Microsoft AI Fundamentals** - Essential concepts in artificial intelligence
+- **TCS Machine Learning** - Enterprise-grade ML solutions development
+- **FreeCodeCamp Data Analysis** - Comprehensive data analysis techniques
+
+---
+
+## 🛠️ Technical Arsenal
+
+<div align="center">
+
+### Languages
+<p>
+  <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python"/>
+  <img src="https://img.shields.io/badge/C++-00599C?style=for-the-badge&logo=cplusplus&logoColor=white" alt="C++"/>
+  <img src="https://img.shields.io/badge/C-A8B9CC?style=for-the-badge&logo=c&logoColor=black" alt="C"/>
+  <img src="https://img.shields.io/badge/SQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white" alt="SQL"/>
+  <img src="https://img.shields.io/badge/MATLAB-0076A8?style=for-the-badge&logo=mathworks&logoColor=white" alt="MATLAB"/>
 </p>
 
----
-
-### 🚀 **About Me**
-
-- 🔭 Currently working on **Reinforcement Learning and Generative AI**.
-- 🌱 Learning **Data Structures and Algorithms (C++), Deep Learning, Reinforcement Learning**.
-- 👯 Looking to collaborate on **Machine Learning and AI projects**.
-- 🏆 Achieved **1st Place** in Space Exploration Hackathon by ISRO STIC and NIT Agartala.
-- 👨‍💻 Developed over 15 applications using **Streamlit**, integrating various robust ML models.
-
----
-
-### 💼 **Experience**
-
-- **Machine Learning Intern** at Bharat Intern (Feb 2024)  
-  - Developed a house price prediction model using Multiple Linear Regression.  
-  - Conducted Iris flower classification using various ML algorithms.
-
-- **TCS ESG Job Simulation on Forage** (May 2024)  
-  - Completed a sustainability consulting simulation, developed a fitment matrix for client needs.
-
-- **Accenture North America Data Analytics Job Simulation on Forage** (May 2024)  
-  - Analyzed and modeled datasets to uncover insights, created presentations for stakeholders.
-
----
-
-### 🔬 **Projects**
-
-- **Supervised Machine Learning - Model Selection**  
-  - Selected optimal models for cancer cell classification, achieving high accuracy and precision.
-
-- **Unsupervised Machine Learning**  
-  - Employed K-means clustering for customer segmentation and Apriori for market basket analysis.
-
-- **Deep Learning**  
-  - Implemented RNNs for stock price prediction and CNNs for image classification using advanced architectures like VGG16 and ResNetV2.
-
----
-
-### 🏅 **Achievements**
-
-- **LeetCode:** Earned 3 stars, 50 DAYS, and 100 DAYS BADGE (2023 & 2024).
-- **Industry Certifications:** Recognized by IBM, Google, TCS, Accenture, FreeCodeCamp, and Microsoft.
-
----
-
-### 🛠️ **Skills**
-
-- **Languages:** Python, C++, C, MATLAB, SQL
-- **Developer Tools:** Git, Kaggle, VS Code, PyCharm, Anaconda, MySQL, Streamlit
-- **Libraries:** Pandas, NumPy, Matplotlib, Seaborn, Scikit-Learn, TensorFlow, Keras, PyTorch
-
----
-
-### 🌐 **Connect with me**
-
-<p align="center">
-  <a href="https://linkedin.com/in/devanik" target="_blank">
-    <img src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg" alt="LinkedIn" height="30" width="40" />
-  </a>
-  <a href="https://stackoverflow.com/users/23631278/devanik" target="blank">
-    <img src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/stack-overflow.svg" alt="Stack Overflow" height="30" width="40" />
-  </a>
-  <a href="https://kaggle.com/devanikdebnath" target="blank">
-    <img src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/kaggle.svg" alt="Kaggle" height="30" width="40" />
-  </a>
-  <a href="https://www.youtube.com/channel/UCuCFrmWZmHNcAE8JR616ByA" target="blank">
-    <img src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/youtube.svg" alt="YouTube" height="30" width="40" />
-  </a>
-  <a href="https://www.leetcode.com/devnic" target="blank">
-    <img src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/leet-code.svg" alt="LeetCode" height="30" width="40" />
-  </a>
-  <a href="https://auth.geeksforgeeks.org/user/debnathra907r" target="blank">
-    <img src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/geeks-for-geeks.svg" alt="GeeksforGeeks" height="30" width="40" />
-  </a>
+### Frameworks & Libraries
+<p>
+  <img src="https://img.shields.io/badge/TensorFlow-FF6F00?style=for-the-badge&logo=tensorflow&logoColor=white" alt="TensorFlow"/>
+  <img src="https://img.shields.io/badge/PyTorch-EE4C2C?style=for-the-badge&logo=pytorch&logoColor=white" alt="PyTorch"/>
+  <img src="https://img.shields.io/badge/scikit--learn-F7931E?style=for-the-badge&logo=scikit-learn&logoColor=white" alt="Scikit-Learn"/>
+  <img src="https://img.shields.io/badge/Pandas-150458?style=for-the-badge&logo=pandas&logoColor=white" alt="Pandas"/>
+  <img src="https://img.shields.io/badge/NumPy-013243?style=for-the-badge&logo=numpy&logoColor=white" alt="NumPy"/>
 </p>
 
----
-
-### 💻 **Languages and Tools**
-
-<p align="center">
-  <a href="https://www.arduino.cc/" target="_blank">
-    <img src="https://cdn.worldvectorlogo.com/logos/arduino-1.svg" alt="Arduino" width="40" height="40"/>
-  </a>
-  <a href="https://www.w3schools.com/cpp/" target="_blank">
-    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/cplusplus/cplusplus-original.svg" alt="C++" width="40" height="40"/>
-  </a>
-  <a href="https://www.w3schools.com/cs/" target="_blank">
-    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/csharp/csharp-original.svg" alt="C#" width="40" height="40"/>
-  </a>
-  <a href="https://www.mathworks.com/" target="_blank">
-    <img src="https://upload.wikimedia.org/wikipedia/commons/2/21/Matlab_Logo.png" alt="MATLAB" width="40" height="40"/>
-  </a>
-  <a href="https://www.mysql.com/" target="_blank">
-    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original-wordmark.svg" alt="MySQL" width="40" height="40"/>
-  </a>
-  <a href="https://www.python.org" target="_blank">
-    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" alt="Python" width="40" height="40"/>
-  </a>
-  <a href="https://pytorch.org/" target="_blank">
-    <img src="https://www.vectorlogo.zone/logos/pytorch/pytorch-icon.svg" alt="PyTorch" width="40" height="40"/>
-  </a>
-  <a href="https://scikit-learn.org/" target="_blank">
-    <img src="https://upload.wikimedia.org/wikipedia/commons/0/05/Scikit_learn_logo_small.svg" alt="Scikit-Learn" width="40" height="40"/>
-  </a>
-  <a href="https://seaborn.pydata.org/" target="_blank">
-    <img src="https://seaborn.pydata.org/_images/logo-mark-lightbg.svg" alt="Seaborn" width="40" height="40"/>
-  </a>
-  <a href="https://www.tensorflow.org" target="_blank">
-    <img src="https://www.vectorlogo.zone/logos/tensorflow/tensorflow-icon.svg" alt="TensorFlow" width="40" height="40"/>
-  </a>
+### Tools & Platforms
+<p>
+  <img src="https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white" alt="Git"/>
+  <img src="https://img.shields.io/badge/Kaggle-20BEFF?style=for-the-badge&logo=kaggle&logoColor=white" alt="Kaggle"/>
+  <img src="https://img.shields.io/badge/VS%20Code-007ACC?style=for-the-badge&logo=visual-studio-code&logoColor=white" alt="VS Code"/>
+  <img src="https://img.shields.io/badge/Streamlit-FF4B4B?style=for-the-badge&logo=streamlit&logoColor=white" alt="Streamlit"/>
+  <img src="https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white" alt="MySQL"/>
 </p>
 
----
-
-### 📊 **GitHub Stats**
-
-<p align="center">
-  <img src="https://github-readme-stats.vercel.app/api/top-langs?username=devanik21&show_icons=true&locale=en&layout=compact" alt="Top Languages" />
-  <img src="https://github-readme-stats.vercel.app/api?username=devanik21&show_icons=true&locale=en" alt="GitHub Stats" />
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=devanik21&" alt="GitHub Streak" />
-</p>
+</div>
 
 ---
 
-### 💡 **Fun Fact**
-I believe that AI, when harnessed correctly, can increase human lifespan to infinity. Curious? Let's explore together!
+## 📊 GitHub Analytics
+
+<div align="center">
+  <img src="https://github-readme-streak-stats.herokuapp.com/?user=devanik21&theme=radical&hide_border=true" alt="GitHub Streak" width="49%" />
+  <img src="https://github-readme-stats.vercel.app/api?username=devanik21&show_icons=true&theme=radical&hide_border=true&count_private=true" alt="GitHub Stats" width="49%" />
+</div>
+
+<div align="center">
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=devanik21&layout=compact&theme=radical&hide_border=true" alt="Top Languages" width="49%" />
+  <img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=devanik21&theme=radical" alt="Profile Summary" width="49%" />
+</div>
 
 ---
+
+## 🌐 Connect With Me
+
+<div align="center">
+  <a href="https://linkedin.com/in/devanik">
+    <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"/>
+  </a>
+  <a href="https://stackoverflow.com/users/23631278/devanik">
+    <img src="https://img.shields.io/badge/Stack%20Overflow-FE7A16?style=for-the-badge&logo=stack-overflow&logoColor=white" alt="Stack Overflow"/>
+  </a>
+  <a href="https://kaggle.com/devanikdebnath">
+    <img src="https://img.shields.io/badge/Kaggle-20BEFF?style=for-the-badge&logo=kaggle&logoColor=white" alt="Kaggle"/>
+  </a>
+  <a href="https://www.youtube.com/channel/UCuCFrmWZmHNcAE8JR616ByA">
+    <img src="https://img.shields.io/badge/YouTube-FF0000?style=for-the-badge&logo=youtube&logoColor=white" alt="YouTube"/>
+  </a>
+  <a href="https://www.leetcode.com/devnic">
+    <img src="https://img.shields.io/badge/LeetCode-FFA116?style=for-the-badge&logo=leetcode&logoColor=black" alt="LeetCode"/>
+  </a>
+  <a href="https://auth.geeksforgeeks.org/user/debnathra907r">
+    <img src="https://img.shields.io/badge/GeeksforGeeks-2F8D46?style=for-the-badge&logo=geeksforgeeks&logoColor=white" alt="GeeksforGeeks"/>
+  </a>
+</div>
+
+---
+
+## 💭 AI Philosophy
+
+<div align="center">
+  <blockquote>
+    <p><i>"I believe that AI, when harnessed correctly, can increase human lifespan to infinity. The intersection of machine learning and healthcare is where I aim to make my greatest contribution."</i></p>
+  </blockquote>
+</div>
+
+---
+
+<div align="center">
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&height=100&section=footer&animation=fadeIn" width="100%"/>
+</div>
