@@ -1,7 +1,7 @@
-# <div align="center">🌟 DEVANIK | AI VISIONARY 🌟</div>
+# <div align="center"> DEVANIK  </div>
 
 <div align="center">
-  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=600&size=28&duration=3000&pause=1000&color=6FA4FC&center=true&vCenter=true&random=false&width=700&lines=Reinforcement+Learning+Enthusiast;Machine+Learning+Researcher;ECE+Student+at+NIT+Agartala;Passionate+AI+Researcher;Building+Tomorrow's+Intelligence+Today;Aspiring+AI+Ops+Engneer" alt="Typing SVG" />
+  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=600&size=28&duration=3000&pause=1000&color=6FA4FC&center=true&vCenter=true&random=false&width=700&lines=Reinforcement+Learning+Enthusiast;Machine+Learning+Researcher;ECE+Student+at+NIT+Agartala;Passionate+AI+Researcher;Building+Tomorrow's+Intelligence+Today;Aspiring+AI+Ops+Engineer" alt="Typing SVG" />
 </div>
 
 <div align="center">
@@ -14,7 +14,7 @@
 <br/>
 
 <div align="center">
-  <img src="https://media.giphy.com/media/f3iwJFOVOwuy7K6FFw/giphy.gif" width="600" height="300"/>
+  <img src="https://media.giphy.com/media/f3iwJFOVOwuy7K6FFw/giphy.gif" width="600" height="300" autoplay loop />
 </div>
 
 ---
@@ -100,7 +100,7 @@ class Devanik:
 
 ---
 
-## 🧠 Projects
+## 🧠 Recent Projects
 
 <div align="center">
   <a href="https://github.com/devanik21/supervised-ml-model">
