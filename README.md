@@ -1,7 +1,7 @@
 # <div align="center">🌟 DEVANIK | AI VISIONARY 🌟</div>
 
 <div align="center">
-  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=600&size=28&duration=3000&pause=1000&color=6FA4FC&center=true&vCenter=true&random=false&width=700&lines=Reinforcement+Learning+Enthusiast;Machine+Learning+Researcher;ECE+Student+at+NIT+Agartala;Passionate+AI+Practitioner;Building+Tomorrow's+Intelligence+Today" alt="Typing SVG" />
+  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=600&size=28&duration=3000&pause=1000&color=6FA4FC&center=true&vCenter=true&random=false&width=700&lines=Reinforcement+Learning+Enthusiast;Machine+Learning+Researcher;ECE+Student+at+NIT+Agartala;Passionate+AI+Researcher;Building+Tomorrow's+Intelligence+Today;Aspiring+AI+Ops+Engneer" alt="Typing SVG" />
 </div>
 
 <div align="center">
@@ -48,13 +48,29 @@ class Devanik:
   <table>
     <tr>
       <td align="center">
-        <img src="https://img.shields.io/badge/Machine%20Learning%20Intern-Bharat%20Intern-blue?style=for-the-badge" alt="Bharat Intern"/><br/>
-        <sub><sup>Feb 2024</sup></sub>
+        <img src="https://img.shields.io/badge/Research%20Intern-National%20Astronomical%20Observatory%20of%20Japan-1F60C9?style=for-the-badge" alt="NAOJ"/><br/>
+        <sub><sup>Dec 2024 - Present · 5 mos</sup></sub>
       </td>
       <td>
-        • Developed a house price prediction model using Multiple Linear Regression<br/>
-        • Conducted Iris flower classification using various ML algorithms<br/>
-        • Achieved 95% accuracy on test datasets
+        • Working on "A Stochastic Approach to Reconstruct Gamma-Ray Burst Light Curves" under Prof. Maria Giovanna Dainotti<br/>
+        • Applying models like Willingale Model (W07), Broken Power Law (BPL), and Gaussian Processes<br/>
+        • Analyzing GRB light curve data to better estimate key parameters such as plateau end time, flux, and decay indices<br/>
+        • Exploring ways to reduce uncertainties in GRB measurements for cosmology and theoretical studies<br/>
+        • Gaining experience in statistical and machine learning techniques for astrophysical research
+      </td>
+    </tr>
+    <tr>
+      <td align="center">
+        <img src="https://img.shields.io/badge/AI%20Intern-Coding%20Jr-FF5A5F?style=for-the-badge" alt="Coding Jr"/><br/>
+        <sub><sup>Nov 2024 - Feb 2025 · 4 mos</sup></sub>
+      </td>
+      <td>
+        • Developing Planto.ai Copilot, an intelligent assistant designed to enhance user productivity<br/>
+        • Data Preparation: Cleaning and organizing datasets for training, validation, and testing<br/>
+        • Model Building: Implementing neural network architectures tailored to the copilot's objectives<br/>
+        • Training and Validation: Using advanced algorithms and monitoring performance<br/>
+        • Fine-tuning: Optimizing models and hyperparameters to enhance predictions and prevent overfitting<br/>
+        • Integration and Testing: Collaborating to integrate trained models into the platform
       </td>
     </tr>
     <tr>
