@@ -1,5 +1,4 @@
-<div align="center"> DEVANIK | Fusing AI + Quantum Mechanics ⚛</div>
-
+<div align="center"> 𝘿ΞVΛNIK  </div>
 
 <div align="center">
   <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=600&size=28&duration=3000&pause=1000&color=6FA4FC&center=true&vCenter=true&random=false&width=700&lines=Reinforcement+Learning+Enthusiast;Machine+Learning+Researcher;ECE+Student+at+NIT+Agartala;Passionate+AI+Researcher;Building+Tomorrow's+Intelligence+Today;Aspiring+AI+Ops+Engneer;Pushing+AI+Beyond+Human+Imagination;Architecting+Synthetic+Intelligence;The+Future+Whispers+Through+My+Code" alt="Typing SVG" />
