@@ -8,7 +8,7 @@
   <a href="https://github.com/devanik21"><img src="https://img.shields.io/github/stars/devanik21?style=for-the-badge&color=blueviolet" alt="GitHub Stars"></a>
   <img src="https://komarev.com/ghpvc/?username=devanik21&style=for-the-badge&color=6c3483" alt="Profile Views" />
   <a href="https://linkedin.com/in/devanik"><img src="https://img.shields.io/badge/LinkedIn-Connect-blue?style=for-the-badge&logo=linkedin" alt="LinkedIn" /></a>
-  <a href="https://kaggle.com/devanikdebnath"><img src="https://img.shields.io/badge/Kaggle-Grandmaster-20BEFF?style=for-the-badge&logo=kaggle" alt="Kaggle" /></a>
+  <a href="https://kaggle.com/devanikdebnath"><img src="https://img.shields.io/badge/Kaggle-Competitions Contributor-20BEFF?style=for-the-badge&logo=kaggle" alt="Kaggle" /></a>
   <a href="https://www.leetcode.com/devnic"><img src="https://img.shields.io/badge/LeetCode-Elite-FFA116?style=for-the-badge&logo=leetcode&logoColor=black" alt="LeetCode" /></a>
 </div>
 
@@ -148,10 +148,10 @@ class CosmicArchitect:
         <img src="https://img.shields.io/badge/LeetCode-Nova%20Status-9D71EA?style=for-the-badge&logo=leetcode&logoColor=white" alt="LeetCode"/>
       </td>
       <td>
-        <img src="https://img.shields.io/badge/LeetCode-150%20Day%20Streak-76B900?style=for-the-badge&logo=leetcode&logoColor=black" alt="150 Days"/>
+        <img src="https://img.shields.io/badge/LeetCode-150%20Day%20Streak-76B900?style=for-the-badge&logo=leetcode&logoColor=black" alt="350 Days +"/>
       </td>
       <td>
-        <img src="https://img.shields.io/badge/Top%200.1%25-Global%20Rank-FF0000?style=for-the-badge&logo=leetcode&logoColor=white" alt="Global Rank"/>
+        <img src="https://img.shields.io/badge/Top%2028%25-Global%20Rank-FF0000?style=for-the-badge&logo=leetcode&logoColor=white" alt="Global Rank"/>
       </td>
     </tr>
   </table>
