@@ -33,7 +33,7 @@ class Devanik:
         self.interests = ["Reinforcement Learning", "Generative AI", "Deep Learning"]
         self.current_focus = "Building AI systems that solve real-world problems"
         self.achievement = "1st Place in Space Exploration Hackathon by ISRO STIC"
-        self.applications_built = 15  # Using Streamlit with robust ML models
+        self.applications_built = 25+ # Using Streamlit with robust ML models
         
     def daily_routine(self):
         return ["Learn something new about AI", "Solve DSA problems", "Work on ML projects", "Contribute to open source"]
