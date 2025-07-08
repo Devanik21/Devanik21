@@ -99,7 +99,7 @@ class NeuralArchitect:
 <td width="50%">
 
 ### 🌌 NATIONAL ASTRONOMICAL OBSERVATORY OF JAPAN
-**`Research Scientist | Dec 2024 - Present`**
+**`Research Scientist | Dec 2024 - Feb 2025`**
 ```yaml
 Mission: Gamma-Ray Burst Intelligence
 - Stochastic light curve reconstruction algorithms
@@ -112,7 +112,7 @@ Mission: Gamma-Ray Burst Intelligence
 ```
 
 ### 🤖 CODING JR - AI COPILOT DIVISION
-**`AI Systems Engineer | Nov 2024 - Feb 2025`**
+**`AI Systems Engineer | May 2025 - July 2025`**
 ```yaml
 Project: Planto.ai Neural Copilot
 - Intelligent assistant architecture design
