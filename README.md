@@ -809,7 +809,19 @@ Current Learning Focus:
 
 ---
 
+
 ## 🚀 LAUNCH SEQUENCE: CONNECT WITH THE NEURAL ARCHITECT
+
+<div align="center">
+  <img src="https://media.giphy.com/media/3oKIPEqDGUULpEU0aQ/giphy.gif" width="600" height="300" alt="AI Brain Animation"/>
+  <br/>
+  <img src="https://media.giphy.com/media/pOEbLRT4SwD35IELiQ/giphy.gif" width="600" height="300" alt="AI Chip Animation"/>
+  <br/>
+  <img src="https://media.giphy.com/media/KX5nwoDX97AtPvKBF6/giphy.gif" width="600" height="300" alt="AI Circuit Animation"/>
+  <br/>
+  <img src="https://media.giphy.com/media/xTiTnxpQ3ghPiB2Hp6/giphy.gif" width="600" height="300" alt="AI Core Pulse Animation"/>
+</div>
+
 
 <div align="center">
   <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=200&section=footer&text=INITIATE%20NEURAL%20CONNECTION&fontSize=28&fontColor=fff&animation=fadeIn&fontAlignY=65&desc=Ready%20to%20Build%20Tomorrow's%20Intelligence?&descAlignY=85&descAlign=62" width="100%"/>
