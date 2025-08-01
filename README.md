@@ -28,7 +28,11 @@
 ## 🧠 CONSCIOUSNESS.INIT()
 
 <div align="center">
+  <img src="https://media.giphy.com/media/3oKIPEqDGUULpEU0aQ/giphy.gif" width="600" height="300" alt="AI Brain Animation"/>
+  <br/>
   <img src="https://media.giphy.com/media/pOEbLRT4SwD35IELiQ/giphy.gif" width="600" height="300" alt="AI Chip Animation"/>
+  <br/>
+  <img src="https://media.giphy.com/media/KX5nwoDX97AtPvKBF6/giphy.gif" width="600" height="300" alt="AI Circuit Animation"/>
 </div>
 
 
