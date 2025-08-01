@@ -28,10 +28,6 @@
 ## 🧠 CONSCIOUSNESS.INIT()
 
 <div align="center">
-  <img src="https://media.giphy.com/media/3oKIPEqDGUULpEU0aQ/giphy.gif" width="600" height="300" alt="AI Brain Animation"/>
-  <br/>
-  <img src="https://media.giphy.com/media/pOEbLRT4SwD35IELiQ/giphy.gif" width="600" height="300" alt="AI Chip Animation"/>
-  <br/>
   <img src="https://media.giphy.com/media/KX5nwoDX97AtPvKBF6/giphy.gif" width="600" height="300" alt="AI Circuit Animation"/>
 </div>
 
@@ -812,15 +808,7 @@ Current Learning Focus:
 
 ## 🚀 LAUNCH SEQUENCE: CONNECT WITH THE NEURAL ARCHITECT
 
-<div align="center">
-  <img src="https://media.giphy.com/media/3oKIPEqDGUULpEU0aQ/giphy.gif" width="600" height="300" alt="AI Brain Animation"/>
-  <br/>
-  <img src="https://media.giphy.com/media/pOEbLRT4SwD35IELiQ/giphy.gif" width="600" height="300" alt="AI Chip Animation"/>
-  <br/>
-  <img src="https://media.giphy.com/media/KX5nwoDX97AtPvKBF6/giphy.gif" width="600" height="300" alt="AI Circuit Animation"/>
-  <br/>
-  <img src="https://media.giphy.com/media/xTiTnxpQ3ghPiB2Hp6/giphy.gif" width="600" height="300" alt="AI Core Pulse Animation"/>
-</div>
+
 
 
 <div align="center">
@@ -843,6 +831,8 @@ Current Learning Focus:
   </table>
 </div>
 
+
+
 ### 🔗 QUANTUM COMMUNICATION CHANNELS
 
 <div align="center">
@@ -858,6 +848,12 @@ Current Learning Focus:
 </div>
 
 ---
+
+
+<div align="center">
+  <img src="https://media.giphy.com/media/xTiTnxpQ3ghPiB2Hp6/giphy.gif" width="600" height="300" alt="AI Core Pulse Animation"/>
+</div> 
+
 
 <div align="center">
   <img src="https://capsule-render.vercel.app/api?type=transparent&height=100&section=footer&text=⚡%20POWERING%20THE%20FUTURE%20WITH%20ARTIFICIAL%20INTELLIGENCE%20⚡&fontSize=20&fontColor=00D4FF&animation=blinking" width="100%"/>
