@@ -28,7 +28,7 @@
 ## 🧠 CONSCIOUSNESS.INIT()
 
 <div align="center">
-  <img src="[https://media.giphy.com/media/3oKIPEqDGUULpEU0aQ/giphy.gif](https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExNno5ZW84OWRpb2xtM21idDM1MmFhend6YnRtZ3p5MWhkZHdvM2RkbyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/pOEbLRT4SwD35IELiQ/giphy.gif)" width="600" height="300" alt="AI Brain Animation"/>
+  <img src="https://media.giphy.com/media/3oKIPEqDGUULpEU0aQ/giphy.gif" width="600" height="300" alt="AI Brain Animation"/>
 </div>
 
 ```python
