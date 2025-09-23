@@ -1,4 +1,4 @@
-# 🌌 DΞVΛΠIK - Neural Architect of Tomorrow
+# 🌌 DΞVΛΠIK 
 
 <div align="center">
   <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=300&section=header&text=ARTIFICIAL%20INTELLIGENCE%20RESEARCHER&fontSize=40&fontColor=fff&animation=fadeIn&fontAlignY=55&desc=Building%20the%20Future&descAlignY=75&descAlign=62" width="100%"/>
