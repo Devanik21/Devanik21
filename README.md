@@ -757,13 +757,13 @@ Models: LSTM, Bi-LSTM, GRU, Transformer experiments
         <br/>
         <sub><b>Open Source Impact</b></sub>
         <br/>
-        <sub>📦 259 Repositories</sub>
+        <sub>📦 260 Repositories</sub>
         <br/>
-        <sub>⭐ 140 Original Projects</sub>
+        <sub>⭐ 180+ Original Projects</sub>
         <br/>
-        <sub>🍴 119 Forks</sub>
+        <sub>🍴 75+ Forks</sub>
         <br/>
-        <sub>🚀 76+ Streamlit Apps</sub>
+        <sub>♾️ 76+ Streamlit Apps</sub>
       </td>
       <td align="center" width="20%">
         <img src="https://img.shields.io/badge/TATA_CRUCIBLE-1BA1E2?style=for-the-badge&logo=award&logoColor=white" alt="Tata"/>
