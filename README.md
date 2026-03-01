@@ -25,12 +25,14 @@
 </div>
 
 ```
-╔════════════════════════════════════════════════════════════════════╗
-║  LIVING DOCUMENT STATUS: ACTIVE | REPOSITORIES: 259               ║
-║  CONSCIOUSNESS LEVEL: EXPANDING | STREAMLIT APPS: 76+             ║
-║  LEETCODE: 700+ PROBLEMS | PEAK RATING: 1734 | CGPA: 7.8/10       ║
-║  RESEARCH: NAOJ + Samsung Fellow | NEURAL PLASTICITY: 97.8%       ║
-╚════════════════════════════════════════════════════════════════════╝
+╔══════════════════════════════════════════════════════════════════════════╗
+║  STATUS: ACTIVE RESEARCHER | REPOSITORIES: 267+ | STREAMLIT: 106+         ║
+║  FELLOWSHIP: 💎 SAMSUNG FELLOW @ IISc BANGALORE                          ║
+║  ACHIEVEMENT: 🥇 ISRO SPACE HACKATHON WINNER                             ║
+║  RESEARCH: NAOJ INTERN | NEUROMORPHIC AI | DIFFERENTIABLE PLASTICITY      ║
+║  METRICS: 700+ LEETCODE | PEAK: 1734 | CGPA: 7.8/10                      ║
+╚══════════════════════════════════════════════════════════════════════════╝
+
 ```
 
 ---
