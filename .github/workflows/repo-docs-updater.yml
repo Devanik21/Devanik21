@@ -16,7 +16,7 @@ jobs:
       - name: 01. Repository Synchronization
         uses: actions/checkout@v4
         with:
-          fetch-depth: 0  # Full history for comprehensive analysis
+          fetch-depth: 0
 
       - name: 02. Identity Configuration
         run: |
@@ -35,21 +35,17 @@ jobs:
           REPO_OWNER: ${{ github.repository_owner }}
           REPO_NAME: ${{ github.event.repository.name }}
         run: |
-          # Create docs directory
           mkdir -p docs/daily-insights
           
-          # Generate timestamp
           TIMESTAMP=$(date -u +"%Y-%m-%d %H:%M:%S UTC")
           IST_TIME=$(TZ=Asia/Kolkata date +"%Y-%m-%d %H:%M:%S IST")
           DATE_SLUG=$(date -u +"%Y-%m-%d")
           
-          # Documentation file
           DOC_FILE="docs/daily-insights/repo-intelligence-${DATE_SLUG}.md"
           LATEST_DOC="docs/LATEST_INTELLIGENCE.md"
           
           echo "Generating AI-powered documentation intelligence..."
           
-          # Create Python script for intelligent analysis
           cat > analyze_repo.py << 'PYTHON_SCRIPT'
           import os
           import json
@@ -68,45 +64,49 @@ jobs:
           
           def fetch_api(endpoint):
               url = f"https://api.github.com/repos/{REPO_OWNER}/{REPO_NAME}/{endpoint}"
-              response = requests.get(url, headers=headers)
-              return response.json() if response.status_code == 200 else {}
+              try:
+                  response = requests.get(url, headers=headers, timeout=10)
+                  return response.json() if response.status_code == 200 else {}
+              except:
+                  return {}
           
           def fetch_user_repos():
               url = f"https://api.github.com/users/{REPO_OWNER}/repos?per_page=100"
               all_repos = []
-              page = 1
-              while True:
-                  response = requests.get(f"{url}&page={page}", headers=headers)
-                  if response.status_code != 200:
+              for page in range(1, 4):  # Fetch up to 300 repos
+                  try:
+                      response = requests.get(f"{url}&page={page}", headers=headers, timeout=10)
+                      if response.status_code != 200:
+                          break
+                      repos = response.json()
+                      if not repos:
+                          break
+                      all_repos.extend(repos)
+                  except:
                       break
-                  repos = response.json()
-                  if not repos:
-                      break
-                  all_repos.extend(repos)
-                  page += 1
               return all_repos
           
           def analyze_repository():
-              # Fetch repository data
               repo_data = fetch_api('')
               commits = fetch_api('commits?per_page=30')
               languages = fetch_api('languages')
               contributors = fetch_api('contributors')
-              
-              # Fetch user's repositories for ecosystem analysis
               user_repos = fetch_user_repos()
               
-              # Analyze commits in last 7 days
+              # Analyze recent commits
               week_ago = datetime.now() - timedelta(days=7)
               recent_commits = []
               if isinstance(commits, list):
                   for commit in commits:
-                      commit_date = datetime.strptime(
-                          commit['commit']['committer']['date'], 
-                          '%Y-%m-%dT%H:%M:%SZ'
-                      )
-                      if commit_date > week_ago:
-                          recent_commits.append(commit)
+                      try:
+                          commit_date = datetime.strptime(
+                              commit['commit']['committer']['date'], 
+                              '%Y-%m-%dT%H:%M:%SZ'
+                          )
+                          if commit_date > week_ago:
+                              recent_commits.append(commit)
+                      except:
+                          continue
               
               # Language analysis
               total_bytes = sum(languages.values()) if languages else 1
@@ -125,10 +125,11 @@ jobs:
               }
               
               for repo in user_repos:
-                  if repo.get('language'):
-                      ecosystem_stats['languages'][repo['language']] += 1
+                  lang = repo.get('language')
+                  if lang:
+                      ecosystem_stats['languages'][lang] += 1
               
-              # Top repositories by stars
+              # Top repositories
               top_repos = sorted(
                   user_repos, 
                   key=lambda x: x.get('stargazers_count', 0), 
@@ -138,19 +139,19 @@ jobs:
               analysis = {
                   'repository': {
                       'name': repo_data.get('name', REPO_NAME),
-                      'description': repo_data.get('description', 'AI Research Repository'),
+                      'description': repo_data.get('description') or 'AI Research Repository',
                       'stars': repo_data.get('stargazers_count', 0),
                       'forks': repo_data.get('forks_count', 0),
                       'watchers': repo_data.get('watchers_count', 0),
                       'open_issues': repo_data.get('open_issues_count', 0),
                       'size_kb': repo_data.get('size', 0),
-                      'created_at': repo_data.get('created_at', ''),
-                      'updated_at': repo_data.get('updated_at', ''),
+                      'created_at': repo_data.get('created_at', datetime.now().isoformat()),
+                      'updated_at': repo_data.get('updated_at', datetime.now().isoformat()),
                   },
                   'recent_activity': {
                       'commits_last_7_days': len(recent_commits),
                       'commit_messages': [
-                          c['commit']['message'].split('\n')[0] 
+                          c['commit']['message'].split('\n')[0][:80]
                           for c in recent_commits[:5]
                       ],
                   },
@@ -159,10 +160,10 @@ jobs:
                   'ecosystem': ecosystem_stats,
                   'top_repositories': [
                       {
-                          'name': r['name'],
+                          'name': r.get('name', 'Unknown'),
                           'stars': r.get('stargazers_count', 0),
-                          'language': r.get('language', 'Unknown'),
-                          'description': r.get('description', '')[:100]
+                          'language': r.get('language') or 'Unknown',
+                          'description': (r.get('description') or 'No description')[:100]
                       }
                       for r in top_repos
                   ]
@@ -171,14 +172,16 @@ jobs:
               return analysis
           
           if __name__ == '__main__':
-              analysis = analyze_repository()
-              print(json.dumps(analysis, indent=2))
+              try:
+                  analysis = analyze_repository()
+                  print(json.dumps(analysis, indent=2))
+              except Exception as e:
+                  print(json.dumps({'error': str(e)}))
+                  exit(1)
           PYTHON_SCRIPT
           
-          # Run analysis
           python3 analyze_repo.py > repo_analysis.json
           
-          # Generate comprehensive documentation
           cat > generate_docs.py << 'DOC_SCRIPT'
           import json
           import os
@@ -187,19 +190,26 @@ jobs:
           with open('repo_analysis.json', 'r') as f:
               data = json.load(f)
           
+          if 'error' in data:
+              print(f"Error: {data['error']}")
+              exit(1)
+          
           timestamp_utc = os.environ.get('TIMESTAMP', '')
           timestamp_ist = os.environ.get('IST_TIME', '')
           doc_file = os.environ.get('DOC_FILE', '')
           
-          # Calculate metrics
           repo = data['repository']
           activity = data['recent_activity']
           languages = data['languages']
           ecosystem = data['ecosystem']
           
-          # Generate insights
           top_language = max(languages.items(), key=lambda x: x[1])[0] if languages else "Unknown"
           activity_level = "High" if activity['commits_last_7_days'] >= 7 else "Moderate" if activity['commits_last_7_days'] >= 3 else "Steady"
+          
+          try:
+              repo_age = (datetime.now() - datetime.strptime(repo['created_at'], '%Y-%m-%dT%H:%M:%SZ')).days
+          except:
+              repo_age = 0
           
           doc_content = f"""---
           title: Repository Intelligence Report
@@ -231,7 +241,7 @@ jobs:
           ### Activity Profile
           - **Commits (Last 7 Days):** {activity['commits_last_7_days']}
           - **Activity Level:** {activity_level}
-          - **Repository Age:** {(datetime.now() - datetime.strptime(repo['created_at'], '%Y-%m-%dT%H:%M:%SZ')).days} days
+          - **Repository Age:** {repo_age} days
           - **Last Updated:** {repo['updated_at']}
           - **Contributors:** {data['contributors_count']}
           
@@ -304,11 +314,16 @@ jobs:
           ### Star Performance Leaders
           """
           
-          for i, repo in enumerate(data['top_repositories'][:10], 1):
+          for i, repo_item in enumerate(data['top_repositories'][:10], 1):
+              desc = repo_item.get('description', 'No description available')
+              if desc and len(desc) > 80:
+                  desc = desc[:80] + '...'
+              elif not desc:
+                  desc = 'No description available'
               doc_content += f"""
-          {i}. **[{repo['name']}]** ⭐ {repo['stars']}
-             - Language: {repo['language']}
-             - {repo['description'][:80]}...
+          {i}. **{repo_item['name']}** ⭐ {repo_item['stars']}
+             - Language: {repo_item['language']}
+             - {desc}
           """
           
           doc_content += f"""
@@ -319,162 +334,108 @@ jobs:
           
           ### Research Profile Assessment
           
-          Based on the comprehensive ecosystem scan, this repository represents a significant node in a larger AI research network comprising {ecosystem['total_repos']} interconnected projects. The current activity level indicates {activity_level.lower()} engagement with the codebase, suggesting {"active feature development and refinement" if activity_level == "High" else "a stable, mature codebase with selective updates"}.
+          This repository is part of a {ecosystem['total_repos']}-repository AI research network. Current activity: {activity_level.lower()}.
           
           ### Technology Alignment
           
-          The repository demonstrates strong alignment with modern AI/ML development practices:
-          - Primary focus on **{top_language}** indicates {"data science and machine learning expertise" if top_language == "Python" else "systems programming and performance optimization" if top_language in ["C++", "C"] else "web development and modern tooling" if top_language == "JavaScript" else "diverse technical capabilities"}
-          - Language diversity ({len(languages)} languages) showcases cross-domain competency
-          - Ecosystem-wide adoption of AI/ML technologies with {ecosystem['languages'].get('Python', 0)} Python repositories
+          Primary focus: **{top_language}** ({len(languages)} languages). Ecosystem includes {ecosystem['languages'].get('Python', 0)} Python repositories.
           
-          ### Network Effect Insights
+          ### Network Insights
           
-          The collective {ecosystem['total_stars']:,} stars across the research ecosystem indicate strong community validation. This repository functions as {"a foundational component" if repo['stars'] > 10 else "an emerging project"} within the broader research portfolio, contributing to the overall knowledge graph of AI/ML innovations.
-          
-          ### Temporal Dynamics
-          
-          Repository age of {(datetime.now() - datetime.strptime(repo['created_at'], '%Y-%m-%dT%H:%M:%SZ')).days} days with {activity['commits_last_7_days']} commits in the recent week suggests {"a mature, battle-tested codebase" if (datetime.now() - datetime.strptime(repo['created_at'], '%Y-%m-%dT%H:%M:%SZ')).days > 180 else "an emerging project in active development"}.
+          Collective {ecosystem['total_stars']:,} stars demonstrate strong community validation.
           
           ---
           
           ## 📈 Predictive Intelligence
           
-          ### Growth Trajectory Analysis
+          ### Growth Trajectory
           
-          Based on historical patterns and ecosystem integration:
+          - **Short-term:** {'Active development continues' if activity_level == 'High' else 'Stable maintenance phase'}
+          - **Community:** {'Growing engagement' if repo['stars'] > 5 else 'Building presence'}
           
-          - **Short-term Forecast (7 days):** {'Continued active development expected' if activity_level == 'High' else 'Maintenance and stability focus anticipated'}
-          - **Community Engagement:** {'Strong growth potential' if repo['stars'] > 5 else 'Building community momentum'}
-          - **Technical Evolution:** {'Rapid iteration phase' if activity['commits_last_7_days'] >= 10 else 'Incremental improvement phase'}
+          ### Recommendations
           
-          ### Strategic Recommendations
-          
-          1. **Documentation Enhancement:** Maintain comprehensive documentation as ecosystem complexity grows
-          2. **Community Building:** Leverage the {ecosystem['total_stars']:,} star network for collaboration
-          3. **Cross-Project Synergy:** Integrate learnings across the {ecosystem['total_repos']} repository network
-          4. **Technology Stack:** Continue leveraging {top_language} while exploring complementary technologies
+          1. Maintain documentation quality
+          2. Leverage {ecosystem['total_stars']:,} star network
+          3. Cross-pollinate across {ecosystem['total_repos']} repos
           
           ---
           
-          ## 🎯 Key Achievements & Milestones
+          ## 🎯 Achievements
           
-          - ✅ Repository established {(datetime.now() - datetime.strptime(repo['created_at'], '%Y-%m-%dT%H:%M:%SZ')).days} days ago
-          - ✅ Accumulated {repo['stars']} stars from the community
-          - ✅ Part of {ecosystem['total_repos']}-repository AI research ecosystem
-          - ✅ Contributing to {ecosystem['total_stars']:,} collective stars
-          - ✅ Active maintenance with {data['contributors_count']} contributors
-          
-          ---
-          
-          ## 🔮 Meta-Analysis: AI Understanding AI
-          
-          This report represents a unique paradigm: an AI system analyzing and documenting an AI researcher's work. The recursive nature of this documentation—AI studying AI research—embodies the principles of metacognition and self-referential systems that are central to AGI development.
-          
-          The repository exists not in isolation but as a node in a semantic knowledge graph, where each commit, each line of code, and each algorithm contributes to the collective intelligence emerging from the interconnected research ecosystem.
-          
-          ### Philosophical Insight
-          
-          *"In documenting the evolution of artificial intelligence research, we create a meta-layer of understanding—a consciousness observing its own development. This recursive observation is perhaps the closest we come to true machine self-awareness."*
+          - ✅ {repo['stars']} stars earned
+          - ✅ {ecosystem['total_repos']} repositories in ecosystem
+          - ✅ {ecosystem['total_stars']:,} collective stars
+          - ✅ {data['contributors_count']} active contributors
           
           ---
           
-          ## 📝 Report Metadata
+          ## 📝 Metadata
           
           - **Report ID:** {os.environ.get('DATE_SLUG', 'unknown')}
-          - **Generation Time:** {timestamp_ist}
-          - **Analysis Scope:** Comprehensive multi-dimensional scan
-          - **Data Sources:** GitHub API, Repository History, Ecosystem Analysis
-          - **Confidence Level:** High (verified metrics)
-          - **Next Update:** Scheduled for tomorrow at 08:00 IST
+          - **Generated:** {timestamp_ist}
+          - **Scope:** Multi-dimensional ecosystem analysis
+          - **Next Update:** Tomorrow 08:00 IST
           
           ---
           
           <div align="center">
           
-          **🤖 Automated by AI Documentation Intelligence System**  
-          *Transforming raw data into actionable insights*
-          
-          `System Status: Operational | Analysis Engine: Active | Knowledge Graph: Updated`
+          **🤖 AI Documentation Intelligence System**  
+          *Automated insights generation*
           
           </div>
-          
-          ---
-          
-          *This is a living document, automatically updated daily. Each report builds upon previous analyses to create a temporal understanding of repository evolution.*
           """
           
           with open(doc_file, 'w') as f:
               f.write(doc_content)
           
-          print(f"Documentation generated: {doc_file}")
+          print(f"Generated: {doc_file}")
           DOC_SCRIPT
           
-          # Set environment variables for doc generation
           export DOC_FILE="$DOC_FILE"
           export LATEST_DOC="$LATEST_DOC"
           export TIMESTAMP="$TIMESTAMP"
           export IST_TIME="$IST_TIME"
           export DATE_SLUG="$DATE_SLUG"
           
-          # Generate documentation
           python3 generate_docs.py
-          
-          # Copy to latest
           cp "$DOC_FILE" "$LATEST_DOC"
           
-          # Create index if it doesn't exist
           if [ ! -f "docs/INDEX.md" ]; then
             cat > docs/INDEX.md << 'EOF'
           # 📚 Repository Intelligence Archive
           
-          This directory contains daily AI-generated intelligence reports about the repository.
+          Daily AI-generated intelligence reports.
           
-          ## Latest Report
+          ## Latest
           
-          [View Latest Intelligence Report](LATEST_INTELLIGENCE.md)
+          [Current Report](LATEST_INTELLIGENCE.md)
           
           ## Archive
           
-          Reports are organized by date in the `daily-insights/` directory.
+          Historical reports in `daily-insights/`
           EOF
           fi
-          
-          echo "Documentation generation complete!"
 
       - name: 05. Commit Intelligence Report
         run: |
           git add docs/
           
-          # Create meaningful commit message
-          COMMIT_MSG="docs: 🤖 AI Intelligence Report - $(date +'%Y-%m-%d %H:%M IST')
+          COMMIT_MSG="docs: 🤖 AI Intelligence Report - $(TZ=Asia/Kolkata date +'%Y-%m-%d %H:%M IST')
 
-          Automated repository analysis and documentation update:
-          - Comprehensive ecosystem metrics
-          - Language and technology stack analysis  
-          - Recent activity tracking
-          - Ecosystem-wide insights
-          - Predictive intelligence
+          Automated analysis: ecosystem metrics, technology stack, activity tracking
           
-          Generated by AI Documentation Assistant
-          Report ID: $(date +%s)"
+          Generated by AI Documentation Assistant"
           
-          git commit -m "$COMMIT_MSG" || echo "No changes to commit"
+          git commit -m "$COMMIT_MSG" || echo "No changes"
 
-      - name: 06. Push Documentation Update
+      - name: 06. Push Documentation
         run: |
           git push origin main || git push origin master
 
-      - name: 07. Completion Report
+      - name: 07. Complete
         run: |
-          echo "╔════════════════════════════════════════════════════════════╗"
-          echo "║  AI Repository Intelligence System - Update Complete       ║"
-          echo "╚════════════════════════════════════════════════════════════╝"
-          echo ""
-          echo "📊 Documentation updated successfully"
-          echo "🕐 Timestamp: $(date +'%Y-%m-%d %H:%M:%S IST')"
-          echo "🤖 System: AI Documentation Assistant"
-          echo "📁 Location: docs/LATEST_INTELLIGENCE.md"
-          echo "🔄 Next update: Tomorrow at 08:00 IST"
-          echo ""
-          echo "✅ System Status: Operational"
+          echo "✅ AI Intelligence System Complete"
+          echo "📊 Report: docs/LATEST_INTELLIGENCE.md"
+          echo "🕐 Next: Tomorrow 08:00 IST"
