@@ -1,0 +1,383 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 520">
+<defs>
+  <filter id="glow">
+    <feGaussianBlur stdDeviation="4" result="blur"/>
+    <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+  </filter>
+  <filter id="glowStrong">
+    <feGaussianBlur stdDeviation="8" result="blur"/>
+    <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+  </filter>
+  <filter id="glowSoft">
+    <feGaussianBlur stdDeviation="2" result="blur"/>
+    <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+  </filter>
+  <radialGradient id="coreGrad" cx="50%" cy="50%" r="50%">
+    <stop offset="0%" stop-color="#00D4FF" stop-opacity="0.9"/>
+    <stop offset="60%" stop-color="#0066FF" stop-opacity="0.4"/>
+    <stop offset="100%" stop-color="#0a0a2e" stop-opacity="0"/>
+  </radialGradient>
+  <radialGradient id="radarGrad" cx="50%" cy="50%" r="50%">
+    <stop offset="0%" stop-color="#00D4FF" stop-opacity="0.3"/>
+    <stop offset="100%" stop-color="#00D4FF" stop-opacity="0"/>
+  </radialGradient>
+  <linearGradient id="scanGrad" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0%" stop-color="#00D4FF" stop-opacity="0"/>
+    <stop offset="50%" stop-color="#00D4FF" stop-opacity="0.08"/>
+    <stop offset="100%" stop-color="#00D4FF" stop-opacity="0"/>
+  </linearGradient>
+  <linearGradient id="borderGrad" x1="0" y1="0" x2="1" y2="1">
+    <stop offset="0%" stop-color="#00D4FF"/>
+    <stop offset="33%" stop-color="#FF6B6B"/>
+    <stop offset="66%" stop-color="#FFD93D"/>
+    <stop offset="100%" stop-color="#9B59B6"/>
+  </linearGradient>
+  <linearGradient id="barGrad1" x1="0" y1="0" x2="1" y2="0">
+    <stop offset="0%" stop-color="#00D4FF"/>
+    <stop offset="100%" stop-color="#0066FF"/>
+  </linearGradient>
+  <linearGradient id="barGrad2" x1="0" y1="0" x2="1" y2="0">
+    <stop offset="0%" stop-color="#FF6B6B"/>
+    <stop offset="100%" stop-color="#FF3366"/>
+  </linearGradient>
+  <linearGradient id="barGrad3" x1="0" y1="0" x2="1" y2="0">
+    <stop offset="0%" stop-color="#FFD93D"/>
+    <stop offset="100%" stop-color="#FF9500"/>
+  </linearGradient>
+  <linearGradient id="barGrad4" x1="0" y1="0" x2="1" y2="0">
+    <stop offset="0%" stop-color="#9B59B6"/>
+    <stop offset="100%" stop-color="#6C3483"/>
+  </linearGradient>
+</defs>
+
+<style>
+  @keyframes pulse { 0%,100%{opacity:.5;} 50%{opacity:1;} }
+  @keyframes pulseSlow { 0%,100%{opacity:.3;} 50%{opacity:.7;} }
+  @keyframes orbit { from{transform:rotate(0deg)} to{transform:rotate(360deg)} }
+  @keyframes orbitReverse { from{transform:rotate(360deg)} to{transform:rotate(0deg)} }
+  @keyframes sweep { from{transform:rotate(0deg)} to{transform:rotate(360deg)} }
+  @keyframes blink { 0%,49%{opacity:1} 50%,100%{opacity:0} }
+  @keyframes fadeIn1 { 0%{opacity:0} 100%{opacity:1} }
+  @keyframes fadeIn2 { 0%{opacity:0} 100%{opacity:1} }
+  @keyframes fadeIn3 { 0%{opacity:0} 100%{opacity:1} }
+  @keyframes fadeIn4 { 0%{opacity:0} 100%{opacity:1} }
+  @keyframes growBar1 { 0%{width:0} 100%{width:130px} }
+  @keyframes growBar2 { 0%{width:0} 100%{width:110px} }
+  @keyframes growBar3 { 0%{width:0} 100%{width:95px} }
+  @keyframes growBar4 { 0%{width:0} 100%{width:120px} }
+  @keyframes dash { to{stroke-dashoffset:0} }
+  @keyframes float { 0%,100%{transform:translateY(0)} 50%{transform:translateY(-5px)} }
+  @keyframes scanMove { 0%{transform:translateY(-260px)} 100%{transform:translateY(260px)} }
+  @keyframes ripple { 0%{r:40;opacity:.6} 100%{r:120;opacity:0} }
+  @keyframes particleFloat { 0%{opacity:0;transform:translateY(20px)} 50%{opacity:1} 100%{opacity:0;transform:translateY(-20px)} }
+  @keyframes hexRotate { from{transform:rotate(0deg)} to{transform:rotate(60deg)} }
+  @keyframes brainWave { 0%{d:path("M0,0 Q25,-15 50,0 Q75,15 100,0")} 50%{d:path("M0,0 Q25,15 50,0 Q75,-15 100,0")} 100%{d:path("M0,0 Q25,-15 50,0 Q75,15 100,0")} }
+
+  .grid-line { stroke: #1a1a3e; stroke-width: 0.5; }
+  .corner { stroke: #00D4FF; stroke-width: 2; fill: none; filter: url(#glowSoft); }
+  .label { font-family: 'Courier New', monospace; fill: #00D4FF; font-size: 10px; letter-spacing: 2px; }
+  .label-dim { font-family: 'Courier New', monospace; fill: #4a4a7a; font-size: 9px; letter-spacing: 1px; }
+  .stat-value { font-family: 'Courier New', monospace; fill: #ffffff; font-size: 22px; font-weight: bold; }
+  .stat-label { font-family: 'Courier New', monospace; fill: #6a6aaa; font-size: 10px; letter-spacing: 2px; }
+  .core-text { font-family: 'Courier New', monospace; fill: #ffffff; font-size: 16px; font-weight: bold; letter-spacing: 3px; }
+  .core-sub { font-family: 'Courier New', monospace; fill: #00D4FF; font-size: 9px; letter-spacing: 2px; }
+  .status-dot { animation: blink 1.5s step-end infinite; }
+  .panel-title { font-family: 'Courier New', monospace; fill: #FF6B6B; font-size: 11px; font-weight: bold; letter-spacing: 3px; }
+  .bar-label { font-family: 'Courier New', monospace; fill: #8a8aba; font-size: 10px; }
+  .bar-value { font-family: 'Courier New', monospace; fill: #ffffff; font-size: 10px; font-weight: bold; }
+</style>
+
+<!-- ═══════ BACKGROUND ═══════ -->
+<rect width="1200" height="520" fill="#0a0a1a" rx="12"/>
+<rect x="2" y="2" width="1196" height="516" fill="none" stroke="url(#borderGrad)" stroke-width="1" rx="12" opacity="0.3"/>
+
+<!-- Subtle grid -->
+<g opacity="0.15">
+  <line x1="0" y1="130" x2="1200" y2="130" class="grid-line"/>
+  <line x1="0" y1="260" x2="1200" y2="260" class="grid-line"/>
+  <line x1="0" y1="390" x2="1200" y2="390" class="grid-line"/>
+  <line x1="300" y1="0" x2="300" y2="520" class="grid-line"/>
+  <line x1="600" y1="0" x2="600" y2="520" class="grid-line"/>
+  <line x1="900" y1="0" x2="900" y2="520" class="grid-line"/>
+</g>
+
+<!-- Scan line effect -->
+<rect x="0" y="0" width="1200" height="40" fill="url(#scanGrad)" opacity="0.5">
+  <animateTransform attributeName="transform" type="translate" values="0,-260;0,260;0,-260" dur="8s" repeatCount="indefinite"/>
+</rect>
+
+<!-- ═══════ HUD CORNER BRACKETS ═══════ -->
+<path d="M15,35 L15,15 L35,15" class="corner"/>
+<path d="M1165,35 L1165,15 L1185,15" class="corner" transform="scale(-1,1) translate(-1200,0)"/>
+<path d="M15,485 L15,505 L35,505" class="corner"/>
+<path d="M1185,505 L1185,485 L1165,505" class="corner" transform="rotate(0)"/>
+<path d="M1165,485 L1185,485 L1185,505" class="corner"/>
+
+<!-- Top bar labels -->
+<text x="50" y="32" class="label" opacity="0.5">SYS://CONSCIOUSNESS_HUD</text>
+<text x="1000" y="32" class="label" opacity="0.5">v3.14.159</text>
+<circle cx="980" cy="28" r="3" fill="#27c93f" class="status-dot"/>
+<text x="550" y="32" class="label-dim">◆ DEVANIK NEURAL INTERFACE ◆</text>
+
+<!-- ═══════ CENTRAL AI CORE ═══════ -->
+<g transform="translate(600,260)">
+  <!-- Ripple effects -->
+  <circle cx="0" cy="0" r="40" fill="none" stroke="#00D4FF" stroke-width="0.5">
+    <animate attributeName="r" values="40;130" dur="4s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0.5;0" dur="4s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="0" cy="0" r="40" fill="none" stroke="#00D4FF" stroke-width="0.5">
+    <animate attributeName="r" values="40;130" dur="4s" begin="1.3s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0.5;0" dur="4s" begin="1.3s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="0" cy="0" r="40" fill="none" stroke="#00D4FF" stroke-width="0.5">
+    <animate attributeName="r" values="40;130" dur="4s" begin="2.6s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0.5;0" dur="4s" begin="2.6s" repeatCount="indefinite"/>
+  </circle>
+
+  <!-- Outer orbit ring -->
+  <circle r="130" fill="none" stroke="#1a1a4e" stroke-width="1" stroke-dasharray="4,8"/>
+  
+  <!-- Middle orbit ring with rotation -->
+  <g style="animation: orbit 30s linear infinite; transform-origin: 0 0;">
+    <circle r="95" fill="none" stroke="#2a2a5e" stroke-width="0.8" stroke-dasharray="2,6"/>
+    <!-- Orbiting nodes -->
+    <circle cx="95" cy="0" r="4" fill="#FF6B6B" filter="url(#glowSoft)"/>
+    <circle cx="-60" cy="72" r="3" fill="#FFD93D" filter="url(#glowSoft)"/>
+    <circle cx="-60" cy="-72" r="3" fill="#9B59B6" filter="url(#glowSoft)"/>
+  </g>
+
+  <!-- Inner orbit ring (reverse) -->
+  <g style="animation: orbitReverse 20s linear infinite; transform-origin: 0 0;">
+    <circle r="65" fill="none" stroke="#2a2a5e" stroke-width="0.6" stroke-dasharray="3,5"/>
+    <circle cx="0" cy="65" r="3" fill="#00D4FF" filter="url(#glowSoft)"/>
+    <circle cx="0" cy="-65" r="3" fill="#27c93f" filter="url(#glowSoft)"/>
+  </g>
+
+  <!-- Core glow -->
+  <circle r="45" fill="url(#coreGrad)" filter="url(#glowStrong)">
+    <animate attributeName="opacity" values="0.6;1;0.6" dur="3s" repeatCount="indefinite"/>
+  </circle>
+  <circle r="35" fill="none" stroke="#00D4FF" stroke-width="1.5" opacity="0.6">
+    <animate attributeName="opacity" values="0.4;0.8;0.4" dur="2s" repeatCount="indefinite"/>
+  </circle>
+  
+  <!-- Core text -->
+  <text y="-5" text-anchor="middle" class="core-text" filter="url(#glowSoft)">A.G.I.</text>
+  <text y="14" text-anchor="middle" class="core-sub">CORE ONLINE</text>
+  
+  <!-- Connection lines to panels -->
+  <line x1="-135" y1="-80" x2="-250" y2="-140" stroke="#00D4FF" stroke-width="0.5" opacity="0.4" stroke-dasharray="4,4">
+    <animate attributeName="stroke-dashoffset" values="8;0" dur="1s" repeatCount="indefinite"/>
+  </line>
+  <line x1="135" y1="-80" x2="250" y2="-140" stroke="#FF6B6B" stroke-width="0.5" opacity="0.4" stroke-dasharray="4,4">
+    <animate attributeName="stroke-dashoffset" values="8;0" dur="1s" repeatCount="indefinite"/>
+  </line>
+  <line x1="-135" y1="80" x2="-250" y2="140" stroke="#FFD93D" stroke-width="0.5" opacity="0.4" stroke-dasharray="4,4">
+    <animate attributeName="stroke-dashoffset" values="8;0" dur="1s" repeatCount="indefinite"/>
+  </line>
+  <line x1="135" y1="80" x2="250" y2="140" stroke="#9B59B6" stroke-width="0.5" opacity="0.4" stroke-dasharray="4,4">
+    <animate attributeName="stroke-dashoffset" values="8;0" dur="1s" repeatCount="indefinite"/>
+  </line>
+</g>
+
+<!-- ═══════ TOP-LEFT: RESEARCH METRICS ═══════ -->
+<g transform="translate(40,60)">
+  <rect x="0" y="0" width="250" height="180" fill="#0d0d25" rx="8" stroke="#1a1a4e" stroke-width="1"/>
+  <rect x="0" y="0" width="250" height="28" fill="#111135" rx="8"/>
+  <rect x="0" y="14" width="250" height="14" fill="#111135"/>
+  <text x="15" y="19" class="panel-title">◈ RESEARCH METRICS</text>
+  <circle cx="235" cy="14" r="3" fill="#27c93f" class="status-dot"/>
+  
+  <text x="15" y="52" class="stat-label">REPOSITORIES</text>
+  <text x="200" y="52" class="stat-value" text-anchor="end" style="animation:fadeIn1 1s ease forwards;animation-delay:0.3s;opacity:0">267+</text>
+  
+  <text x="15" y="80" class="stat-label">STREAMLIT APPS</text>
+  <text x="200" y="80" class="stat-value" text-anchor="end" style="animation:fadeIn1 1s ease forwards;animation-delay:0.6s;opacity:0">106+</text>
+  
+  <text x="15" y="108" class="stat-label">RESEARCH PAPERS</text>
+  <text x="200" y="108" class="stat-value" text-anchor="end" style="animation:fadeIn1 1s ease forwards;animation-delay:0.9s;opacity:0">3</text>
+  
+  <text x="15" y="136" class="stat-label">NEURAL NETWORKS</text>
+  <text x="200" y="136" class="stat-value" text-anchor="end" style="animation:fadeIn1 1s ease forwards;animation-delay:1.2s;opacity:0">1K+</text>
+  
+  <text x="15" y="164" class="stat-label">VS CODE EXTENSIONS</text>
+  <text x="200" y="164" class="stat-value" text-anchor="end" style="animation:fadeIn1 1s ease forwards;animation-delay:1.5s;opacity:0">4</text>
+</g>
+
+<!-- ═══════ TOP-RIGHT: COMBAT STATS ═══════ -->
+<g transform="translate(910,60)">
+  <rect x="0" y="0" width="250" height="180" fill="#0d0d25" rx="8" stroke="#1a1a4e" stroke-width="1"/>
+  <rect x="0" y="0" width="250" height="28" fill="#111135" rx="8"/>
+  <rect x="0" y="14" width="250" height="14" fill="#111135"/>
+  <text x="15" y="19" class="panel-title">◈ ALGORITHM MASTERY</text>
+  <circle cx="235" cy="14" r="3" fill="#FF6B6B">
+    <animate attributeName="fill" values="#FF6B6B;#FFD93D;#FF6B6B" dur="2s" repeatCount="indefinite"/>
+  </circle>
+  
+  <text x="15" y="52" class="stat-label">LEETCODE SOLVED</text>
+  <text x="200" y="52" class="stat-value" text-anchor="end" fill="#FFD93D" style="animation:fadeIn2 1s ease forwards;animation-delay:0.5s;opacity:0">700+</text>
+  
+  <text x="15" y="80" class="stat-label">PEAK RATING</text>
+  <text x="200" y="80" class="stat-value" text-anchor="end" fill="#FF6B6B" style="animation:fadeIn2 1s ease forwards;animation-delay:0.8s;opacity:0">1734</text>
+  
+  <text x="15" y="108" class="stat-label">STAR RATING</text>
+  <text x="200" y="108" class="stat-value" text-anchor="end" fill="#00D4FF" style="animation:fadeIn2 1s ease forwards;animation-delay:1.1s;opacity:0">⭐⭐⭐</text>
+  
+  <text x="15" y="136" class="stat-label">CREDLY BADGES</text>
+  <text x="200" y="136" class="stat-value" text-anchor="end" fill="#9B59B6" style="animation:fadeIn2 1s ease forwards;animation-delay:1.4s;opacity:0">18</text>
+
+  <text x="15" y="164" class="stat-label">HACKATHON WINS</text>
+  <text x="200" y="164" class="stat-value" text-anchor="end" fill="#27c93f" style="animation:fadeIn2 1s ease forwards;animation-delay:1.7s;opacity:0">ISRO</text>
+</g>
+
+<!-- ═══════ BOTTOM-LEFT: SKILL BARS ═══════ -->
+<g transform="translate(40,280)">
+  <rect x="0" y="0" width="250" height="195" fill="#0d0d25" rx="8" stroke="#1a1a4e" stroke-width="1"/>
+  <rect x="0" y="0" width="250" height="28" fill="#111135" rx="8"/>
+  <rect x="0" y="14" width="250" height="14" fill="#111135"/>
+  <text x="15" y="19" class="panel-title">◈ NEURAL CAPACITIES</text>
+
+  <!-- Deep Learning bar -->
+  <text x="15" y="52" class="bar-label">DEEP LEARNING</text>
+  <text x="225" y="52" class="bar-value">96%</text>
+  <rect x="15" y="58" width="220" height="6" fill="#1a1a3e" rx="3"/>
+  <rect x="15" y="58" height="6" fill="url(#barGrad1)" rx="3" width="0">
+    <animate attributeName="width" from="0" to="211" dur="1.5s" begin="0.5s" fill="freeze"/>
+  </rect>
+
+  <!-- Reinforcement Learning bar -->
+  <text x="15" y="85" class="bar-label">REINFORCEMENT LEARNING</text>
+  <text x="225" y="85" class="bar-value">92%</text>
+  <rect x="15" y="91" width="220" height="6" fill="#1a1a3e" rx="3"/>
+  <rect x="15" y="91" height="6" fill="url(#barGrad2)" rx="3" width="0">
+    <animate attributeName="width" from="0" to="202" dur="1.5s" begin="0.8s" fill="freeze"/>
+  </rect>
+
+  <!-- Generative AI bar -->
+  <text x="15" y="118" class="bar-label">GENERATIVE AI</text>
+  <text x="225" y="118" class="bar-value">89%</text>
+  <rect x="15" y="124" width="220" height="6" fill="#1a1a3e" rx="3"/>
+  <rect x="15" y="124" height="6" fill="url(#barGrad3)" rx="3" width="0">
+    <animate attributeName="width" from="0" to="196" dur="1.5s" begin="1.1s" fill="freeze"/>
+  </rect>
+
+  <!-- Computer Vision bar -->
+  <text x="15" y="151" class="bar-label">COMPUTER VISION</text>
+  <text x="225" y="151" class="bar-value">87%</text>
+  <rect x="15" y="157" width="220" height="6" fill="#1a1a3e" rx="3"/>
+  <rect x="15" y="157" height="6" fill="url(#barGrad4)" rx="3" width="0">
+    <animate attributeName="width" from="0" to="191" dur="1.5s" begin="1.4s" fill="freeze"/>
+  </rect>
+
+  <!-- Quantum ML bar -->
+  <text x="15" y="184" class="bar-label">QUANTUM ML</text>
+  <text x="225" y="184" class="bar-value">78%</text>
+  <rect x="15" y="190" width="220" height="6" fill="#1a1a3e" rx="3"/>
+  <rect x="15" y="190" height="6" fill="url(#barGrad1)" rx="3" width="0">
+    <animate attributeName="width" from="0" to="172" dur="1.5s" begin="1.7s" fill="freeze"/>
+  </rect>
+</g>
+
+<!-- ═══════ BOTTOM-RIGHT: RESEARCH RADAR ═══════ -->
+<g transform="translate(1035,375)">
+  <!-- Radar background -->
+  <circle r="90" fill="#0d0d25" stroke="#1a1a4e" stroke-width="1"/>
+  <circle r="60" fill="none" stroke="#1a1a3e" stroke-width="0.5"/>
+  <circle r="30" fill="none" stroke="#1a1a3e" stroke-width="0.5"/>
+  <line x1="-90" y1="0" x2="90" y2="0" stroke="#1a1a3e" stroke-width="0.5"/>
+  <line x1="0" y1="-90" x2="0" y2="90" stroke="#1a1a3e" stroke-width="0.5"/>
+  <line x1="-63" y1="-63" x2="63" y2="63" stroke="#1a1a3e" stroke-width="0.3"/>
+  <line x1="63" y1="-63" x2="-63" y2="63" stroke="#1a1a3e" stroke-width="0.3"/>
+
+  <!-- Radar sweep -->
+  <g style="animation: sweep 4s linear infinite; transform-origin: 0 0;">
+    <path d="M0,0 L0,-90 A90,90 0 0,1 45,-78 Z" fill="url(#radarGrad)" opacity="0.6"/>
+    <line x1="0" y1="0" x2="0" y2="-90" stroke="#00D4FF" stroke-width="1" opacity="0.8"/>
+  </g>
+
+  <!-- Radar data points -->
+  <circle cx="20" cy="-55" r="3" fill="#00D4FF" filter="url(#glowSoft)" opacity="0.8">
+    <animate attributeName="opacity" values="0.3;1;0.3" dur="3s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="-40" cy="30" r="4" fill="#FF6B6B" filter="url(#glowSoft)" opacity="0.8">
+    <animate attributeName="opacity" values="0.5;1;0.5" dur="2.5s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="50" cy="20" r="3" fill="#FFD93D" filter="url(#glowSoft)" opacity="0.8">
+    <animate attributeName="opacity" values="0.4;1;0.4" dur="2s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="-25" cy="-40" r="3" fill="#9B59B6" filter="url(#glowSoft)" opacity="0.8">
+    <animate attributeName="opacity" values="0.6;1;0.6" dur="3.5s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="35" cy="-30" r="2" fill="#27c93f" filter="url(#glowSoft)" opacity="0.8">
+    <animate attributeName="opacity" values="0.3;0.9;0.3" dur="1.8s" repeatCount="indefinite"/>
+  </circle>
+
+  <!-- Radar label -->
+  <text y="-98" text-anchor="middle" class="panel-title" font-size="9">◈ RESEARCH RADAR</text>
+</g>
+
+<!-- ═══════ BOTTOM STATUS BAR ═══════ -->
+<g transform="translate(310, 490)">
+  <rect x="0" y="-12" width="580" height="24" fill="#0d0d25" rx="12" stroke="#1a1a4e" stroke-width="0.5"/>
+  
+  <circle cx="20" cy="0" r="3" fill="#27c93f" class="status-dot"/>
+  <text x="30" y="4" class="label-dim">SAMSUNG FELLOW</text>
+  
+  <text x="160" y="4" class="label-dim" fill="#2a2a5e">│</text>
+  
+  <circle cx="175" cy="0" r="3" fill="#00D4FF">
+    <animate attributeName="opacity" values="0.5;1;0.5" dur="2s" repeatCount="indefinite"/>
+  </circle>
+  <text x="185" y="4" class="label-dim">IISc BANGALORE</text>
+  
+  <text x="300" y="4" class="label-dim" fill="#2a2a5e">│</text>
+  
+  <circle cx="315" cy="0" r="3" fill="#FFD93D">
+    <animate attributeName="opacity" values="0.5;1;0.5" dur="2.5s" repeatCount="indefinite"/>
+  </circle>
+  <text x="325" y="4" class="label-dim">NAOJ RESEARCH</text>
+  
+  <text x="440" y="4" class="label-dim" fill="#2a2a5e">│</text>
+  
+  <circle cx="455" cy="0" r="3" fill="#FF6B6B">
+    <animate attributeName="opacity" values="0.5;1;0.5" dur="1.8s" repeatCount="indefinite"/>
+  </circle>
+  <text x="465" y="4" class="label-dim">NIT AGARTALA</text>
+</g>
+
+<!-- ═══════ BRAINWAVE LINE (bottom decoration) ═══════ -->
+<g transform="translate(310, 465)">
+  <polyline fill="none" stroke="#00D4FF" stroke-width="1" opacity="0.3"
+    points="0,0 15,-8 30,5 45,-12 60,3 75,-6 90,8 105,-10 120,2 135,-7 145,4 160,-9 175,6 190,-5 205,10 220,-8 235,3 250,-6 265,7 280,-12 295,0 310,-5 325,8 340,-7 355,4 370,-10 385,2 400,-6 415,5 430,-8 445,3 460,-5 475,7 490,-10 505,0 520,-3 535,6 550,-8 565,2 580,0">
+    <animate attributeName="points" 
+      values="0,0 15,-8 30,5 45,-12 60,3 75,-6 90,8 105,-10 120,2 135,-7 145,4 160,-9 175,6 190,-5 205,10 220,-8 235,3 250,-6 265,7 280,-12 295,0 310,-5 325,8 340,-7 355,4 370,-10 385,2 400,-6 415,5 430,-8 445,3 460,-5 475,7 490,-10 505,0 520,-3 535,6 550,-8 565,2 580,0;
+             0,0 15,6 30,-8 45,10 60,-5 75,8 90,-3 105,7 120,-10 135,4 145,-7 160,5 175,-9 190,3 205,-6 220,12 235,-4 250,8 265,-5 280,10 295,0 310,7 325,-6 340,5 355,-8 370,3 385,-7 400,9 415,-4 430,6 445,-8 460,3 475,-5 490,7 505,0 520,5 535,-6 550,4 565,-3 580,0;
+             0,0 15,-8 30,5 45,-12 60,3 75,-6 90,8 105,-10 120,2 135,-7 145,4 160,-9 175,6 190,-5 205,10 220,-8 235,3 250,-6 265,7 280,-12 295,0 310,-5 325,8 340,-7 355,4 370,-10 385,2 400,-6 415,5 430,-8 445,3 460,-5 475,7 490,-10 505,0 520,-3 535,6 550,-8 565,2 580,0"
+      dur="3s" repeatCount="indefinite"/>
+  </polyline>
+</g>
+
+<!-- ═══════ FLOATING PARTICLES ═══════ -->
+<circle cx="150" cy="260" r="1.5" fill="#00D4FF" opacity="0">
+  <animate attributeName="opacity" values="0;0.6;0" dur="4s" repeatCount="indefinite"/>
+  <animate attributeName="cy" values="270;240" dur="4s" repeatCount="indefinite"/>
+</circle>
+<circle cx="450" cy="180" r="1" fill="#FF6B6B" opacity="0">
+  <animate attributeName="opacity" values="0;0.5;0" dur="3.5s" begin="0.5s" repeatCount="indefinite"/>
+  <animate attributeName="cy" values="190;160" dur="3.5s" begin="0.5s" repeatCount="indefinite"/>
+</circle>
+<circle cx="750" cy="300" r="1" fill="#FFD93D" opacity="0">
+  <animate attributeName="opacity" values="0;0.7;0" dur="5s" begin="1s" repeatCount="indefinite"/>
+  <animate attributeName="cy" values="310;280" dur="5s" begin="1s" repeatCount="indefinite"/>
+</circle>
+<circle cx="850" cy="200" r="1.5" fill="#9B59B6" opacity="0">
+  <animate attributeName="opacity" values="0;0.4;0" dur="3s" begin="2s" repeatCount="indefinite"/>
+  <animate attributeName="cy" values="210;185" dur="3s" begin="2s" repeatCount="indefinite"/>
+</circle>
+<circle cx="500" cy="400" r="1" fill="#27c93f" opacity="0">
+  <animate attributeName="opacity" values="0;0.6;0" dur="4.5s" begin="1.5s" repeatCount="indefinite"/>
+  <animate attributeName="cy" values="410;380" dur="4.5s" begin="1.5s" repeatCount="indefinite"/>
+</circle>
+
+</svg>

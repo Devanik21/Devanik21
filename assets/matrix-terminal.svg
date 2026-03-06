@@ -1,0 +1,197 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 520">
+<defs>
+  <filter id="glow">
+    <feGaussianBlur stdDeviation="2" result="blur"/>
+    <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+  </filter>
+</defs>
+<style>
+  .term-bg { fill: #0d1117; }
+  .title-bar { fill: #161b22; }
+  .term-text { font-family: 'Courier New', 'Lucida Console', monospace; font-size: 13px; }
+  .green { fill: #00ff41; }
+  .cyan { fill: #00D4FF; }
+  .red { fill: #FF6B6B; }
+  .yellow { fill: #FFD93D; }
+  .purple { fill: #9B59B6; }
+  .white { fill: #e6edf3; }
+  .dim { fill: #484f58; }
+  .orange { fill: #FF9500; }
+  .prompt { fill: #27c93f; }
+
+  @keyframes blink { 0%,49%{opacity:1} 50%,100%{opacity:0} }
+  @keyframes typeIn { 0%{opacity:0;transform:translateX(-5px)} 100%{opacity:1;transform:translateX(0)} }
+  
+  .l1 { opacity:0; animation: typeIn 0.3s ease forwards; animation-delay: 0.2s; }
+  .l2 { opacity:0; animation: typeIn 0.3s ease forwards; animation-delay: 0.6s; }
+  .l3 { opacity:0; animation: typeIn 0.3s ease forwards; animation-delay: 1.0s; }
+  .l4 { opacity:0; animation: typeIn 0.3s ease forwards; animation-delay: 1.3s; }
+  .l5 { opacity:0; animation: typeIn 0.3s ease forwards; animation-delay: 1.6s; }
+  .l6 { opacity:0; animation: typeIn 0.3s ease forwards; animation-delay: 1.9s; }
+  .l7 { opacity:0; animation: typeIn 0.3s ease forwards; animation-delay: 2.2s; }
+  .l8 { opacity:0; animation: typeIn 0.3s ease forwards; animation-delay: 2.5s; }
+  .l9 { opacity:0; animation: typeIn 0.3s ease forwards; animation-delay: 2.8s; }
+  .l10 { opacity:0; animation: typeIn 0.3s ease forwards; animation-delay: 3.1s; }
+  .l11 { opacity:0; animation: typeIn 0.3s ease forwards; animation-delay: 3.4s; }
+  .l12 { opacity:0; animation: typeIn 0.3s ease forwards; animation-delay: 3.7s; }
+  .l13 { opacity:0; animation: typeIn 0.3s ease forwards; animation-delay: 4.0s; }
+  .l14 { opacity:0; animation: typeIn 0.3s ease forwards; animation-delay: 4.3s; }
+  .l15 { opacity:0; animation: typeIn 0.3s ease forwards; animation-delay: 4.6s; }
+  .l16 { opacity:0; animation: typeIn 0.3s ease forwards; animation-delay: 4.9s; }
+  .l17 { opacity:0; animation: typeIn 0.3s ease forwards; animation-delay: 5.2s; }
+  .l18 { opacity:0; animation: typeIn 0.3s ease forwards; animation-delay: 5.5s; }
+  .l19 { opacity:0; animation: typeIn 0.3s ease forwards; animation-delay: 5.8s; }
+  .l20 { opacity:0; animation: typeIn 0.3s ease forwards; animation-delay: 6.1s; }
+  .l21 { opacity:0; animation: typeIn 0.3s ease forwards; animation-delay: 6.4s; }
+  .l22 { opacity:0; animation: typeIn 0.3s ease forwards; animation-delay: 6.7s; }
+  .l23 { opacity:0; animation: typeIn 0.3s ease forwards; animation-delay: 7.0s; }
+
+  .cursor {
+    animation: blink 1s step-end infinite;
+    animation-delay: 7.3s;
+  }
+</style>
+
+<!-- Terminal frame -->
+<rect class="term-bg" width="900" height="520" rx="12"/>
+<rect class="title-bar" width="900" height="36" rx="12"/>
+<rect class="title-bar" y="24" width="900" height="12"/>
+
+<!-- Window dots -->
+<circle cx="22" cy="18" r="7" fill="#ff5f56"/>
+<circle cx="44" cy="18" r="7" fill="#ffbd2e"/>
+<circle cx="66" cy="18" r="7" fill="#27c93f"/>
+
+<!-- Title -->
+<text x="450" y="22" text-anchor="middle" fill="#8b949e" font-family="'Courier New', monospace" font-size="12" font-weight="bold">devanik@neural-nexus:~/consciousness — zsh — 900×520</text>
+
+<!-- Terminal content - animated lines -->
+<g class="l1">
+  <text x="25" y="65" class="term-text prompt">❯</text>
+  <text x="42" y="65" class="term-text white"> cat /proc/neural/identity.json</text>
+</g>
+
+<g class="l2">
+  <text x="25" y="90" class="term-text cyan">{</text>
+</g>
+
+<g class="l3">
+  <text x="25" y="110" class="term-text dim">  "name":</text>
+  <text x="130" y="110" class="term-text yellow"> "Devanik Debnath"</text>
+  <text x="312" y="110" class="term-text dim">,</text>
+</g>
+
+<g class="l4">
+  <text x="25" y="130" class="term-text dim">  "role":</text>
+  <text x="130" y="130" class="term-text yellow"> "AI Researcher &amp; Neural Architect"</text>
+  <text x="470" y="130" class="term-text dim">,</text>
+</g>
+
+<g class="l5">
+  <text x="25" y="150" class="term-text dim">  "fellowship":</text>
+  <text x="170" y="150" class="term-text yellow"> "Samsung Fellow (Grade I) @ IISc Bangalore"</text>
+  <text x="578" y="150" class="term-text dim">,</text>
+</g>
+
+<g class="l6">
+  <text x="25" y="170" class="term-text dim">  "achievement":</text>
+  <text x="180" y="170" class="term-text yellow"> "🥇 ISRO Space Hackathon Winner"</text>
+  <text x="488" y="170" class="term-text dim">,</text>
+</g>
+
+<g class="l7">
+  <text x="25" y="190" class="term-text dim">  "research":</text>
+  <text x="155" y="190" class="term-text yellow"> "NAOJ Intern → GRB Reconstruction via Deep Learning"</text>
+</g>
+
+<g class="l8">
+  <text x="25" y="210" class="term-text cyan">}</text>
+</g>
+
+<g class="l9">
+  <text x="25" y="240" class="term-text prompt">❯</text>
+  <text x="42" y="240" class="term-text white"> neofetch --neural-stats</text>
+</g>
+
+<g class="l10">
+  <text x="25" y="268" class="term-text red">  ╔══════════════════════════════════════════════════╗</text>
+</g>
+<g class="l11">
+  <text x="25" y="288" class="term-text red">  ║</text>
+  <text x="58" y="288" class="term-text dim">  repos:</text>
+  <text x="140" y="288" class="term-text green">██████████████████████████░░</text>
+  <text x="395" y="288" class="term-text white"> 267+</text>
+  <text x="560" y="288" class="term-text red">  ║</text>
+</g>
+<g class="l12">
+  <text x="25" y="308" class="term-text red">  ║</text>
+  <text x="58" y="308" class="term-text dim">  apps:</text>
+  <text x="140" y="308" class="term-text cyan">███████████████████████░░░░</text>
+  <text x="395" y="308" class="term-text white"> 106+</text>
+  <text x="560" y="308" class="term-text red">  ║</text>
+</g>
+<g class="l13">
+  <text x="25" y="328" class="term-text red">  ║</text>
+  <text x="58" y="328" class="term-text dim">  leet:</text>
+  <text x="140" y="328" class="term-text yellow">████████████████████░░░░░░</text>
+  <text x="395" y="328" class="term-text white"> 700+</text>
+  <text x="460" y="328" class="term-text dim"> peak:</text>
+  <text x="520" y="328" class="term-text orange">1734</text>
+  <text x="560" y="328" class="term-text red">║</text>
+</g>
+<g class="l14">
+  <text x="25" y="348" class="term-text red">  ║</text>
+  <text x="58" y="348" class="term-text dim">  nets:</text>
+  <text x="140" y="348" class="term-text purple">████████████████████████░░</text>
+  <text x="395" y="348" class="term-text white"> 1000+</text>
+  <text x="560" y="348" class="term-text red">║</text>
+</g>
+<g class="l15">
+  <text x="25" y="368" class="term-text red">  ║</text>
+  <text x="58" y="368" class="term-text dim">  cgpa:</text>
+  <text x="140" y="368" class="term-text green">██████████████████░░░░░░░░</text>
+  <text x="395" y="368" class="term-text white"> 7.8/10</text>
+  <text x="473" y="368" class="term-text dim"> sem:</text>
+  <text x="520" y="368" class="term-text orange">8.92</text>
+  <text x="560" y="368" class="term-text red">║</text>
+</g>
+<g class="l16">
+  <text x="25" y="388" class="term-text red">  ╚══════════════════════════════════════════════════╝</text>
+</g>
+
+<g class="l17">
+  <text x="25" y="415" class="term-text prompt">❯</text>
+  <text x="42" y="415" class="term-text white"> ping consciousness.neural</text>
+</g>
+<g class="l18">
+  <text x="25" y="435" class="term-text green">  PONG</text>
+  <text x="82" y="435" class="term-text dim"> from</text>
+  <text x="120" y="435" class="term-text cyan"> consciousness.neural</text>
+  <text x="316" y="435" class="term-text dim">: ttl=∞ status=</text>
+  <text x="456" y="435" class="term-text green">EXPANDING</text>
+</g>
+<g class="l19">
+  <text x="25" y="455" class="term-text green">  PONG</text>
+  <text x="82" y="455" class="term-text dim"> from</text>
+  <text x="120" y="455" class="term-text cyan"> singularity.core</text>
+  <text x="290" y="455" class="term-text dim">: ttl=∞ status=</text>
+  <text x="430" y="455" class="term-text yellow">CONVERGING</text>
+</g>
+<g class="l20">
+  <text x="25" y="475" class="term-text green">  PONG</text>
+  <text x="82" y="475" class="term-text dim"> from</text>
+  <text x="120" y="475" class="term-text cyan"> agi.gateway</text>
+  <text x="248" y="475" class="term-text dim">: ttl=∞ status=</text>
+  <text x="388" y="475" class="term-text red">██</text>
+  <text x="413" y="475" class="term-text orange">██</text>
+  <text x="438" y="475" class="term-text yellow">██</text>
+  <text x="463" y="475" class="term-text green">BUILDING</text>
+</g>
+
+<g class="l21">
+  <text x="25" y="500" class="term-text prompt">❯</text>
+  <text x="42" y="500" class="term-text dim">_</text>
+  <rect x="42" y="488" width="8" height="16" fill="#27c93f" class="cursor"/>
+</g>
+
+</svg>

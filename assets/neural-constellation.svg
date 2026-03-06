@@ -1,0 +1,343 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 500">
+<defs>
+  <filter id="glow">
+    <feGaussianBlur stdDeviation="3" result="blur"/>
+    <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+  </filter>
+  <filter id="glowSoft">
+    <feGaussianBlur stdDeviation="1.5" result="blur"/>
+    <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+  </filter>
+  <radialGradient id="starGlow" cx="50%" cy="50%" r="50%">
+    <stop offset="0%" stop-color="#ffffff" stop-opacity="1"/>
+    <stop offset="100%" stop-color="#ffffff" stop-opacity="0"/>
+  </radialGradient>
+</defs>
+
+<style>
+  @keyframes twinkle1 { 0%,100%{opacity:.3;r:2} 50%{opacity:1;r:3.5} }
+  @keyframes twinkle2 { 0%,100%{opacity:.5;r:1.5} 50%{opacity:1;r:3} }
+  @keyframes twinkle3 { 0%,100%{opacity:.4;r:2.5} 50%{opacity:.9;r:4} }
+  @keyframes twinkle4 { 0%,100%{opacity:.6;r:1} 50%{opacity:1;r:2} }
+  @keyframes pulseNode { 0%,100%{r:6;opacity:.7} 50%{r:8;opacity:1} }
+  @keyframes pulseLink { 0%,100%{opacity:.15} 50%{opacity:.4} }
+  @keyframes dashFlow { to { stroke-dashoffset: -20; } }
+  @keyframes fadeLabel { 0%,30%{opacity:0} 50%,80%{opacity:1} 100%{opacity:0} }
+  @keyframes shootingStar { 0%{transform:translate(0,0);opacity:1} 100%{transform:translate(120px,60px);opacity:0} }
+  @keyframes nebulaPulse { 0%,100%{opacity:.03} 50%{opacity:.08} }
+  
+  .star-label { 
+    font-family: 'Courier New', monospace; 
+    font-size: 10px; 
+    letter-spacing: 1.5px;
+    font-weight: bold;
+  }
+  .constellation-name {
+    font-family: 'Courier New', monospace;
+    font-size: 8px;
+    letter-spacing: 3px;
+    fill: #4a4a7a;
+  }
+</style>
+
+<!-- Deep space background -->
+<rect width="1200" height="500" fill="#050510" rx="12"/>
+
+<!-- Nebula clouds -->
+<ellipse cx="300" cy="200" rx="200" ry="120" fill="#1a0a3e" opacity="0.05">
+  <animate attributeName="opacity" values="0.03;0.08;0.03" dur="8s" repeatCount="indefinite"/>
+</ellipse>
+<ellipse cx="900" cy="350" rx="180" ry="100" fill="#0a1a3e" opacity="0.05">
+  <animate attributeName="opacity" values="0.05;0.1;0.05" dur="10s" repeatCount="indefinite"/>
+</ellipse>
+<ellipse cx="600" cy="100" rx="250" ry="80" fill="#1a0a2e" opacity="0.04">
+  <animate attributeName="opacity" values="0.02;0.06;0.02" dur="12s" repeatCount="indefinite"/>
+</ellipse>
+
+<!-- Background stars (tiny) -->
+<circle cx="45" cy="30" r="0.8" fill="#fff" opacity="0.3"><animate attributeName="opacity" values=".2;.6;.2" dur="3s" repeatCount="indefinite"/></circle>
+<circle cx="120" cy="80" r="0.5" fill="#fff" opacity="0.4"/>
+<circle cx="200" cy="45" r="0.6" fill="#fff" opacity="0.2"><animate attributeName="opacity" values=".1;.5;.1" dur="4s" repeatCount="indefinite"/></circle>
+<circle cx="280" cy="90" r="0.7" fill="#fff" opacity="0.3"/>
+<circle cx="350" cy="20" r="0.5" fill="#fff" opacity="0.5"><animate attributeName="opacity" values=".3;.7;.3" dur="2.5s" repeatCount="indefinite"/></circle>
+<circle cx="420" cy="60" r="0.4" fill="#fff" opacity="0.2"/>
+<circle cx="500" cy="35" r="0.8" fill="#fff" opacity="0.4"><animate attributeName="opacity" values=".2;.8;.2" dur="5s" repeatCount="indefinite"/></circle>
+<circle cx="580" cy="75" r="0.5" fill="#fff" opacity="0.3"/>
+<circle cx="650" cy="25" r="0.6" fill="#fff" opacity="0.5"><animate attributeName="opacity" values=".3;.6;.3" dur="3.5s" repeatCount="indefinite"/></circle>
+<circle cx="730" cy="55" r="0.4" fill="#fff" opacity="0.2"/>
+<circle cx="810" cy="40" r="0.7" fill="#fff" opacity="0.4"><animate attributeName="opacity" values=".2;.7;.2" dur="4.5s" repeatCount="indefinite"/></circle>
+<circle cx="890" cy="70" r="0.5" fill="#fff" opacity="0.3"/>
+<circle cx="970" cy="30" r="0.6" fill="#fff" opacity="0.5"/>
+<circle cx="1050" cy="60" r="0.4" fill="#fff" opacity="0.2"><animate attributeName="opacity" values=".1;.4;.1" dur="6s" repeatCount="indefinite"/></circle>
+<circle cx="1130" cy="45" r="0.8" fill="#fff" opacity="0.4"/>
+<circle cx="80" cy="430" r="0.6" fill="#fff" opacity="0.3"><animate attributeName="opacity" values=".2;.5;.2" dur="3.8s" repeatCount="indefinite"/></circle>
+<circle cx="160" cy="460" r="0.5" fill="#fff" opacity="0.2"/>
+<circle cx="240" cy="480" r="0.7" fill="#fff" opacity="0.4"/>
+<circle cx="320" cy="440" r="0.4" fill="#fff" opacity="0.3"><animate attributeName="opacity" values=".1;.6;.1" dur="5.5s" repeatCount="indefinite"/></circle>
+<circle cx="700" cy="470" r="0.6" fill="#fff" opacity="0.5"/>
+<circle cx="800" cy="450" r="0.5" fill="#fff" opacity="0.2"><animate attributeName="opacity" values=".2;.4;.2" dur="4.2s" repeatCount="indefinite"/></circle>
+<circle cx="1000" cy="480" r="0.7" fill="#fff" opacity="0.3"/>
+<circle cx="1100" cy="460" r="0.4" fill="#fff" opacity="0.4"><animate attributeName="opacity" values=".3;.7;.3" dur="3.2s" repeatCount="indefinite"/></circle>
+<circle cx="550" cy="470" r="0.5" fill="#fff" opacity="0.2"/>
+<circle cx="450" cy="490" r="0.6" fill="#fff" opacity="0.3"><animate attributeName="opacity" values=".1;.5;.1" dur="4.8s" repeatCount="indefinite"/></circle>
+
+<!-- ═══════ CONSTELLATION: DEEP LEARNING ═══════ -->
+<!-- Connection lines -->
+<line x1="150" y1="150" x2="280" y2="120" stroke="#00D4FF" stroke-width="0.8" opacity="0.2" stroke-dasharray="4,4">
+  <animate attributeName="stroke-dashoffset" values="0;-20" dur="3s" repeatCount="indefinite"/>
+</line>
+<line x1="280" y1="120" x2="220" y2="220" stroke="#00D4FF" stroke-width="0.8" opacity="0.2" stroke-dasharray="4,4">
+  <animate attributeName="stroke-dashoffset" values="0;-20" dur="3s" repeatCount="indefinite"/>
+</line>
+<line x1="220" y1="220" x2="150" y2="150" stroke="#00D4FF" stroke-width="0.8" opacity="0.2" stroke-dasharray="4,4">
+  <animate attributeName="stroke-dashoffset" values="0;-20" dur="3s" repeatCount="indefinite"/>
+</line>
+<line x1="280" y1="120" x2="350" y2="180" stroke="#00D4FF" stroke-width="0.5" opacity="0.15" stroke-dasharray="4,4">
+  <animate attributeName="stroke-dashoffset" values="0;-20" dur="3s" repeatCount="indefinite"/>
+</line>
+
+<!-- Stars (nodes) -->
+<circle cx="150" cy="150" r="5" fill="#00D4FF" filter="url(#glow)">
+  <animate attributeName="r" values="5;7;5" dur="3s" repeatCount="indefinite"/>
+</circle>
+<text x="150" y="138" text-anchor="middle" class="star-label" fill="#00D4FF">PYTORCH</text>
+
+<circle cx="280" cy="120" r="6" fill="#00D4FF" filter="url(#glow)">
+  <animate attributeName="r" values="6;8;6" dur="4s" repeatCount="indefinite"/>
+</circle>
+<text x="280" y="108" text-anchor="middle" class="star-label" fill="#00D4FF">TENSORFLOW</text>
+
+<circle cx="220" cy="220" r="4" fill="#00D4FF" filter="url(#glowSoft)">
+  <animate attributeName="r" values="4;6;4" dur="3.5s" repeatCount="indefinite"/>
+</circle>
+<text x="220" y="240" text-anchor="middle" class="star-label" fill="#00D4FF">KERAS</text>
+
+<circle cx="350" cy="180" r="3" fill="#00D4FF" filter="url(#glowSoft)">
+  <animate attributeName="r" values="3;5;3" dur="2.5s" repeatCount="indefinite"/>
+</circle>
+<text x="350" y="200" text-anchor="middle" class="star-label" fill="#00D4FF">ONNX</text>
+
+<text x="215" y="275" text-anchor="middle" class="constellation-name">— DEEP LEARNING —</text>
+
+<!-- ═══════ CONSTELLATION: GENERATIVE AI ═══════ -->
+<line x1="500" y1="100" x2="600" y2="140" stroke="#FF6B6B" stroke-width="0.8" opacity="0.2" stroke-dasharray="4,4">
+  <animate attributeName="stroke-dashoffset" values="0;-20" dur="3.5s" repeatCount="indefinite"/>
+</line>
+<line x1="600" y1="140" x2="550" y2="230" stroke="#FF6B6B" stroke-width="0.8" opacity="0.2" stroke-dasharray="4,4">
+  <animate attributeName="stroke-dashoffset" values="0;-20" dur="3.5s" repeatCount="indefinite"/>
+</line>
+<line x1="550" y1="230" x2="500" y2="100" stroke="#FF6B6B" stroke-width="0.5" opacity="0.15" stroke-dasharray="4,4">
+  <animate attributeName="stroke-dashoffset" values="0;-20" dur="3.5s" repeatCount="indefinite"/>
+</line>
+<line x1="600" y1="140" x2="700" y2="110" stroke="#FF6B6B" stroke-width="0.5" opacity="0.15" stroke-dasharray="4,4">
+  <animate attributeName="stroke-dashoffset" values="0;-20" dur="3.5s" repeatCount="indefinite"/>
+</line>
+<line x1="500" y1="100" x2="450" y2="170" stroke="#FF6B6B" stroke-width="0.5" opacity="0.15" stroke-dasharray="4,4">
+  <animate attributeName="stroke-dashoffset" values="0;-20" dur="3.5s" repeatCount="indefinite"/>
+</line>
+
+<circle cx="500" cy="100" r="6" fill="#FF6B6B" filter="url(#glow)">
+  <animate attributeName="r" values="6;8;6" dur="3.8s" repeatCount="indefinite"/>
+</circle>
+<text x="500" y="88" text-anchor="middle" class="star-label" fill="#FF6B6B">GANs</text>
+
+<circle cx="600" cy="140" r="5" fill="#FF6B6B" filter="url(#glow)">
+  <animate attributeName="r" values="5;7;5" dur="3s" repeatCount="indefinite"/>
+</circle>
+<text x="600" y="128" text-anchor="middle" class="star-label" fill="#FF6B6B">DIFFUSION</text>
+
+<circle cx="550" cy="230" r="4" fill="#FF6B6B" filter="url(#glowSoft)">
+  <animate attributeName="r" values="4;6;4" dur="4.2s" repeatCount="indefinite"/>
+</circle>
+<text x="550" y="250" text-anchor="middle" class="star-label" fill="#FF6B6B">LLMs</text>
+
+<circle cx="700" cy="110" r="3" fill="#FF6B6B" filter="url(#glowSoft)">
+  <animate attributeName="r" values="3;5;3" dur="2.8s" repeatCount="indefinite"/>
+</circle>
+<text x="700" y="98" text-anchor="middle" class="star-label" fill="#FF6B6B">RAG</text>
+
+<circle cx="450" cy="170" r="3" fill="#FF6B6B" filter="url(#glowSoft)">
+  <animate attributeName="r" values="3;5;3" dur="3.2s" repeatCount="indefinite"/>
+</circle>
+<text x="450" y="160" text-anchor="middle" class="star-label" fill="#FF6B6B">TRANSFORMERS</text>
+
+<text x="570" y="275" text-anchor="middle" class="constellation-name">— GENERATIVE AI —</text>
+
+<!-- ═══════ CONSTELLATION: REINFORCEMENT LEARNING ═══════ -->
+<line x1="850" y1="150" x2="950" y2="120" stroke="#FFD93D" stroke-width="0.8" opacity="0.2" stroke-dasharray="4,4">
+  <animate attributeName="stroke-dashoffset" values="0;-20" dur="2.8s" repeatCount="indefinite"/>
+</line>
+<line x1="950" y1="120" x2="1050" y2="180" stroke="#FFD93D" stroke-width="0.8" opacity="0.2" stroke-dasharray="4,4">
+  <animate attributeName="stroke-dashoffset" values="0;-20" dur="2.8s" repeatCount="indefinite"/>
+</line>
+<line x1="1050" y1="180" x2="950" y2="230" stroke="#FFD93D" stroke-width="0.5" opacity="0.15" stroke-dasharray="4,4">
+  <animate attributeName="stroke-dashoffset" values="0;-20" dur="2.8s" repeatCount="indefinite"/>
+</line>
+<line x1="950" y1="230" x2="850" y2="150" stroke="#FFD93D" stroke-width="0.5" opacity="0.15" stroke-dasharray="4,4">
+  <animate attributeName="stroke-dashoffset" values="0;-20" dur="2.8s" repeatCount="indefinite"/>
+</line>
+
+<circle cx="850" cy="150" r="5" fill="#FFD93D" filter="url(#glow)">
+  <animate attributeName="r" values="5;7;5" dur="3.5s" repeatCount="indefinite"/>
+</circle>
+<text x="850" y="138" text-anchor="middle" class="star-label" fill="#FFD93D">Q-LEARNING</text>
+
+<circle cx="950" cy="120" r="6" fill="#FFD93D" filter="url(#glow)">
+  <animate attributeName="r" values="6;8;6" dur="4s" repeatCount="indefinite"/>
+</circle>
+<text x="950" y="108" text-anchor="middle" class="star-label" fill="#FFD93D">MCTS</text>
+
+<circle cx="1050" cy="180" r="4" fill="#FFD93D" filter="url(#glowSoft)">
+  <animate attributeName="r" values="4;6;4" dur="3s" repeatCount="indefinite"/>
+</circle>
+<text x="1050" y="168" text-anchor="middle" class="star-label" fill="#FFD93D">PPO</text>
+
+<circle cx="950" cy="230" r="3" fill="#FFD93D" filter="url(#glowSoft)">
+  <animate attributeName="r" values="3;5;3" dur="2.5s" repeatCount="indefinite"/>
+</circle>
+<text x="950" y="250" text-anchor="middle" class="star-label" fill="#FFD93D">SARSA</text>
+
+<text x="950" y="275" text-anchor="middle" class="constellation-name">— REINFORCEMENT LEARNING —</text>
+
+<!-- ═══════ CONSTELLATION: QUANTUM &amp; LONGEVITY ═══════ -->
+<line x1="150" y1="360" x2="280" y2="340" stroke="#9B59B6" stroke-width="0.8" opacity="0.2" stroke-dasharray="4,4">
+  <animate attributeName="stroke-dashoffset" values="0;-20" dur="4s" repeatCount="indefinite"/>
+</line>
+<line x1="280" y1="340" x2="350" y2="400" stroke="#9B59B6" stroke-width="0.8" opacity="0.2" stroke-dasharray="4,4">
+  <animate attributeName="stroke-dashoffset" values="0;-20" dur="4s" repeatCount="indefinite"/>
+</line>
+<line x1="350" y1="400" x2="200" y2="420" stroke="#9B59B6" stroke-width="0.5" opacity="0.15" stroke-dasharray="4,4">
+  <animate attributeName="stroke-dashoffset" values="0;-20" dur="4s" repeatCount="indefinite"/>
+</line>
+<line x1="200" y1="420" x2="150" y2="360" stroke="#9B59B6" stroke-width="0.5" opacity="0.15" stroke-dasharray="4,4">
+  <animate attributeName="stroke-dashoffset" values="0;-20" dur="4s" repeatCount="indefinite"/>
+</line>
+
+<circle cx="150" cy="360" r="5" fill="#9B59B6" filter="url(#glow)">
+  <animate attributeName="r" values="5;7;5" dur="4.5s" repeatCount="indefinite"/>
+</circle>
+<text x="150" y="348" text-anchor="middle" class="star-label" fill="#9B59B6">QUANTUM ML</text>
+
+<circle cx="280" cy="340" r="4" fill="#9B59B6" filter="url(#glowSoft)">
+  <animate attributeName="r" values="4;6;4" dur="3.5s" repeatCount="indefinite"/>
+</circle>
+<text x="280" y="328" text-anchor="middle" class="star-label" fill="#9B59B6">AION</text>
+
+<circle cx="350" cy="400" r="5" fill="#9B59B6" filter="url(#glow)">
+  <animate attributeName="r" values="5;7;5" dur="3s" repeatCount="indefinite"/>
+</circle>
+<text x="350" y="420" text-anchor="middle" class="star-label" fill="#9B59B6">LONGEVITY</text>
+
+<circle cx="200" cy="420" r="3" fill="#9B59B6" filter="url(#glowSoft)">
+  <animate attributeName="r" values="3;5;3" dur="2.8s" repeatCount="indefinite"/>
+</circle>
+<text x="200" y="440" text-anchor="middle" class="star-label" fill="#9B59B6">BSHDER</text>
+
+<text x="250" y="465" text-anchor="middle" class="constellation-name">— QUANTUM &amp; LONGEVITY —</text>
+
+<!-- ═══════ CONSTELLATION: COMPUTER VISION ═══════ -->
+<line x1="600" y1="350" x2="700" y2="380" stroke="#27c93f" stroke-width="0.8" opacity="0.2" stroke-dasharray="4,4">
+  <animate attributeName="stroke-dashoffset" values="0;-20" dur="3.2s" repeatCount="indefinite"/>
+</line>
+<line x1="700" y1="380" x2="650" y2="430" stroke="#27c93f" stroke-width="0.8" opacity="0.2" stroke-dasharray="4,4">
+  <animate attributeName="stroke-dashoffset" values="0;-20" dur="3.2s" repeatCount="indefinite"/>
+</line>
+<line x1="650" y1="430" x2="550" y2="400" stroke="#27c93f" stroke-width="0.5" opacity="0.15" stroke-dasharray="4,4">
+  <animate attributeName="stroke-dashoffset" values="0;-20" dur="3.2s" repeatCount="indefinite"/>
+</line>
+<line x1="550" y1="400" x2="600" y2="350" stroke="#27c93f" stroke-width="0.5" opacity="0.15" stroke-dasharray="4,4">
+  <animate attributeName="stroke-dashoffset" values="0;-20" dur="3.2s" repeatCount="indefinite"/>
+</line>
+
+<circle cx="600" cy="350" r="5" fill="#27c93f" filter="url(#glow)">
+  <animate attributeName="r" values="5;7;5" dur="3s" repeatCount="indefinite"/>
+</circle>
+<text x="600" y="338" text-anchor="middle" class="star-label" fill="#27c93f">YOLO</text>
+
+<circle cx="700" cy="380" r="4" fill="#27c93f" filter="url(#glowSoft)">
+  <animate attributeName="r" values="4;6;4" dur="3.8s" repeatCount="indefinite"/>
+</circle>
+<text x="700" y="368" text-anchor="middle" class="star-label" fill="#27c93f">CNN</text>
+
+<circle cx="650" cy="430" r="4" fill="#27c93f" filter="url(#glowSoft)">
+  <animate attributeName="r" values="4;6;4" dur="4s" repeatCount="indefinite"/>
+</circle>
+<text x="650" y="450" text-anchor="middle" class="star-label" fill="#27c93f">OPENCV</text>
+
+<circle cx="550" cy="400" r="3" fill="#27c93f" filter="url(#glowSoft)">
+  <animate attributeName="r" values="3;5;3" dur="2.5s" repeatCount="indefinite"/>
+</circle>
+<text x="550" y="418" text-anchor="middle" class="star-label" fill="#27c93f">RESNET</text>
+
+<text x="640" y="465" text-anchor="middle" class="constellation-name">— COMPUTER VISION —</text>
+
+<!-- ═══════ CONSTELLATION: CONSCIOUSNESS RESEARCH ═══════ -->
+<line x1="900" y1="330" x2="1000" y2="360" stroke="#FF9500" stroke-width="0.8" opacity="0.2" stroke-dasharray="4,4">
+  <animate attributeName="stroke-dashoffset" values="0;-20" dur="3.6s" repeatCount="indefinite"/>
+</line>
+<line x1="1000" y1="360" x2="1100" y2="340" stroke="#FF9500" stroke-width="0.8" opacity="0.2" stroke-dasharray="4,4">
+  <animate attributeName="stroke-dashoffset" values="0;-20" dur="3.6s" repeatCount="indefinite"/>
+</line>
+<line x1="1100" y1="340" x2="1050" y2="420" stroke="#FF9500" stroke-width="0.5" opacity="0.15" stroke-dasharray="4,4">
+  <animate attributeName="stroke-dashoffset" values="0;-20" dur="3.6s" repeatCount="indefinite"/>
+</line>
+<line x1="1050" y1="420" x2="900" y2="330" stroke="#FF9500" stroke-width="0.5" opacity="0.15" stroke-dasharray="4,4">
+  <animate attributeName="stroke-dashoffset" values="0;-20" dur="3.6s" repeatCount="indefinite"/>
+</line>
+
+<circle cx="900" cy="330" r="5" fill="#FF9500" filter="url(#glow)">
+  <animate attributeName="r" values="5;7;5" dur="3.5s" repeatCount="indefinite"/>
+</circle>
+<text x="900" y="318" text-anchor="middle" class="star-label" fill="#FF9500">CAUSA-SUI</text>
+
+<circle cx="1000" cy="360" r="6" fill="#FF9500" filter="url(#glow)">
+  <animate attributeName="r" values="6;8;6" dur="4.2s" repeatCount="indefinite"/>
+</circle>
+<text x="1000" y="348" text-anchor="middle" class="star-label" fill="#FF9500">GENEVO</text>
+
+<circle cx="1100" cy="340" r="4" fill="#FF9500" filter="url(#glowSoft)">
+  <animate attributeName="r" values="4;6;4" dur="3s" repeatCount="indefinite"/>
+</circle>
+<text x="1100" y="328" text-anchor="middle" class="star-label" fill="#FF9500">THERMO-MIND</text>
+
+<circle cx="1050" cy="420" r="3" fill="#FF9500" filter="url(#glowSoft)">
+  <animate attributeName="r" values="3;5;3" dur="2.8s" repeatCount="indefinite"/>
+</circle>
+<text x="1050" y="440" text-anchor="middle" class="star-label" fill="#FF9500">LUCID-DREAMER</text>
+
+<text x="1010" y="465" text-anchor="middle" class="constellation-name">— CONSCIOUSNESS —</text>
+
+<!-- ═══════ INTER-CONSTELLATION BRIDGES ═══════ -->
+<!-- Deep Learning to GenAI -->
+<line x1="350" y1="180" x2="450" y2="170" stroke="#ffffff" stroke-width="0.3" opacity="0.08" stroke-dasharray="2,6">
+  <animate attributeName="opacity" values="0.05;0.15;0.05" dur="5s" repeatCount="indefinite"/>
+</line>
+<!-- GenAI to RL -->
+<line x1="700" y1="110" x2="850" y2="150" stroke="#ffffff" stroke-width="0.3" opacity="0.08" stroke-dasharray="2,6">
+  <animate attributeName="opacity" values="0.05;0.15;0.05" dur="6s" repeatCount="indefinite"/>
+</line>
+<!-- Quantum to CV -->
+<line x1="350" y1="400" x2="550" y2="400" stroke="#ffffff" stroke-width="0.3" opacity="0.08" stroke-dasharray="2,6">
+  <animate attributeName="opacity" values="0.05;0.15;0.05" dur="7s" repeatCount="indefinite"/>
+</line>
+<!-- CV to Consciousness -->
+<line x1="700" y1="380" x2="900" y2="330" stroke="#ffffff" stroke-width="0.3" opacity="0.08" stroke-dasharray="2,6">
+  <animate attributeName="opacity" values="0.05;0.15;0.05" dur="5.5s" repeatCount="indefinite"/>
+</line>
+
+<!-- ═══════ SHOOTING STARS ═══════ -->
+<g opacity="0">
+  <line x1="0" y1="0" x2="30" y2="15" stroke="#ffffff" stroke-width="1.5" stroke-linecap="round"/>
+  <animate attributeName="opacity" values="0;0;1;0" dur="8s" keyTimes="0;0.4;0.45;0.55" repeatCount="indefinite"/>
+  <animateTransform attributeName="transform" type="translate" values="100,50;250,120" dur="8s" repeatCount="indefinite"/>
+</g>
+<g opacity="0">
+  <line x1="0" y1="0" x2="25" y2="12" stroke="#ffffff" stroke-width="1" stroke-linecap="round"/>
+  <animate attributeName="opacity" values="0;0;1;0" dur="12s" keyTimes="0;0.6;0.65;0.75" repeatCount="indefinite"/>
+  <animateTransform attributeName="transform" type="translate" values="800,30;950,100" dur="12s" repeatCount="indefinite"/>
+</g>
+
+<!-- ═══════ TITLE ═══════ -->
+<text x="600" y="30" text-anchor="middle" font-family="'Courier New', monospace" font-size="14" fill="#ffffff" letter-spacing="8px" opacity="0.6" font-weight="bold">N E U R A L   C O N S T E L L A T I O N   M A P</text>
+
+</svg>
