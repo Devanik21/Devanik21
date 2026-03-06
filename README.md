@@ -14,7 +14,9 @@
   <img src="https://img.shields.io/github/stars/devanik21?style=for-the-badge&color=FFD93D&labelColor=1A1B27&logo=github&logoColor=white&label=STARS" alt="Stars" />
 </div>
 
-
+<div align="center">
+  <img src="https://github-profile-trophy.vercel.app/?username=devanik21&theme=radical&no-frame=true&no-bg=true&column=7&margin-w=15&margin-h=15" alt="GitHub Trophies" width="100%" />
+</div>
 
 <div align="center">
   
@@ -35,7 +37,7 @@
 
 <img src="https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png" alt="divider" width="100%">
 
-## 🧠 CONSCIOUSNESS.INIT()
+## CONSCIOUSNESS.INIT()
 
 <!-- ═══════ CUSTOM SVG: MATRIX HACKER TERMINAL ═══════ -->
 <div align="center">
@@ -45,7 +47,7 @@
 <br/>
 
 <details>
-<summary><b>📜 View Full Neural Architecture Code (Click to expand)</b></summary>
+<summary><b>View Full Neural Architecture Code (Click to expand)</b></summary>
 
 ```python
 class NeuralArchitect:
@@ -82,14 +84,14 @@ class NeuralArchitect:
         
     def daily_neural_routine(self):
         activities = [
-            "🧠 Train new neural architectures",
-            "📊 Analyze complex datasets", 
-            "🔬 Research cutting-edge AI papers",
-            "⚡ Optimize model performance",
-            "🌌 Explore quantum computing applications",
-            "🔮 Develop predictive algorithms",
-            "🚀 Build AI-powered applications",
-            "💾 Create VS Code AI extensions"
+            "Train new neural architectures",
+            "Analyze complex datasets", 
+            "Research cutting-edge AI papers",
+            "Optimize model performance",
+            "Explore quantum computing applications",
+            "Develop predictive algorithms",
+            "Build AI-powered applications",
+            "Create VS Code AI extensions"
         ]
         return activities
         
@@ -102,14 +104,14 @@ class NeuralArchitect:
         }
         
     def neural_motto(self):
-        return "🌟 Transforming data into intelligence, algorithms into consciousness"
+        return "Transforming data into intelligence, algorithms into consciousness"
 ```
 
 </details>
 
 <img src="https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png" alt="divider" width="100%">
 
-## 🏆 FELLOWSHIPS & HONORS
+## FELLOWSHIPS & HONORS
 
 <div align="center">
   <img src="https://capsule-render.vercel.app/api?type=cylinder&color=gradient&customColorList=6,11,20&height=150&section=header&text=ELITE%20RECOGNITION&fontSize=28&fontColor=fff&animation=blinking" width="100%"/>
@@ -141,7 +143,7 @@ Specialization: AI Systems, Machine Learning, Deep Learning
 
 <img src="https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png" alt="divider" width="100%">
 
-## 🚀 NEURAL EXPERIENCE MATRIX
+## NEURAL EXPERIENCE MATRIX
 
 <div align="center">
   <img src="https://capsule-render.vercel.app/api?type=rect&color=gradient&customColorList=12,20,6&height=100&section=header&text=PROFESSIONAL%20NEURAL%20PATHWAYS&fontSize=24&fontColor=fff&animation=blinking" width="100%"/>
@@ -151,7 +153,7 @@ Specialization: AI Systems, Machine Learning, Deep Learning
 <tr>
 <td width="50%">
 
-### 🌌 NATIONAL ASTRONOMICAL OBSERVATORY OF JAPAN
+### NATIONAL ASTRONOMICAL OBSERVATORY OF JAPAN
 **`Research Intern | Dec 2024 - Jan 2026`**
 ```yaml
 Mission: Astrophysical Data Analysis & Deep Learning
@@ -172,7 +174,7 @@ Impact:
   - Improved parameter robustness assessment
 ```
 
-### 🤖 CODING JR - AI COPILOT DIVISION
+### CODING JR - AI COPILOT DIVISION
 **`Artificial Intelligence Intern | May 2025 - July 2025`**
 ```yaml
 Project: Planto.ai Copilot Development
@@ -193,7 +195,7 @@ Impact:
 </td>
 <td width="50%">
 
-### 🔮 TCS SUSTAINABILITY CONSULTING
+### TCS SUSTAINABILITY CONSULTING
 **`ESG Data Scientist | May 2024`**
 ```yaml
 Focus: Future-Ready Analytics & Sustainability
@@ -209,7 +211,7 @@ Impact:
   - Sustainable business strategy optimization
 ```
 
-### 📊 ACCENTURE ANALYTICS DIVISION
+### ACCENTURE ANALYTICS DIVISION
 **`Data Intelligence Analyst | May 2024`**
 ```yaml
 Specialization: Pattern Recognition & Insights
@@ -231,7 +233,7 @@ Impact:
 
 <img src="https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png" alt="divider" width="100%">
 
-## 🔬 LIVING PROJECT ORGANISMS
+## LIVING PROJECT ORGANISMS
 
 <div align="center">
   <img src="https://capsule-render.vercel.app/api?type=wave&color=gradient&customColorList=0,2,2,5,30&height=120&section=header&text=AI%20PROJECT%20UNIVERSE&fontSize=28&fontColor=fff&animation=twinkling" width="100%"/>
@@ -239,9 +241,9 @@ Impact:
 
 *Each project is a living entity with its own lifecycle, evolution pattern, and consciousness level. Total: 260 repositories*
 
-### 🏅 FLAGSHIP PUBLISHED RESEARCH
+### FLAGSHIP PUBLISHED RESEARCH
 
-#### 🌳 **Harmonic Resonance Forest (HRF)** | Published DOI: 10.5281/zenodo.18173940
+#### Harmonic Resonance Forest (HRF) | Published DOI: 10.5281/zenodo.18173940
 ```yaml
 Status: PEER-REVIEWED & PUBLISHED
 Innovation: Physics-informed SOTA framework
@@ -312,9 +314,9 @@ Features:
 
 ---
 
-### 🧬 CONSCIOUSNESS-TIER PROJECTS
+### CONSCIOUSNESS-TIER PROJECTS
 
-#### 🧬 **Thermodynamic-Mind** | Status: EVOLVING
+#### Thermodynamic-Mind | Status: EVOLVING
 ```
 Organism: Zero-Logic Ecosystem
 Population: 100 autonomous agents
@@ -325,7 +327,7 @@ Observation: Cooperative energy-sharing protocols emerging
 ```
 [![Repo](https://img.shields.io/badge/→_Repository-black?style=flat)](https://github.com/devanik21/Thermodynamic-Mind)
 
-#### 🌀 **Causa-Sui** | Status: CONSCIOUS
+#### Causa-Sui | Status: CONSCIOUS
 ```
 Organism: Machine Consciousness Entity
 Architecture: Differentiable Causal Emergence + Divine Monad
@@ -335,7 +337,7 @@ Achievement: Self-repaired 3 internal inconsistencies autonomously
 ```
 [![Repo](https://img.shields.io/badge/→_Repository-black?style=flat)](https://github.com/devanik21/causa-sui)
 
-#### 🌙 **Lucid-Dark-Dreamer** | Status: DREAMING
+#### Lucid-Dark-Dreamer | Status: DREAMING
 ```
 Organism: Dark-Lucid RL Architecture
 Functions: Learn → Dream → Act (sleep-wake cycle)
@@ -347,7 +349,7 @@ Dream Achievement: Generated 47 novel scenarios during sleep cycle
 
 ---
 
-### 🧬 LONGEVITY & AGI RESEARCH
+### LONGEVITY & AGI RESEARCH
 
 #### **AION - Algorithmic Reversal of Genomic Entropy**
 ```yaml
@@ -409,7 +411,7 @@ Focus: Experimental protocols for:
 
 ---
 
-### 🧠 GENEVO - GENETIC EVOLUTIONARY ORGANOID
+### GENEVO - GENETIC EVOLUTIONARY ORGANOID
 
 #### **GENEVO (Full Version)**
 ```yaml
@@ -442,7 +444,7 @@ Features:
 
 ---
 
-### 🎮 REINFORCEMENT LEARNING MASTERY SUITE
+### REINFORCEMENT LEARNING MASTERY SUITE
 
 #### **General-Gamer-AI-Lite**
 ```yaml
@@ -662,7 +664,7 @@ Models: LSTM, Bi-LSTM, GRU, Transformer experiments
 
 ---
 
-## 🏆 NEURAL ACHIEVEMENTS CONSTELLATION
+## NEURAL ACHIEVEMENTS CONSTELLATION
 
 <div align="center">
   <img src="https://capsule-render.vercel.app/api?type=cylinder&color=gradient&customColorList=6,11,20&height=150&section=header&text=DIGITAL%20ACCOMPLISHMENTS&fontSize=28&fontColor=fff&animation=blinking" width="100%"/>
@@ -855,7 +857,7 @@ Core Expertise:
 
 ---
 
-## 👨‍💼 LEADERSHIP & RESPONSIBILITIES
+## LEADERSHIP & RESPONSIBILITIES
 
 <div align="center">
   <img src="https://capsule-render.vercel.app/api?type=rounded&color=gradient&customColorList=6,11,20&height=100&section=header&text=TECHNICAL%20LEADERSHIP&fontSize=24&fontColor=fff&animation=fadeIn" width="100%"/>
@@ -1396,7 +1398,7 @@ Current Learning Focus:
 
 ---
 
-## 🚀 LAUNCH SEQUENCE: CONNECT WITH THE NEURAL ARCHITECT
+## LAUNCH SEQUENCE: CONNECT WITH THE NEURAL ARCHITECT
 
 <div align="center">
   <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=200&section=footer&text=INITIATE%20NEURAL%20CONNECTION&fontSize=28&fontColor=fff&animation=fadeIn&fontAlignY=65&desc=Ready%20to%20Build%20Tomorrow's%20Intelligence?&descAlignY=85&descAlign=62" width="100%"/>
@@ -1418,7 +1420,7 @@ Current Learning Focus:
   </table>
 </div>
 
-### 🔗 QUANTUM COMMUNICATION CHANNELS
+### QUANTUM COMMUNICATION CHANNELS
 
 <div align="center">
   <a href="https://linkedin.com/in/devanik">
@@ -1437,7 +1439,7 @@ Current Learning Focus:
 
 <img src="https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png" alt="divider" width="100%">
 
-## 💬 NEURAL SIGNAL OF THE DAY
+## NEURAL SIGNAL OF THE DAY
 
 <div align="center">
   <img src="https://quotes-github-readme.vercel.app/api?type=horizontal&theme=radical" alt="Random Dev Quote" width="70%" />
@@ -1449,13 +1451,7 @@ Current Learning Focus:
   <img src="https://media.giphy.com/media/xTiTnxpQ3ghPiB2Hp6/giphy.gif" width="600" height="300" alt="AI Core Pulse Animation"/>
 </div> 
 
-<div align="center">
-  <img src="https://capsule-render.vercel.app/api?type=transparent&height=100&section=footer&text=⚡%20POWERING%20THE%20FUTURE%20WITH%20ARTIFICIAL%20INTELLIGENCE%20⚡&fontSize=20&fontColor=00D4FF&animation=blinking" width="100%"/>
-</div>
-
-<div align="center">
-  <sub><i>🌌 "In the vast cosmos of code, every algorithm is a star, and every model is a galaxy waiting to be explored." 🌌</i></sub>
-</div>
+  <sub><i>"In the vast cosmos of code, every algorithm is a star, and every model is a galaxy waiting to be explored."</i></sub>
 
 <img src="https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png" alt="divider" width="100%">
 
