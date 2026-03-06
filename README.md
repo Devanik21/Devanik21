@@ -15,6 +15,10 @@
 </div>
 
 <div align="center">
+  <img src="https://github-profile-trophy.vercel.app/?username=devanik21&theme=radical&no-frame=true&no-bg=true&column=7&margin-w=15&margin-h=15" alt="GitHub Trophies" width="100%" />
+</div>
+
+<div align="center">
   
   [![LinkedIn](https://img.shields.io/badge/QUANTUM_LINK-0077B5?style=for-the-badge&logo=linkedin&logoColor=white&labelColor=000000)](https://linkedin.com/in/devanik)
   [![Kaggle](https://img.shields.io/badge/DATA_NEXUS-20BEFF?style=for-the-badge&logo=kaggle&logoColor=white&labelColor=000000)](https://kaggle.com/devanikdebnath)
@@ -24,24 +28,26 @@
   
 </div>
 
-```
-╔══════════════════════════════════════════════════════════════════════════╗
-║  STATUS: ACTIVE RESEARCHER | REPOSITORIES: 267+ | STREAMLIT: 106+         ║
-║  FELLOWSHIP: 💎 SAMSUNG FELLOW @ IISc BANGALORE                          ║
-║  ACHIEVEMENT: 🥇 ISRO SPACE HACKATHON WINNER                             ║
-║  RESEARCH: NAOJ INTERN | NEUROMORPHIC AI | DIFFERENTIABLE PLASTICITY      ║
-║  METRICS: 700+ LEETCODE | PEAK: 1734 | CGPA: 7.8/10                      ║
-╚══════════════════════════════════════════════════════════════════════════╝
+<br/>
 
-```
+<!-- ═══════ CUSTOM SVG: CONSCIOUSNESS HUD DASHBOARD ═══════ -->
+<div align="center">
+  <img src="./assets/consciousness-hud.svg" alt="Consciousness HUD Dashboard" width="100%" />
+</div>
 
----
+<img src="https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png" alt="divider" width="100%">
 
 ## 🧠 CONSCIOUSNESS.INIT()
 
+<!-- ═══════ CUSTOM SVG: MATRIX HACKER TERMINAL ═══════ -->
 <div align="center">
-  <img src="https://media.giphy.com/media/KX5nwoDX97AtPvKBF6/giphy.gif" width="600" height="300" alt="AI Circuit Animation"/>
+  <img src="./assets/matrix-terminal.svg" alt="Neural Terminal Interface" width="100%" />
 </div>
+
+<br/>
+
+<details>
+<summary><b>📜 View Full Neural Architecture Code (Click to expand)</b></summary>
 
 ```python
 class NeuralArchitect:
@@ -101,7 +107,9 @@ class NeuralArchitect:
         return "🌟 Transforming data into intelligence, algorithms into consciousness"
 ```
 
----
+</details>
+
+<img src="https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png" alt="divider" width="100%">
 
 ## 🏆 FELLOWSHIPS & HONORS
 
@@ -133,7 +141,7 @@ Expected Graduation: 2026
 Specialization: AI Systems, Machine Learning, Deep Learning
 ```
 
----
+<img src="https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png" alt="divider" width="100%">
 
 ## 🚀 NEURAL EXPERIENCE MATRIX
 
@@ -223,7 +231,7 @@ Impact:
 </tr>
 </table>
 
----
+<img src="https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png" alt="divider" width="100%">
 
 ## 🔬 LIVING PROJECT ORGANISMS
 
@@ -782,52 +790,43 @@ Models: LSTM, Bi-LSTM, GRU, Transformer experiments
   </table>
 </div>
 
----
+<img src="https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png" alt="divider" width="100%">
 
 ## 🛠️ NEURAL TECHNOLOGY STACK
 
+<!-- ═══════ CUSTOM SVG: NEURAL CONSTELLATION MAP ═══════ -->
 <div align="center">
-  <img src="https://capsule-render.vercel.app/api?type=shark&color=gradient&customColorList=6,11,20&height=140&section=header&text=ARTIFICIAL%20INTELLIGENCE%20ARSENAL&fontSize=24&fontColor=fff&animation=twinkling" width="100%"/>
+  <img src="./assets/neural-constellation.svg" alt="Neural Constellation Map" width="100%" />
 </div>
+
+<br/>
 
 ### 🧠 CORE NEURAL LANGUAGES
 <div align="center">
-  <img src="https://img.shields.io/badge/PYTHON_MASTERY-3776AB?style=for-the-badge&logo=python&logoColor=white&labelColor=000000" alt="Python"/>
-  <img src="https://img.shields.io/badge/C++_OPTIMIZATION-00599C?style=for-the-badge&logo=cplusplus&logoColor=white&labelColor=000000" alt="C++"/>
-  <img src="https://img.shields.io/badge/C_SYSTEMS-A8B9CC?style=for-the-badge&logo=c&logoColor=black&labelColor=000000" alt="C"/>
-  <img src="https://img.shields.io/badge/SQL_INTELLIGENCE-4479A1?style=for-the-badge&logo=mysql&logoColor=white&labelColor=000000" alt="SQL"/>
-  <img src="https://img.shields.io/badge/MATLAB_COMPUTING-0076A8?style=for-the-badge&logo=mathworks&logoColor=white&labelColor=000000" alt="MATLAB"/>
+  <a href="https://skillicons.dev">
+    <img src="https://skillicons.dev/icons?i=python,cpp,c,matlab,bash&theme=dark&perline=10" alt="Languages" />
+  </a>
 </div>
 
-### 🔬 ADVANCED AI FRAMEWORKS
+### 🔬 AI / ML / DL FRAMEWORKS
 <div align="center">
-  <img src="https://img.shields.io/badge/TENSORFLOW-FF6F00?style=for-the-badge&logo=tensorflow&logoColor=white&labelColor=000000" alt="TensorFlow"/>
-  <img src="https://img.shields.io/badge/PYTORCH-EE4C2C?style=for-the-badge&logo=pytorch&logoColor=white&labelColor=000000" alt="PyTorch"/>
-  <img src="https://img.shields.io/badge/KERAS-D00000?style=for-the-badge&logo=keras&logoColor=white&labelColor=000000" alt="Keras"/>
-  <img src="https://img.shields.io/badge/SCIKIT_LEARN-F7931E?style=for-the-badge&logo=scikit-learn&logoColor=white&labelColor=000000" alt="Scikit-Learn"/>
-  <img src="https://img.shields.io/badge/LANGCHAIN-1C3C3C?style=for-the-badge&logo=chainlink&logoColor=white&labelColor=000000" alt="LangChain"/>
-  <img src="https://img.shields.io/badge/HUGGING_FACE-FFD93D?style=for-the-badge&logo=huggingface&logoColor=black&labelColor=000000" alt="Hugging Face"/>
-  <img src="https://img.shields.io/badge/OPENAI_API-412991?style=for-the-badge&logo=openai&logoColor=white&labelColor=000000" alt="OpenAI"/>
+  <a href="https://skillicons.dev">
+    <img src="https://skillicons.dev/icons?i=tensorflow,pytorch,sklearn,opencv&theme=dark&perline=10" alt="AI Frameworks" />
+  </a>
 </div>
 
-### 📊 DATA INTELLIGENCE LIBRARIES
+### 📊 DATA, DEVOPS & TOOLS
 <div align="center">
-  <img src="https://img.shields.io/badge/PANDAS-150458?style=for-the-badge&logo=pandas&logoColor=white&labelColor=000000" alt="Pandas"/>
-  <img src="https://img.shields.io/badge/NUMPY-013243?style=for-the-badge&logo=numpy&logoColor=white&labelColor=000000" alt="NumPy"/>
-  <img src="https://img.shields.io/badge/MATPLOTLIB-11557C?style=for-the-badge&logoColor=white&labelColor=000000" alt="Matplotlib"/>
-  <img src="https://img.shields.io/badge/SEABORN-9E4B9E?style=for-the-badge&logoColor=white&labelColor=000000" alt="Seaborn"/>
-  <img src="https://img.shields.io/badge/OPENCV-5C3EE8?style=for-the-badge&logo=opencv&logoColor=white&labelColor=000000" alt="OpenCV"/>
+  <a href="https://skillicons.dev">
+    <img src="https://skillicons.dev/icons?i=docker,git,github,vscode,linux,mysql,mongodb,grafana,prometheus,aws&theme=dark&perline=10" alt="DevOps & Tools" />
+  </a>
 </div>
 
-### 🚀 DEVOPS & DEPLOYMENT
+### 🌐 WEB & MORE
 <div align="center">
-  <img src="https://img.shields.io/badge/DOCKER-2496ED?style=for-the-badge&logo=docker&logoColor=white&labelColor=000000" alt="Docker"/>
-  <img src="https://img.shields.io/badge/GIT-F05032?style=for-the-badge&logo=git&logoColor=white&labelColor=000000" alt="Git"/>
-  <img src="https://img.shields.io/badge/VS_CODE-007ACC?style=for-the-badge&logo=visualstudiocode&logoColor=white&labelColor=000000" alt="VS Code"/>
-  <img src="https://img.shields.io/badge/STREAMLIT-FF4B4B?style=for-the-badge&logo=streamlit&logoColor=white&labelColor=000000" alt="Streamlit"/>
-  <img src="https://img.shields.io/badge/GRAFANA-F46800?style=for-the-badge&logo=grafana&logoColor=white&labelColor=000000" alt="Grafana"/>
-  <img src="https://img.shields.io/badge/PROMETHEUS-E6522C?style=for-the-badge&logo=prometheus&logoColor=white&labelColor=000000" alt="Prometheus"/>
-  <img src="https://img.shields.io/badge/POWER_BI-F2C811?style=for-the-badge&logo=powerbi&logoColor=black&labelColor=000000" alt="Power BI"/>
+  <a href="https://skillicons.dev">
+    <img src="https://skillicons.dev/icons?i=html,css,js,react,nodejs,flask,fastapi,figma&theme=dark&perline=10" alt="Web & More" />
+  </a>
 </div>
 
 ### 🔧 SPECIALIZED EXPERTISE
@@ -890,7 +889,7 @@ Impact:
   - Established club coding standards
 ```
 
----
+<img src="https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png" alt="divider" width="100%">
 
 ## 📊 NEURAL NETWORK ANALYTICS
 
@@ -929,7 +928,30 @@ Impact:
   <img src="https://leetcard.jacoblin.cool/devnic?theme=radical&font=Orbitron&ext=contest" alt="LeetCode Contest" width="49%" />
 </div>
 
----
+<div align="center">
+  <img src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=devanik21&theme=radical" alt="Repos per Language" width="32%" />
+  <img src="https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=devanik21&theme=radical" alt="Most Commit Language" width="32%" />
+  <img src="https://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=devanik21&theme=radical&utcOffset=5.5" alt="Productive Time" width="32%" />
+</div>
+
+<br/>
+
+<div align="center">
+  <h3>🐍 CONTRIBUTION SNAKE DEVOURING THE GRAPH</h3>
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/devanik21/devanik21/output/github-snake-dark.svg" />
+    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/devanik21/devanik21/output/github-snake.svg" />
+    <img alt="github-snake" src="https://raw.githubusercontent.com/devanik21/devanik21/output/github-snake-dark.svg" width="100%" />
+  </picture>
+</div>
+
+<br/>
+
+<div align="center">
+  <img src="https://raw.githubusercontent.com/devanik21/devanik21/output/ocean.gif" alt="Snake Ocean Animation" width="100%" />
+</div>
+
+<img src="https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png" alt="divider" width="100%">
 
 ## 🧬 SUPERVISED INTELLIGENCE SYSTEMS
 
@@ -1305,7 +1327,7 @@ Current Learning Focus:
   </table>
 </div>
 
----
+<img src="https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png" alt="divider" width="100%">
 
 ## 🌈 NEURAL ACTIVITY SPECTRUM
 
@@ -1317,7 +1339,7 @@ Current Learning Focus:
   <img src="https://github-readme-activity-graph.vercel.app/graph?username=devanik21&theme=react-dark&hide_border=true&bg_color=0D1117&color=00D4FF&line=FF6B6B&point=FFD93D&area=true&area_color=9B59B6" alt="Neural Activity Graph" width="100%" />
 </div>
 
----
+<img src="https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png" alt="divider" width="100%">
 
 ## 🌐 NEURAL NETWORK CONNECTIONS
 
@@ -1415,7 +1437,15 @@ Current Learning Focus:
   </a>
 </div>
 
----
+<img src="https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png" alt="divider" width="100%">
+
+## 💬 NEURAL SIGNAL OF THE DAY
+
+<div align="center">
+  <img src="https://quotes-github-readme.vercel.app/api?type=horizontal&theme=radical" alt="Random Dev Quote" width="70%" />
+</div>
+
+<br/>
 
 <div align="center">
   <img src="https://media.giphy.com/media/xTiTnxpQ3ghPiB2Hp6/giphy.gif" width="600" height="300" alt="AI Core Pulse Animation"/>
@@ -1429,7 +1459,7 @@ Current Learning Focus:
   <sub><i>🌌 "In the vast cosmos of code, every algorithm is a star, and every model is a galaxy waiting to be explored." 🌌</i></sub>
 </div>
 
----
+<img src="https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png" alt="divider" width="100%">
 
 <div align="center">
 
