@@ -899,6 +899,10 @@ Impact:
 </div>
 
 <div align="center">
+  <img src="./profile-3d-contrib/profile-night-view.svg" alt="3D Neural Contribution Matrix" width="100%" />
+</div>
+
+<div align="center">
   <img src="https://github-readme-streak-stats.herokuapp.com/?user=devanik21&theme=radical&hide_border=true&stroke=00D4FF&ring=FF6B6B&fire=FFD93D&currStreakNum=00D4FF&sideNums=00D4FF&currStreakLabel=FF6B6B&sideLabels=FF6B6B&dates=FFFFFF" alt="GitHub Streak" width="49%" />
   <img src="https://github-readme-stats.vercel.app/api?username=devanik21&show_icons=true&theme=radical&hide_border=true&count_private=true&bg_color=0D1117&title_color=00D4FF&text_color=FFFFFF&icon_color=FF6B6B" alt="GitHub Stats" width="49%" />
 </div>
