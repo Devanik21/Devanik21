@@ -912,6 +912,19 @@ Impact:
   <img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=devanik21&theme=radical" alt="Profile Summary" width="49%" />
 </div>
 
+<div align="center">
+  <img src="https://capsule-render.vercel.app/api?type=transparent&color=gradient&customColorList=6,11,20&height=100&section=header&text=LEETCODE%20NEURAL%20INSIGHTS&fontSize=28&fontColor=FFA116&animation=fadeIn" width="100%"/>
+</div>
+
+<div align="center">
+  <img src="https://leetcard.jacoblin.cool/devnic?theme=radical&font=Orbitron&ext=activity" alt="LeetCode Activity - Active Days & Streaks" width="49%" />
+  <img src="https://leetcard.jacoblin.cool/devnic?theme=radical&font=Orbitron&ext=heatmap" alt="LeetCode Heatmap" width="49%" />
+</div>
+
+<div align="center">
+  <img src="https://leetcard.jacoblin.cool/devnic?theme=radical&font=Orbitron&ext=contest" alt="LeetCode Contest" width="49%" />
+</div>
+
 ---
 
 ## 🧬 SUPERVISED INTELLIGENCE SYSTEMS
