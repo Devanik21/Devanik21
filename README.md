@@ -680,41 +680,41 @@ Models: LSTM, Bi-LSTM, GRU, Transformer experiments
         <br/>
         <sub><b>⭐⭐⭐ 3-Star Rating</b></sub>
         <br/>
-        <sub>🔥 700+ Problems Solved</sub>
+        <sub>700+ Problems Solved</sub>
         <br/>
-        <sub>📊 Peak Contest Rating: 1734</sub>
+        <sub>Peak Contest Rating: 1734</sub>
         <br/>
-        <sub>🏅 300 Days Badge (2023)</sub>
+        <sub>300 Days Badge (2023)</sub>
         <br/>
-        <sub>🏆 Annual Badge (2024)</sub>
+        <sub>Annual Badge (2024)</sub>
         <br/>
-        <sub>⚡ Algorithm Optimization Expert</sub>
+        <sub>Algorithm Optimization Expert</sub>
       </td>
       <td align="center">
         <img src="https://img.shields.io/badge/CODING_NINJA-FF6B6B?style=for-the-badge&logo=code&logoColor=white" alt="Coding"/>
         <br/>
         <sub><b>Data Structures Master</b></sub>
         <br/>
-        <sub>🧠 Advanced Algorithm Design</sub>
+        <sub>Advanced Algorithm Design</sub>
         <br/>
-        <sub>⚡ Time Complexity Optimization</sub>
+        <sub>Time Complexity Optimization</sub>
         <br/>
-        <sub>🎯 Dynamic Programming Expert</sub>
+        <sub>Dynamic Programming Expert</sub>
         <br/>
-        <sub>🔥 Graph Algorithm Specialist</sub>
+        <sub>Graph Algorithm Specialist</sub>
       </td>
       <td align="center">
         <img src="https://img.shields.io/badge/HACKATHON_CHAMPION-00D4FF?style=for-the-badge&logo=trophy&logoColor=white" alt="Hackathon"/>
         <br/>
-        <sub><b>🥇 ISRO STIC Winner</b></sub>
+        <sub>ISRO STIC Winner</sub>
         <br/>
-        <sub>🚀 Space Exploration Hackathon</sub>
+        <sub>Space Exploration Hackathon</sub>
         <br/>
-        <sub>🛰️ StellarMinesite Development</sub>
+        <sub>StellarMinesite Development</sub>
         <br/>
-        <sub>🌌 Satellite Data Analysis</sub>
+        <sub>Satellite Data Analysis</sub>
         <br/>
-        <sub>⭐ Innovation Excellence</sub>
+        <sub>Innovation Excellence</sub>
       </td>
     </tr>
   </table>
@@ -730,61 +730,61 @@ Models: LSTM, Bi-LSTM, GRU, Transformer experiments
         <br/>
         <sub><b>18 Credly Badges</b></sub>
         <br/>
-        <sub>🧠 Machine Learning</sub>
+        <sub>Machine Learning</sub>
         <br/>
-        <sub>📊 Data Science</sub>
+        <sub>Data Science</sub>
         <br/>
-        <sub>🔬 Big Data</sub>
+        <sub>Big Data</sub>
         <br/>
-        <sub>🔒 Cybersecurity</sub>
+        <sub>Cybersecurity</sub>
         <br/>
-        <sub>☁️ Cloud Computing</sub>
+        <sub>Cloud Computing</sub>
       </td>
       <td align="center" width="20%">
         <img src="https://img.shields.io/badge/GOOGLE_AI-4285F4?style=for-the-badge&logo=google&logoColor=white" alt="Google"/>
         <br/>
         <sub><b>Cloud Completion Badges</b></sub>
         <br/>
-        <sub>🧠 Intro to Generative AI</sub>
+        <sub>Intro to Generative AI</sub>
         <br/>
-        <sub>🔮 Large Language Models</sub>
+        <sub>Large Language Models</sub>
         <br/>
-        <sub>⚡ Responsible AI</sub>
+        <sub>Responsible AI</sub>
       </td>
       <td align="center" width="20%">
         <img src="https://img.shields.io/badge/KAGGLE-20BEFF?style=for-the-badge&logo=kaggle&logoColor=white" alt="Kaggle"/>
         <br/>
         <sub><b>GenAI Course Capstone</b></sub>
         <br/>
-        <sub>📚 QuantumDocs AI</sub>
+        <sub>QuantumDocs AI</sub>
         <br/>
-        <sub>🔍 Gemini API + RAG</sub>
+        <sub>Gemini API + RAG</sub>
         <br/>
-        <sub>📄 Document Analysis</sub>
+        <sub>Document Analysis</sub>
       </td>
       <td align="center" width="20%">
         <img src="https://img.shields.io/badge/GITHUB-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub"/>
         <br/>
         <sub><b>Open Source Impact</b></sub>
         <br/>
-        <sub>📦 260 Repositories</sub>
+        <sub>260 Repositories</sub>
         <br/>
-        <sub>⭐ 180+ Original Projects</sub>
+        <sub>180+ Original Projects</sub>
         <br/>
-        <sub>🍴 75+ Forks</sub>
+        <sub>75+ Forks</sub>
         <br/>
-        <sub>♾️ 76+ Streamlit Apps</sub>
+        <sub>76+ Streamlit Apps</sub>
       </td>
       <td align="center" width="20%">
         <img src="https://img.shields.io/badge/TATA_CRUCIBLE-1BA1E2?style=for-the-badge&logo=award&logoColor=white" alt="Tata"/>
         <br/>
         <sub><b>Campus Quiz 2024</b></sub>
         <br/>
-        <sub>🏆 Cluster Finalist</sub>
+        <sub>Cluster Finalist</sub>
         <br/>
-        <sub>📍 North East Region 2</sub>
+        <sub>North East Region 2</sub>
         <br/>
-        <sub>🧠 Business Acumen</sub>
+        <sub>Business Acumen</sub>
       </td>
     </tr>
   </table>
@@ -891,7 +891,7 @@ Impact:
 
 <img src="https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png" alt="divider" width="100%">
 
-## 📊 NEURAL NETWORK ANALYTICS
+## NEURAL NETWORK ANALYTICS
 
 <div align="center">
   <img src="https://capsule-render.vercel.app/api?type=transparent&color=gradient&customColorList=6,11,20&height=100&section=header&text=GITHUB%20NEURAL%20INSIGHTS&fontSize=28&fontColor=00D4FF&animation=fadeIn" width="100%"/>
@@ -953,7 +953,7 @@ Impact:
 
 <img src="https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png" alt="divider" width="100%">
 
-## 🧬 SUPERVISED INTELLIGENCE SYSTEMS
+## SUPERVISED INTELLIGENCE SYSTEMS
 
 <div align="center">
   <table>
@@ -963,45 +963,45 @@ Impact:
         <br/>
         <sub><b>Neural Classification Engine</b></sub>
         <br/>
-        <sub>🎯 96.8% Accuracy Achievement</sub>
+        <sub>96.8% Accuracy Achievement</sub>
         <br/>
-        <sub>🔬 Ensemble Learning Methods</sub>
+        <sub>Ensemble Learning Methods</sub>
         <br/>
-        <sub>⚡ Hyperparameter Optimization</sub>
+        <sub>Hyperparameter Optimization</sub>
         <br/>
-        <sub>🧠 Feature Engineering Mastery</sub>
+        <sub>Feature Engineering Mastery</sub>
       </td>
       <td align="center" width="33%">
         <img src="https://img.shields.io/badge/FRAUD_DETECTION-4ECDC4?style=for-the-badge&logo=shield&logoColor=white" alt="Fraud Detection"/>
         <br/>
         <sub><b>Anomaly Detection System</b></sub>
         <br/>
-        <sub>🛡️ Real-time Threat Analysis</sub>
+        <sub>Real-time Threat Analysis</sub>
         <br/>
-        <sub>🔍 Pattern Recognition AI</sub>
+        <sub>Pattern Recognition AI</sub>
         <br/>
-        <sub>⚡ Sub-second Response Time</sub>
+        <sub>Sub-second Response Time</sub>
         <br/>
-        <sub>🧠 Adaptive Learning Engine</sub>
+        <sub>Adaptive Learning Engine</sub>
       </td>
       <td align="center" width="33%">
         <img src="https://img.shields.io/badge/PREDICTIVE_HEALTH-45B7D1?style=for-the-badge&logo=heartbeat&logoColor=white" alt="Health Prediction"/>
         <br/>
         <sub><b>Medical Diagnosis AI</b></sub>
         <br/>
-        <sub>🏥 Disease Prediction Models</sub>
+        <sub>Disease Prediction Models</sub>
         <br/>
-        <sub>📊 Risk Assessment Algorithms</sub>
+        <sub>Risk Assessment Algorithms</sub>
         <br/>
-        <sub>⚡ Clinical Decision Support</sub>
+        <sub>Clinical Decision Support</sub>
         <br/>
-        <sub>🧠 Personalized Treatment Plans</sub>
+        <sub>Personalized Treatment Plans</sub>
       </td>
     </tr>
   </table>
 </div>
 
-## 🔮 UNSUPERVISED INTELLIGENCE NETWORKS
+## UNSUPERVISED INTELLIGENCE NETWORKS
 
 <div align="center">
   <table>
@@ -1011,36 +1011,36 @@ Impact:
         <br/>
         <sub><b>Behavioral Clustering Intelligence</b></sub>
         <br/>
-        <sub>🎯 5 Distinct Customer Personas Identified</sub>
+        <sub>5 Distinct Customer Personas Identified</sub>
         <br/>
-        <sub>📈 Silhouette Score Optimization</sub>
+        <sub>Silhouette Score Optimization</sub>
         <br/>
-        <sub>🔍 Purchase Pattern Analysis</sub>
+        <sub>Purchase Pattern Analysis</sub>
         <br/>
-        <sub>💡 Actionable Marketing Insights</sub>
+        <sub>Actionable Marketing Insights</sub>
         <br/>
-        <sub>🧠 Unsupervised Learning Mastery</sub>
+        <sub>Unsupervised Learning Mastery</sub>
       </td>
       <td align="center" width="50%">
         <img src="https://img.shields.io/badge/MARKET_INTELLIGENCE-F39C12?style=for-the-badge&logo=chart-line&logoColor=white" alt="Market Analysis"/>
         <br/>
         <sub><b>Economic Pattern Recognition</b></sub>
         <br/>
-        <sub>📊 Market Trend Identification</sub>
+        <sub>Market Trend Identification</sub>
         <br/>
-        <sub>🔮 Anomaly Detection Systems</sub>
+        <sub>Anomaly Detection Systems</sub>
         <br/>
-        <sub>⚡ Real-time Data Processing</sub>
+        <sub>Real-time Data Processing</sub>
         <br/>
-        <sub>🎯 Investment Strategy Optimization</sub>
+        <sub>Investment Strategy Optimization</sub>
         <br/>
-        <sub>🧠 Dimensionality Reduction Techniques</sub>
+        <sub>Dimensionality Reduction Techniques</sub>
       </td>
     </tr>
   </table>
 </div>
 
-## 🌌 DEEP LEARNING UNIVERSE
+## DEEP LEARNING UNIVERSE
 
 <div align="center">
   <table>
@@ -1050,52 +1050,52 @@ Impact:
         <br/>
         <sub><b>Financial Time Series AI</b></sub>
         <br/>
-        <sub>📈 LSTM & GRU Architectures</sub>
+        <sub>LSTM & GRU Architectures</sub>
         <br/>
-        <sub>🎯 32% RMSE Improvement</sub>
+        <sub>32% RMSE Improvement</sub>
         <br/>
-        <sub>⚡ Real-time Predictions</sub>
+        <sub>Real-time Predictions</sub>
         <br/>
-        <sub>🧠 Temporal Pattern Learning</sub>
+        <sub>Temporal Pattern Learning</sub>
       </td>
       <td align="center" width="25%">
         <img src="https://img.shields.io/badge/VISION_CORE-27AE60?style=for-the-badge&logo=eye&logoColor=white" alt="Computer Vision"/>
         <br/>
         <sub><b>Computer Vision Engine</b></sub>
         <br/>
-        <sub>👁️ CNN Architecture Design</sub>
+        <sub>CNN Architecture Design</sub>
         <br/>
-        <sub>🔬 Transfer Learning Expert</sub>
+        <sub>Transfer Learning Expert</sub>
         <br/>
-        <sub>🎯 VGG16 & ResNetV2 Mastery</sub>
+        <sub>VGG16 & ResNetV2 Mastery</sub>
         <br/>
-        <sub>🧠 Image Classification AI</sub>
+        <sub>Image Classification AI</sub>
       </td>
       <td align="center" width="25%">
         <img src="https://img.shields.io/badge/LANGUAGE_MIND-8E44AD?style=for-the-badge&logo=brain&logoColor=white" alt="NLP"/>
         <br/>
         <sub><b>Natural Language Intelligence</b></sub>
         <br/>
-        <sub>💬 Transformer Architectures</sub>
+        <sub>Transformer Architectures</sub>
         <br/>
-        <sub>🔮 Sentiment Analysis AI</sub>
+        <sub>Sentiment Analysis AI</sub>
         <br/>
-        <sub>⚡ Real-time Text Processing</sub>
+        <sub>Real-time Text Processing</sub>
         <br/>
-        <sub>🧠 Semantic Understanding</sub>
+        <sub>Semantic Understanding</sub>
       </td>
       <td align="center" width="25%">
         <img src="https://img.shields.io/badge/GENERATIVE_AI-FF9500?style=for-the-badge&logo=magic&logoColor=white" alt="Generative AI"/>
         <br/>
         <sub><b>Creative AI Systems</b></sub>
         <br/>
-        <sub>🎨 GAN Implementation</sub>
+        <sub>GAN Implementation</sub>
         <br/>
-        <sub>🔮 Content Generation AI</sub>
+        <sub>Content Generation AI</sub>
         <br/>
-        <sub>⚡ Diffusion Models</sub>
+        <sub>Diffusion Models</sub>
         <br/>
-        <sub>🧠 Synthetic Data Creation</sub>
+        <sub>Synthetic Data Creation</sub>
       </td>
     </tr>
   </table>
