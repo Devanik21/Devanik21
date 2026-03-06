@@ -14,9 +14,7 @@
   <img src="https://img.shields.io/github/stars/devanik21?style=for-the-badge&color=FFD93D&labelColor=1A1B27&logo=github&logoColor=white&label=STARS" alt="Stars" />
 </div>
 
-<div align="center">
-  <img src="https://github-profile-trophy.vercel.app/?username=devanik21&theme=radical&no-frame=true&no-bg=true&column=7&margin-w=15&margin-h=15" alt="GitHub Trophies" width="100%" />
-</div>
+
 
 <div align="center">
   
