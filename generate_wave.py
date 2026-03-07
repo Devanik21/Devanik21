@@ -1,54 +1,76 @@
 import math
 
 width = 1200
-height = 80
+height = 180  # Taller for better "bending" feel
 
-svg_content = f'''<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {width} {height}" width="100%" height="{height}">
+svg_content = f'''<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {width} {height}" width="100%" height="{height}" preserveAspectRatio="none">
 <defs>
-  <style>
-'''
+  <!-- Liquid / Gooey Filter for more "rolling" feel -->
+  <filter id="liquidFlow">
+    <feGaussianBlur stdDeviation="8" in="SourceGraphic" result="blur" />
+    <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 20 -9" result="liquid" />
+    <feComposite in="SourceGraphic" in2="liquid" operator="atop"/>
+  </filter>
+  
+  <linearGradient id="midnightGrad" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0%" stop-color="#0d1117" stop-opacity="0"/>
+    <stop offset="40%" stop-color="#161b22" stop-opacity="0.6"/>
+    <stop offset="100%" stop-color="#000000" stop-opacity="0.1"/>
+  </linearGradient>
 
-num_waves = 5
-for i in range(num_waves):
-    direction = "Left" if i % 2 == 0 else "Right"
-    dur = 25 + i * 10
-    svg_content += f'''
-    @keyframes move{i} {{
-      0% {{ transform: translateX({'0' if direction == "Left" else '-'+str(width)+'px'}); }}
-      100% {{ transform: translateX({'-'+str(width)+'px' if direction == "Left" else '0px'}); }}
-    }}
-    .wave{i} {{
-      animation: move{i} {dur}s linear infinite;
-    }}
-'''
-
-svg_content += '''
-  </style>
-  <linearGradient id="waveGrad" x1="0" y1="0" x2="0" y2="1">
-    <stop offset="0%" stop-color="#00D4FF" stop-opacity="0.5"/>
-    <stop offset="60%" stop-color="#9B59B6" stop-opacity="0.2"/>
-    <stop offset="100%" stop-color="#050510" stop-opacity="0"/>
+  <linearGradient id="neuralAura" x1="0" y1="0" x2="1" y2="0">
+    <stop offset="0%" stop-color="#00D4FF" stop-opacity="0.05"/>
+    <stop offset="50%" stop-color="#9B59B6" stop-opacity="0.1"/>
+    <stop offset="100%" stop-color="#00D4FF" stop-opacity="0.05"/>
   </linearGradient>
 </defs>
-<g opacity="1.0">
+
+<style>
+  @keyframes surf {{
+    0% {{ transform: translateY(0) scaleY(1); }}
+    50% {{ transform: translateY(15px) scaleY(0.9); }}
+    100% {{ transform: translateY(0) scaleY(1); }}
+  }}
+  @keyframes flow {{
+    0% {{ transform: translateX(0); }}
+    100% {{ transform: translateX(-1200px); }}
+  }}
+  .liquid-group {{
+    filter: url(#liquidFlow);
+    animation: surf 8s infinite ease-in-out;
+    transform-origin: center;
+  }}
+  .wave-path {{
+    animation: flow 40s linear infinite;
+  }}
+</style>
+
+<g class="liquid-group">
 '''
 
-for i in range(num_waves):
-    amp = 10 + i * 2.0
-    y_center = height / 2 + (i - num_waves/2) * 2.0
+# Generate multiple overlapping thick liquid layers
+for i in range(3):
+    dur = 30 + i * 15
+    offset = i * 400
+    opacity = 0.5 + (i * 0.1)
     
-    p1 = 1 + (i % 2)
-    p2 = 1.5 + (i % 3)
-    
-    d = f"M 0 {height} "
-    for x in range(0, 2400 + 40, 40):
-        y = y_center + math.sin(x / width * p1 * 2 * math.pi) * amp
-        y += math.sin(x / width * p2 * 2 * math.pi) * (amp * 0.5)
+    # Create a long continuous path for the "flowing" animation
+    d = f"M -1200 {height} "
+    for x in range(-1200, 1200 + 100, 100):
+        y = height/2 + math.sin((x + offset) / 300 * math.pi) * 35
         d += f"L {x} {y:.1f} "
     
-    d += f"L 2400 {height} Z"
-    stroke_opacity = 0.4 + (i / num_waves) * 0.4
-    svg_content += f'  <path class="wave{i}" d="{d}" fill="url(#waveGrad)" stroke="rgba(0, 212, 255, {stroke_opacity})" stroke-width="2.0" />\n'
+    # Repeat for second half to loop
+    for x in range(1200, 3600 + 100, 100):
+        y = height/2 + math.sin((x + offset) / 300 * math.pi) * 35
+        d += f"L {x} {y:.1f} "
+        
+    d += f"L 3600 {height} Z"
+    
+    svg_content += f'''
+    <path class="wave-path" d="{d}" fill="url(#midnightGrad)" style="animation-duration: {dur}s; opacity: {opacity};" />
+    <path class="wave-path" d="{d}" fill="none" stroke="url(#neuralAura)" stroke-width="2" style="animation-duration: {dur}s;" />
+    '''
 
 svg_content += '''
 </g>
@@ -57,4 +79,4 @@ svg_content += '''
 
 with open('assets/digital-ocean-wave.svg', 'w') as f:
     f.write(svg_content)
-print("done")
+print("Liquid Atmosphere Generated")
