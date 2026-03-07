@@ -1,0 +1,28 @@
+name: Generate Dragon SVG
+
+on:
+  workflow_dispatch:
+
+jobs:
+  build:
+    permissions:
+      contents: write
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.x'
+
+      - name: Generate Dragon SVG
+        run: python tmp_dragon.py
+
+      - name: Commit & Push
+        run: |
+          git config user.name "github-actions"
+          git config user.email "github-actions@github.com"
+          git add assets/test_dragon.svg
+          git commit -m "Generated Dragon SVG" || echo "No changes to commit"
+          git push
