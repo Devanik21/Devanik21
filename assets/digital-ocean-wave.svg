@@ -1,24 +1,60 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 80" width="100%" height="80">
 <defs>
   <style>
-    @keyframes move0 { 0% { transform: translateX(0px); } 100% { transform: translateX(-1200px); } }
-    .wave0 { animation: move0 30s linear infinite; }
-    @keyframes move1 { 0% { transform: translateX(-1200px); } 100% { transform: translateX(0px); } }
-    .wave1 { animation: move1 38s linear infinite; }
-    @keyframes move2 { 0% { transform: translateX(0px); } 100% { transform: translateX(-1200px); } }
-    .wave2 { animation: move2 46s linear infinite; }
-    @keyframes move3 { 0% { transform: translateX(-1200px); } 100% { transform: translateX(0px); } }
-    .wave3 { animation: move3 54s linear infinite; }
+
+    @keyframes move0 {
+      0% { transform: translateX(0); }
+      100% { transform: translateX(-1200px); }
+    }
+    .wave0 {
+      animation: move0 25s linear infinite;
+    }
+
+    @keyframes move1 {
+      0% { transform: translateX(-1200px); }
+      100% { transform: translateX(0px); }
+    }
+    .wave1 {
+      animation: move1 35s linear infinite;
+    }
+
+    @keyframes move2 {
+      0% { transform: translateX(0); }
+      100% { transform: translateX(-1200px); }
+    }
+    .wave2 {
+      animation: move2 45s linear infinite;
+    }
+
+    @keyframes move3 {
+      0% { transform: translateX(-1200px); }
+      100% { transform: translateX(0px); }
+    }
+    .wave3 {
+      animation: move3 55s linear infinite;
+    }
+
+    @keyframes move4 {
+      0% { transform: translateX(0); }
+      100% { transform: translateX(-1200px); }
+    }
+    .wave4 {
+      animation: move4 65s linear infinite;
+    }
+
   </style>
   <linearGradient id="waveGrad" x1="0" y1="0" x2="0" y2="1">
-    <stop offset="0%" stop-color="#00D4FF" stop-opacity="0.4"/>
+    <stop offset="0%" stop-color="#00D4FF" stop-opacity="0.5"/>
     <stop offset="60%" stop-color="#9B59B6" stop-opacity="0.2"/>
     <stop offset="100%" stop-color="#050510" stop-opacity="0"/>
   </linearGradient>
 </defs>
 <g opacity="1.0">
-  <path class="wave0" d="M 0 80 L 0 30 L 200 35 L 400 25 L 600 35 L 800 25 L 1000 35 L 1200 30 L 1400 35 L 1600 25 L 1800 35 L 2000 25 L 2200 35 L 2400 30 L 2400 80 Z" fill="url(#waveGrad)" stroke="#00D4FF" stroke-opacity="0.5" stroke-width="2" />
-  <path class="wave1" d="M 0 80 L 0 40 L 200 30 L 400 45 L 600 30 L 800 45 L 1000 30 L 1200 40 L 1400 30 L 1600 45 L 1800 30 L 2000 45 L 2200 30 L 2400 40 L 2400 80 Z" fill="url(#waveGrad)" stroke="#00D4FF" stroke-opacity="0.6" stroke-width="2" />
-  <path class="wave2" d="M 0 80 L 0 50 L 200 40 L 400 55 L 600 40 L 800 55 L 1000 40 L 1200 50 L 1400 40 L 1600 55 L 1800 40 L 2000 55 L 2200 40 L 2400 50 L 2400 80 Z" fill="url(#waveGrad)" stroke="#00D4FF" stroke-opacity="0.7" stroke-width="2" />
+  <path class="wave0" d="M 0 80 L 0 35.0 L 40 38.6 L 80 42.0 L 120 44.9 L 160 47.2 L 200 48.7 L 240 49.3 L 280 49.0 L 320 47.9 L 360 46.1 L 400 43.7 L 440 40.9 L 480 37.9 L 520 35.0 L 560 32.3 L 600 30.0 L 640 28.2 L 680 26.9 L 720 26.2 L 760 26.0 L 800 26.3 L 840 27.0 L 880 28.0 L 920 29.1 L 960 30.2 L 1000 31.3 L 1040 32.3 L 1080 33.2 L 1120 33.9 L 1160 34.5 L 1200 35.0 L 1240 35.5 L 1280 36.1 L 1320 36.8 L 1360 37.7 L 1400 38.7 L 1440 39.8 L 1480 40.9 L 1520 42.0 L 1560 43.0 L 1600 43.7 L 1640 44.0 L 1680 43.8 L 1720 43.1 L 1760 41.8 L 1800 40.0 L 1840 37.7 L 1880 35.0 L 1920 32.1 L 1960 29.1 L 2000 26.3 L 2040 23.9 L 2080 22.1 L 2120 21.0 L 2160 20.7 L 2200 21.3 L 2240 22.8 L 2280 25.1 L 2320 28.0 L 2360 31.4 L 2400 35.0 L 2400 80 Z" fill="url(#waveGrad)" stroke="rgba(0, 212, 255, 0.4)" stroke-width="2.0" />
+  <path class="wave1" d="M 0 80 L 0 37.0 L 40 44.9 L 80 51.1 L 120 54.4 L 160 54.1 L 200 50.4 L 240 44.1 L 280 36.5 L 320 29.3 L 360 23.9 L 400 21.4 L 440 22.1 L 480 25.6 L 520 31.1 L 560 37.3 L 600 43.0 L 640 47.1 L 680 48.9 L 720 48.4 L 760 45.9 L 800 42.2 L 840 38.1 L 880 34.3 L 920 31.5 L 960 29.9 L 1000 29.6 L 1040 30.3 L 1080 31.6 L 1120 33.3 L 1160 35.1 L 1200 37.0 L 1240 38.9 L 1280 40.7 L 1320 42.4 L 1360 43.7 L 1400 44.4 L 1440 44.1 L 1480 42.5 L 1520 39.7 L 1560 35.9 L 1600 31.8 L 1640 28.1 L 1680 25.6 L 1720 25.1 L 1760 26.9 L 1800 31.0 L 1840 36.7 L 1880 42.9 L 1920 48.4 L 1960 51.9 L 2000 52.6 L 2040 50.1 L 2080 44.7 L 2120 37.5 L 2160 29.9 L 2200 23.6 L 2240 19.9 L 2280 19.6 L 2320 22.9 L 2360 29.1 L 2400 37.0 L 2400 80 Z" fill="url(#waveGrad)" stroke="rgba(0, 212, 255, 0.48000000000000004)" stroke-width="2.0" />
+  <path class="wave2" d="M 0 80 L 0 39.0 L 40 46.6 L 80 51.7 L 120 52.9 L 160 50.9 L 200 47.6 L 240 45.7 L 280 46.5 L 320 50.1 L 360 54.5 L 400 57.2 L 440 56.3 L 480 51.3 L 520 44.0 L 560 36.7 L 600 32.0 L 640 30.9 L 680 32.6 L 720 34.9 L 760 35.4 L 800 32.9 L 840 27.8 L 880 22.2 L 920 18.7 L 960 19.0 L 1000 23.4 L 1040 30.1 L 1080 36.4 L 1120 40.3 L 1160 40.8 L 1200 39.0 L 1240 37.2 L 1280 37.7 L 1320 41.6 L 1360 47.9 L 1400 54.6 L 1440 59.0 L 1480 59.3 L 1520 55.8 L 1560 50.2 L 1600 45.1 L 1640 42.6 L 1680 43.1 L 1720 45.4 L 1760 47.1 L 1800 46.0 L 1840 41.3 L 1880 34.0 L 1920 26.7 L 1960 21.7 L 2000 20.8 L 2040 23.5 L 2080 27.9 L 2120 31.5 L 2160 32.3 L 2200 30.4 L 2240 27.1 L 2280 25.1 L 2320 26.3 L 2360 31.4 L 2400 39.0 L 2400 80 Z" fill="url(#waveGrad)" stroke="rgba(0, 212, 255, 0.56)" stroke-width="2.0" />
+  <path class="wave3" d="M 0 80 L 0 41.0 L 40 50.0 L 80 57.6 L 120 62.7 L 160 64.5 L 200 62.9 L 240 58.0 L 280 50.8 L 320 42.4 L 360 34.1 L 400 27.1 L 440 22.6 L 480 21.1 L 520 22.6 L 560 26.9 L 600 33.0 L 640 39.9 L 680 46.4 L 720 51.5 L 760 54.4 L 800 54.9 L 840 52.9 L 880 49.0 L 920 44.1 L 960 39.2 L 1000 35.1 L 1040 32.7 L 1080 32.3 L 1120 33.8 L 1160 37.0 L 1200 41.0 L 1240 45.0 L 1280 48.2 L 1320 49.7 L 1360 49.3 L 1400 46.9 L 1440 42.8 L 1480 37.9 L 1520 33.0 L 1560 29.1 L 1600 27.1 L 1640 27.6 L 1680 30.5 L 1720 35.6 L 1760 42.1 L 1800 49.0 L 1840 55.1 L 1880 59.4 L 1920 60.9 L 1960 59.4 L 2000 54.9 L 2040 47.9 L 2080 39.6 L 2120 31.2 L 2160 24.0 L 2200 19.1 L 2240 17.5 L 2280 19.3 L 2320 24.4 L 2360 32.0 L 2400 41.0 L 2400 80 Z" fill="url(#waveGrad)" stroke="rgba(0, 212, 255, 0.64)" stroke-width="2.0" />
+  <path class="wave4" d="M 0 80 L 0 43.0 L 40 51.2 L 80 58.1 L 120 62.6 L 160 64.2 L 200 63.1 L 240 60.1 L 280 56.4 L 320 53.1 L 360 51.1 L 400 50.8 L 440 51.9 L 480 53.6 L 520 54.8 L 560 54.5 L 600 52.0 L 640 47.1 L 680 40.2 L 720 32.4 L 760 25.1 L 800 19.6 L 840 16.9 L 880 17.3 L 920 20.6 L 960 25.9 L 1000 31.9 L 1040 37.4 L 1080 41.4 L 1120 43.5 L 1160 43.8 L 1200 43.0 L 1240 42.2 L 1280 42.5 L 1320 44.6 L 1360 48.6 L 1400 54.1 L 1440 60.1 L 1480 65.4 L 1520 68.7 L 1560 69.1 L 1600 66.4 L 1640 60.9 L 1680 53.6 L 1720 45.8 L 1760 38.9 L 1800 34.0 L 1840 31.5 L 1880 31.2 L 1920 32.4 L 1960 34.1 L 2000 35.2 L 2040 34.9 L 2080 32.9 L 2120 29.6 L 2160 25.9 L 2200 22.9 L 2240 21.8 L 2280 23.4 L 2320 27.9 L 2360 34.8 L 2400 43.0 L 2400 80 Z" fill="url(#waveGrad)" stroke="rgba(0, 212, 255, 0.7200000000000001)" stroke-width="2.0" />
+
 </g>
 </svg>
