@@ -42,6 +42,11 @@
   <img src="./assets/matrix-terminal.svg" alt="Neural Terminal Interface" width="100%" />
 </div>
 
+<!-- ═══════ CUSTOM SVG: DRAGON (auto-generated via GitHub Actions) ═══════ -->
+<div align="center">
+  <img src="./assets/test_dragon.svg" alt="Dragon — Auto-Generated Neural Guardian" width="100%" />
+</div>
+
 <br/>
 
 <details>
@@ -936,6 +941,11 @@ Impact:
 
 <div align="center">
   <img src="https://raw.githubusercontent.com/devanik21/devanik21/output/ocean.gif" alt="Snake Ocean Animation" width="100%" />
+</div>
+
+<!-- ═══════ CUSTOM SVG: DIGITAL OCEAN WAVE (auto-generated via GitHub Actions) ═══════ -->
+<div align="center">
+  <img src="./assets/digital-ocean-wave.svg" alt="Digital Ocean Wave — Auto-Generated" width="100%" />
 </div>
 
 <img src="https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png" alt="divider" width="100%">
