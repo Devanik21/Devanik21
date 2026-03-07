@@ -23,6 +23,7 @@ jobs:
           python generate_wave.py
           python generate_isometric.py
           python tmp_dragon.py
+          python generate_living_divider.py
 
       - name: Commit & Push changes
         run: |
