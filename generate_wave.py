@@ -25,12 +25,12 @@ for i in range(num_waves):
 svg_content += '''
   </style>
   <linearGradient id="waveGrad" x1="0" y1="0" x2="0" y2="1">
-    <stop offset="0%" stop-color="#00D4FF" stop-opacity="0.1"/>
-    <stop offset="60%" stop-color="#9B59B6" stop-opacity="0.02"/>
+    <stop offset="0%" stop-color="#00D4FF" stop-opacity="0.3"/>
+    <stop offset="60%" stop-color="#9B59B6" stop-opacity="0.1"/>
     <stop offset="100%" stop-color="#050510" stop-opacity="0"/>
   </linearGradient>
 </defs>
-<g opacity="0.9">
+<g opacity="1.0">
 '''
 
 for i in range(num_waves):
@@ -47,8 +47,8 @@ for i in range(num_waves):
         d += f"L {x} {y:.1f} "
     
     d += f"L 2400 {height} Z"
-    stroke_opacity = 0.05 + (i / num_waves) * 0.15
-    svg_content += f'  <path class="wave{i}" d="{d}" fill="url(#waveGrad)" stroke="rgba(0, 212, 255, {stroke_opacity})" stroke-width="0.75" />\n'
+    stroke_opacity = 0.2 + (i / num_waves) * 0.3
+    svg_content += f'  <path class="wave{i}" d="{d}" fill="url(#waveGrad)" stroke="rgba(0, 212, 255, {stroke_opacity})" stroke-width="1.0" />\n'
 
 svg_content += '''
 </g>
