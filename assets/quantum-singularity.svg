@@ -1,0 +1,170 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 400">
+<defs>
+  <style>
+    @keyframes rotateCore {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+    @keyframes rotateReverse {
+      0% { transform: rotate(360deg); }
+      100% { transform: rotate(0deg); }
+    }
+    @keyframes pulseGlow {
+      0%, 100% { filter: drop-shadow(0 0 15px #00D4FF); transform: scale(1); }
+      50% { filter: drop-shadow(0 0 30px #00D4FF); transform: scale(1.05); }
+    }
+    @keyframes dataStream {
+      0% { stroke-dashoffset: 100; opacity: 0; }
+      50% { opacity: 1; }
+      100% { stroke-dashoffset: 0; opacity: 0; }
+    }
+    @keyframes floatParticle {
+      0% { transform: translateY(0) scale(1); opacity: 0; }
+      50% { opacity: 1; transform: translateY(-30px) scale(1.5); }
+      100% { transform: translateY(-60px) scale(1); opacity: 0; }
+    }
+    @keyframes blinkBinary {
+      0%, 49% { opacity: 1; }
+      50%, 100% { opacity: 0.3; }
+    }
+    .text-title { font-family: 'Courier New', monospace; font-size: 16px; font-weight: bold; fill: #00D4FF; letter-spacing: 12px; }
+    .text-sub { font-family: 'Courier New', monospace; font-size: 10px; fill: #4a4a7a; letter-spacing: 4px; }
+    .binary { font-family: 'Courier New', monospace; font-size: 8px; fill: #00D4FF; }
+  </style>
+
+  <radialGradient id="bgGlow" cx="50%" cy="50%" r="50%">
+    <stop offset="0%" stop-color="#00D4FF" stop-opacity="0.15"/>
+    <stop offset="100%" stop-color="#050510" stop-opacity="0"/>
+  </radialGradient>
+
+  <linearGradient id="crystal" x1="0" y1="0" x2="1" y2="1">
+    <stop offset="0%" stop-color="#ffffff"/>
+    <stop offset="50%" stop-color="#00D4FF"/>
+    <stop offset="100%" stop-color="#0a0a3a"/>
+  </linearGradient>
+
+  <filter id="hyperGlow">
+    <feGaussianBlur stdDeviation="6" result="blur"/>
+    <feMerge>
+      <feMergeNode in="blur"/>
+      <feMergeNode in="SourceGraphic"/>
+    </feMerge>
+  </filter>
+</defs>
+
+<!-- Deep Space / Tech Background -->
+<rect width="1200" height="400" fill="#050510" rx="12"/>
+<rect width="1200" height="400" fill="url(#bgGlow)"/>
+
+<!-- Geometric Hexagon Grid BG -->
+<g opacity="0.05" stroke="#00D4FF" stroke-width="0.5" fill="none">
+  <path d="M-100,50 L1300,50 M-100,100 L1300,100 M-100,150 L1300,150 M-100,200 L1300,200 M-100,250 L1300,250 M-100,300 L1300,300 M-100,350 L1300,350" />
+  <path d="M100,-50 L100,450 M200,-50 L200,450 M300,-50 L300,450 M400,-50 L400,450 M500,-50 L500,450 M600,-50 L600,450 M700,-50 L700,450 M800,-50 L800,450 M900,-50 L900,450 M1000,-50 L1000,450 M1100,-50 L1100,450" />
+</g>
+
+<!-- Central Singularity Engine -->
+<g transform="translate(600, 200)">
+  <!-- Outer Ring -->
+  <circle r="160" fill="none" stroke="#1a1a4e" stroke-width="2" stroke-dasharray="4 8"/>
+  <g style="animation: rotateCore 40s linear infinite; transform-origin: 0 0;">
+    <circle r="145" fill="none" stroke="#2a2a7a" stroke-width="1" stroke-dasharray="2 6"/>
+    <path d="M-145,0 A145,145 0 0,1 145,0" fill="none" stroke="#00D4FF" stroke-width="3" filter="url(#hyperGlow)"/>
+    <!-- Outer orbiting energy nodes -->
+    <circle cx="102" cy="-102" r="4" fill="#FF6B6B" filter="url(#hyperGlow)"/>
+    <circle cx="-102" cy="102" r="4" fill="#FFD93D" filter="url(#hyperGlow)"/>
+  </g>
+
+  <!-- Middle Complex Ring -->
+  <g style="animation: rotateReverse 25s linear infinite; transform-origin: 0 0;">
+    <circle r="110" fill="none" stroke="#00D4FF" stroke-width="0.5" opacity="0.5"/>
+    <path d="M0,-110 L10,-95 L-10,-95 Z" fill="#00D4FF" />
+    <path d="M0,110 L10,95 L-10,95 Z" fill="#00D4FF" />
+    <path d="M110,0 L95,-10 L95,10 Z" fill="#00D4FF" />
+    <path d="M-110,0 L-95,-10 L-95,10 Z" fill="#00D4FF" />
+    <circle r="95" fill="none" stroke="#9B59B6" stroke-width="1" stroke-dasharray="10 30" filter="url(#hyperGlow)"/>
+    <!-- Nodes -->
+    <circle cx="95" cy="0" r="3" fill="#ffffff" filter="url(#hyperGlow)"/>
+    <circle cx="-95" cy="0" r="3" fill="#ffffff" filter="url(#hyperGlow)"/>
+  </g>
+
+  <!-- Inner High-Speed Ring -->
+  <g style="animation: rotateCore 10s cubic-bezier(0.4, 0, 0.2, 1) infinite; transform-origin: 0 0;">
+    <circle r="65" fill="none" stroke="#FF6B6B" stroke-width="2" stroke-dasharray="30 40 10 40" filter="url(#hyperGlow)"/>
+    <polygon points="0,-65 5,-58 -5,-58" fill="#FF6B6B"/>
+    <polygon points="0,65 5,58 -5,58" fill="#FF6B6B"/>
+  </g>
+
+  <!-- Data Streams shooting into the core -->
+  <!-- Left Side -->
+  <line x1="-400" y1="0" x2="-180" y2="0" stroke="#00D4FF" stroke-width="1.5" stroke-dasharray="20 40" style="animation: dataStream 1.5s linear infinite;"/>
+  <line x1="-350" y1="-50" x2="-140" y2="-20" stroke="#FFD93D" stroke-width="1" stroke-dasharray="10 30" style="animation: dataStream 2s linear infinite 0.5s;"/>
+  <line x1="-350" y1="50" x2="-140" y2="20" stroke="#9B59B6" stroke-width="1" stroke-dasharray="10 30" style="animation: dataStream 1.8s linear infinite 0.2s;"/>
+
+  <!-- Right Side -->
+  <line x1="400" y1="0" x2="180" y2="0" stroke="#00D4FF" stroke-width="1.5" stroke-dasharray="20 40" style="animation: dataStream 1.5s linear infinite 0.7s;"/>
+  <line x1="350" y1="-50" x2="140" y2="-20" stroke="#FF6B6B" stroke-width="1" stroke-dasharray="10 30" style="animation: dataStream 2.2s linear infinite 0.3s;"/>
+  <line x1="350" y1="50" x2="140" y2="20" stroke="#27C93F" stroke-width="1" stroke-dasharray="10 30" style="animation: dataStream 1.6s linear infinite 0.8s;"/>
+
+  <!-- Central Superposition Crystal -->
+  <g style="animation: pulseGlow 4s infinite ease-in-out;">
+    <polygon points="0,-45 35,0 0,45 -35,0" fill="url(#crystal)"/>
+    <polygon points="0,-45 35,0 0,15 -15,0" fill="#ffffff" opacity="0.3"/>
+    <polygon points="0,45 35,0 0,-15 -15,0" fill="#000000" opacity="0.2"/>
+  </g>
+</g>
+
+<!-- Floating Data Particles -->
+<g fill="#00D4FF">
+  <circle cx="200" cy="250" r="2" style="animation: floatParticle 3s infinite;"/>
+  <circle cx="250" cy="300" r="1.5" style="animation: floatParticle 4s infinite 1s;"/>
+  <circle cx="300" cy="150" r="2.5" style="animation: floatParticle 3.5s infinite 2s;"/>
+  <circle cx="350" cy="350" r="1" style="animation: floatParticle 5s infinite 0.5s;"/>
+  <circle cx="400" cy="220" r="2" style="animation: floatParticle 4.5s infinite 1.5s;"/>
+  
+  <circle cx="1000" cy="250" r="2" style="animation: floatParticle 3s infinite 2.5s;"/>
+  <circle cx="950" cy="300" r="1.5" style="animation: floatParticle 4s infinite 0.8s;"/>
+  <circle cx="900" cy="150" r="2.5" style="animation: floatParticle 3.5s infinite 1.2s;"/>
+  <circle cx="850" cy="350" r="1" style="animation: floatParticle 5s infinite 3s;"/>
+  <circle cx="800" cy="220" r="2" style="animation: floatParticle 4.5s infinite 0.2s;"/>
+</g>
+
+<!-- Binary Background Text (left) -->
+<g class="binary" style="animation: blinkBinary 2s step-end infinite;">
+  <text x="50" y="80">01000001</text>
+  <text x="50" y="100">01000111</text>
+  <text x="50" y="120">01001001</text>
+  <text x="50" y="140">10110010</text>
+  <text x="50" y="160">11001101</text>
+</g>
+<g class="binary" style="animation: blinkBinary 2s step-end infinite 1s;" opacity="0.5">
+  <text x="120" y="250">11100100</text>
+  <text x="120" y="270">10010011</text>
+  <text x="120" y="290">01101010</text>
+</g>
+
+<!-- Binary Background Text (right) -->
+<g class="binary" style="animation: blinkBinary 2s step-end infinite 0.5s;">
+  <text x="1080" y="80">01011001</text>
+  <text x="1080" y="100">10100101</text>
+  <text x="1080" y="120">11000010</text>
+  <text x="1080" y="140">00111001</text>
+  <text x="1080" y="160">01000111</text>
+</g>
+<g class="binary" style="animation: blinkBinary 2s step-end infinite 1.5s;" opacity="0.5">
+  <text x="1010" y="250">01110011</text>
+  <text x="1010" y="270">10010001</text>
+  <text x="1010" y="290">01010101</text>
+</g>
+
+<!-- Overlay UI Elements -->
+<!-- Top Left -->
+<polyline points="20,40 20,20 120,20 L130,30" fill="none" stroke="#4a4a7a" stroke-width="1"/>
+<text x="30" y="16" class="text-sub">NEURAL_SYNC: OPTIMAL</text>
+<!-- Bottom Right -->
+<polyline points="1180,360 1180,380 1080,380 L1070,370" fill="none" stroke="#4a4a7a" stroke-width="1"/>
+<text x="1170" y="392" text-anchor="end" class="text-sub">CORE_TEMP: 3.14 K</text>
+
+<!-- Title Text -->
+<text x="600" y="380" text-anchor="middle" class="text-title">QUANTUM SINGULARITY ENGINE</text>
+
+</svg>
