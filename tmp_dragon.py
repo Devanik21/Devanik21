@@ -91,6 +91,6 @@ svg_footer = '''
 </svg>
 '''
 
-with open('c:\\AGI\\test_dragon.svg', 'w') as f:
+with open('test_dragon.svg', 'w') as f:
     f.write(svg_header + svg_body + svg_footer)
 print("done")

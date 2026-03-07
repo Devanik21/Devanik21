@@ -131,6 +131,6 @@ for c in cubes:
 
 svg_footer = "</svg>"
 
-with open('c:\\AGI\\assets\\quantum-singularity.svg', 'w') as f:
+with open('assets/quantum-singularity.svg', 'w') as f:
     f.write(svg_header + svg_cubes + svg_footer)
 print("Generated quantum-singularity.svg")
