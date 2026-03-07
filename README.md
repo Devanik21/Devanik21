@@ -42,10 +42,6 @@
   <img src="./assets/matrix-terminal.svg" alt="Neural Terminal Interface" width="100%" />
 </div>
 
-<!-- ═══════ CUSTOM SVG: DRAGON (auto-generated via GitHub Actions) ═══════ -->
-<div align="center">
-  <img src="./assets/test_dragon.svg" alt="Dragon — Auto-Generated Neural Guardian" width="100%" />
-</div>
 
 <br/>
 
