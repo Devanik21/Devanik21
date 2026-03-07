@@ -1,46 +1,35 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 180" width="100%" height="180" preserveAspectRatio="none">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" width="100%" preserveAspectRatio="none">
 <defs>
-  <filter id="liquidFlow">
-    <feGaussianBlur stdDeviation="8" in="SourceGraphic" result="blur"/>
-    <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 20 -9" result="liquid"/>
-    <feComposite in="SourceGraphic" in2="liquid" operator="atop"/>
+  <linearGradient id="oceanGrad" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0%" stop-color="#00D4FF" stop-opacity="0.2"/>
+    <stop offset="50%" stop-color="#0066FF" stop-opacity="0.1"/>
+    <stop offset="100%" stop-color="#000000" stop-opacity="0.0"/>
+  </linearGradient>
+  
+  <filter id="glow">
+    <feGaussianBlur stdDeviation="3" result="blur"/>
+    <feComposite in="SourceGraphic" in2="blur" operator="over"/>
   </filter>
-  <linearGradient id="midnightGrad" x1="0" y1="0" x2="0" y2="1">
-    <stop offset="0%" stop-color="#0d1117" stop-opacity="0"/>
-    <stop offset="40%" stop-color="#161b22" stop-opacity="0.6"/>
-    <stop offset="100%" stop-color="#000000" stop-opacity="0.1"/>
-  </linearGradient>
-  <linearGradient id="neuralAura" x1="0" y1="0" x2="1" y2="0">
-    <stop offset="0%" stop-color="#00D4FF" stop-opacity="0.05"/>
-    <stop offset="50%" stop-color="#9B59B6" stop-opacity="0.1"/>
-    <stop offset="100%" stop-color="#00D4FF" stop-opacity="0.05"/>
-  </linearGradient>
 </defs>
+
 <style>
-  @keyframes surf {
-    0% { transform: translateY(0) scaleY(1); }
-    50% { transform: translateY(15px) scaleY(0.9); }
-    100% { transform: translateY(0) scaleY(1); }
+  @keyframes slide {
+    from { transform: translateX(0); }
+    to { transform: translateX(-1200px); }
   }
-  @keyframes flow {
-    0% { transform: translateX(0); }
-    100% { transform: translateX(-1200px); }
-  }
-  .liquid-group {
-    filter: url(#liquidFlow);
-    animation: surf 8s infinite ease-in-out;
-    transform-origin: center;
-  }
-  .wave-path {
-    animation: flow 40s linear infinite;
+  .wave {
+    animation: slide linear infinite;
   }
 </style>
-<g class="liquid-group">
-  <path class="wave-path" d="M -1200 180 L -1200 90.0 L -1100 120.3 L -1000 120.3 L -900 90.0 L -800 59.7 L -700 59.7 L -600 90.0 L -500 120.3 L -400 120.3 L -300 90.0 L -200 59.7 L -100 59.7 L 0 90.0 L 100 120.3 L 200 120.3 L 300 90.0 L 400 59.7 L 500 59.7 L 600 90.0 L 700 120.3 L 800 120.3 L 900 90.0 L 1000 59.7 L 1100 59.7 L 1200 90.0 L 1300 120.3 L 1400 120.3 L 1500 90.0 L 1600 59.7 L 1700 59.7 L 1800 90.0 L 1900 120.3 L 2000 120.3 L 2100 90.0 L 2200 59.7 L 2300 59.7 L 2400 90.0 L 2500 120.3 L 2600 120.3 L 2700 90.0 L 2800 59.7 L 2900 59.7 L 3000 90.0 L 3100 120.3 L 3200 120.3 L 3300 90.0 L 3400 59.7 L 3500 59.7 L 3600 90.0 L 3600 180 Z" fill="url(#midnightGrad)" style="animation-duration:30s;opacity:0.5;"/>
-  <path class="wave-path" d="M -1200 180 L -1200 90.0 L -1100 120.3 L -1000 120.3 L -900 90.0 L -800 59.7 L -700 59.7 L -600 90.0 L -500 120.3 L -400 120.3 L -300 90.0 L -200 59.7 L -100 59.7 L 0 90.0 L 100 120.3 L 200 120.3 L 300 90.0 L 400 59.7 L 500 59.7 L 600 90.0 L 700 120.3 L 800 120.3 L 900 90.0 L 1000 59.7 L 1100 59.7 L 1200 90.0 L 1300 120.3 L 1400 120.3 L 1500 90.0 L 1600 59.7 L 1700 59.7 L 1800 90.0 L 1900 120.3 L 2000 120.3 L 2100 90.0 L 2200 59.7 L 2300 59.7 L 2400 90.0 L 2500 120.3 L 2600 120.3 L 2700 90.0 L 2800 59.7 L 2900 59.7 L 3000 90.0 L 3100 120.3 L 3200 120.3 L 3300 90.0 L 3400 59.7 L 3500 59.7 L 3600 90.0 L 3600 180 Z" fill="none" stroke="url(#neuralAura)" stroke-width="2" style="animation-duration:30s;"/>
-  <path class="wave-path" d="M -1200 180 L -1200 59.7 L -1100 59.7 L -1000 90.0 L -900 120.3 L -800 120.3 L -700 90.0 L -600 59.7 L -500 59.7 L -400 90.0 L -300 120.3 L -200 120.3 L -100 90.0 L 0 59.7 L 100 59.7 L 200 90.0 L 300 120.3 L 400 120.3 L 500 90.0 L 600 59.7 L 700 59.7 L 800 90.0 L 900 120.3 L 1000 120.3 L 1100 90.0 L 1200 59.7 L 1300 59.7 L 1400 90.0 L 1500 120.3 L 1600 120.3 L 1700 90.0 L 1800 59.7 L 1900 59.7 L 2000 90.0 L 2100 120.3 L 2200 120.3 L 2300 90.0 L 2400 59.7 L 2500 59.7 L 2600 90.0 L 2700 120.3 L 2800 120.3 L 2900 90.0 L 3000 59.7 L 3100 59.7 L 3200 90.0 L 3300 120.3 L 3400 120.3 L 3500 90.0 L 3600 59.7 L 3600 180 Z" fill="url(#midnightGrad)" style="animation-duration:45s;opacity:0.6;"/>
-  <path class="wave-path" d="M -1200 180 L -1200 59.7 L -1100 59.7 L -1000 90.0 L -900 120.3 L -800 120.3 L -700 90.0 L -600 59.7 L -500 59.7 L -400 90.0 L -300 120.3 L -200 120.3 L -100 90.0 L 0 59.7 L 100 59.7 L 200 90.0 L 300 120.3 L 400 120.3 L 500 90.0 L 600 59.7 L 700 59.7 L 800 90.0 L 900 120.3 L 1000 120.3 L 1100 90.0 L 1200 59.7 L 1300 59.7 L 1400 90.0 L 1500 120.3 L 1600 120.3 L 1700 90.0 L 1800 59.7 L 1900 59.7 L 2000 90.0 L 2100 120.3 L 2200 120.3 L 2300 90.0 L 2400 59.7 L 2500 59.7 L 2600 90.0 L 2700 120.3 L 2800 120.3 L 2900 90.0 L 3000 59.7 L 3100 59.7 L 3200 90.0 L 3300 120.3 L 3400 120.3 L 3500 90.0 L 3600 59.7 L 3600 180 Z" fill="none" stroke="url(#neuralAura)" stroke-width="2" style="animation-duration:45s;"/>
-  <path class="wave-path" d="M -1200 180 L -1200 120.3 L -1100 90.0 L -1000 59.7 L -900 59.7 L -800 90.0 L -700 120.3 L -600 120.3 L -500 90.0 L -400 59.7 L -300 59.7 L -200 90.0 L -100 120.3 L 0 120.3 L 100 90.0 L 200 59.7 L 300 59.7 L 400 90.0 L 500 120.3 L 600 120.3 L 700 90.0 L 800 59.7 L 900 59.7 L 1000 90.0 L 1100 120.3 L 1200 120.3 L 1300 90.0 L 1400 59.7 L 1500 59.7 L 1600 90.0 L 1700 120.3 L 1800 120.3 L 1900 90.0 L 2000 59.7 L 2100 59.7 L 2200 90.0 L 2300 120.3 L 2400 120.3 L 2500 90.0 L 2600 59.7 L 2700 59.7 L 2800 90.0 L 2900 120.3 L 3000 120.3 L 3100 90.0 L 3200 59.7 L 3300 59.7 L 3400 90.0 L 3500 120.3 L 3600 120.3 L 3600 180 Z" fill="url(#midnightGrad)" style="animation-duration:60s;opacity:0.7;"/>
-  <path class="wave-path" d="M -1200 180 L -1200 120.3 L -1100 90.0 L -1000 59.7 L -900 59.7 L -800 90.0 L -700 120.3 L -600 120.3 L -500 90.0 L -400 59.7 L -300 59.7 L -200 90.0 L -100 120.3 L 0 120.3 L 100 90.0 L 200 59.7 L 300 59.7 L 400 90.0 L 500 120.3 L 600 120.3 L 700 90.0 L 800 59.7 L 900 59.7 L 1000 90.0 L 1100 120.3 L 1200 120.3 L 1300 90.0 L 1400 59.7 L 1500 59.7 L 1600 90.0 L 1700 120.3 L 1800 120.3 L 1900 90.0 L 2000 59.7 L 2100 59.7 L 2200 90.0 L 2300 120.3 L 2400 120.3 L 2500 90.0 L 2600 59.7 L 2700 59.7 L 2800 90.0 L 2900 120.3 L 3000 120.3 L 3100 90.0 L 3200 59.7 L 3300 59.7 L 3400 90.0 L 3500 120.3 L 3600 120.3 L 3600 180 Z" fill="none" stroke="url(#neuralAura)" stroke-width="2" style="animation-duration:60s;"/>
+
+<g class="wave-group">
+  <!-- Back slow wave -->
+  <path class="wave" d="M -1200 120 L -1200 60.0 L -1150 70.2 L -1100 70.0 L -1050 69.1 L -1000 77.3 L -950 84.3 L -900 80.0 L -850 74.3 L -800 77.3 L -750 79.1 L -700 70.0 L -650 60.2 L -600 60.0 L -550 59.8 L -500 50.0 L -450 40.9 L -400 42.7 L -350 45.7 L -300 40.0 L -250 35.7 L -200 42.7 L -150 50.9 L -100 50.0 L -50 49.8 L 0 60.0 L 50 70.2 L 100 70.0 L 150 69.1 L 200 77.3 L 250 84.3 L 300 80.0 L 350 74.3 L 400 77.3 L 450 79.1 L 500 70.0 L 550 60.2 L 600 60.0 L 650 59.8 L 700 50.0 L 750 40.9 L 800 42.7 L 850 45.7 L 900 40.0 L 950 35.7 L 1000 42.7 L 1050 50.9 L 1100 50.0 L 1150 49.8 L 1200 60.0 L 1250 70.2 L 1300 70.0 L 1350 69.1 L 1400 77.3 L 1450 84.3 L 1500 80.0 L 1550 74.3 L 1600 77.3 L 1650 79.1 L 1700 70.0 L 1750 60.2 L 1800 60.0 L 1850 59.8 L 1900 50.0 L 1950 40.9 L 2000 42.7 L 2050 45.7 L 2100 40.0 L 2150 35.7 L 2200 42.7 L 2250 50.9 L 2300 50.0 L 2350 49.8 L 2400 60.0 L 2400 120 Z" fill="url(#oceanGrad)" stroke="#00D4FF" stroke-width="0.5" stroke-opacity="0.3" style="animation-duration: 25s;"/>
+  
+  <!-- Middle wave -->
+  <path class="wave" d="M -1200 120 L -1200 83.8 L -1150 90.0 L -1100 83.8 L -1050 75.2 L -1000 74.7 L -950 72.7 L -900 60.0 L -850 47.3 L -800 45.3 L -750 44.8 L -700 36.2 L -650 30.0 L -600 36.2 L -550 44.8 L -500 45.3 L -450 47.3 L -400 60.0 L -350 72.7 L -300 74.7 L -250 75.2 L -200 83.8 L -150 90.0 L -100 83.8 L -50 75.2 L 0 74.7 L 50 72.7 L 100 60.0 L 150 47.3 L 200 45.3 L 250 44.8 L 300 36.2 L 350 30.0 L 400 36.2 L 450 44.8 L 500 45.3 L 550 47.3 L 600 60.0 L 650 72.7 L 700 74.7 L 750 75.2 L 800 83.8 L 850 90.0 L 900 83.8 L 950 75.2 L 1000 74.7 L 1050 72.7 L 1100 60.0 L 1150 47.3 L 1200 45.3 L 1250 44.8 L 1300 36.2 L 1350 30.0 L 1400 36.2 L 1450 44.8 L 1500 45.3 L 1550 47.3 L 1600 60.0 L 1650 72.7 L 1700 74.7 L 1750 75.2 L 1800 83.8 L 1850 90.0 L 1900 83.8 L 1950 75.2 L 2000 74.7 L 2050 72.7 L 2100 60.0 L 2150 47.3 L 2200 45.3 L 2250 44.8 L 2300 36.2 L 2350 30.0 L 2400 36.2 L 2400 120 Z" fill="url(#oceanGrad)" stroke="#00D4FF" stroke-width="1" stroke-opacity="0.5" style="animation-duration: 18s;"/>
+  
+  <!-- Front fast wave -->
+  <path class="wave" d="M -1200 120 L -1200 60.0 L -1150 59.3 L -1100 49.4 L -1050 41.1 L -1000 45.0 L -950 51.1 L -900 49.4 L -850 49.3 L -800 60.0 L -750 70.7 L -700 70.6 L -650 68.9 L -600 75.0 L -550 78.9 L -500 70.6 L -450 60.7 L -400 60.0 L -350 59.3 L -300 49.4 L -250 41.1 L -200 45.0 L -150 51.1 L -100 49.4 L -50 49.3 L 0 60.0 L 50 70.7 L 100 70.6 L 150 68.9 L 200 75.0 L 250 78.9 L 300 70.6 L 350 60.7 L 400 60.0 L 450 59.3 L 500 49.4 L 550 41.1 L 600 45.0 L 650 51.1 L 700 49.4 L 750 49.3 L 800 60.0 L 850 70.7 L 900 70.6 L 950 68.9 L 1000 75.0 L 1050 78.9 L 1100 70.6 L 1150 60.7 L 1200 60.0 L 1250 59.3 L 1300 49.4 L 1350 41.1 L 1400 45.0 L 1450 51.1 L 1500 49.4 L 1550 49.3 L 1600 60.0 L 1650 70.7 L 1700 70.6 L 1750 68.9 L 1800 75.0 L 1850 78.9 L 1900 70.6 L 1950 60.7 L 2000 60.0 L 2050 59.3 L 2100 49.4 L 2150 41.1 L 2200 45.0 L 2250 51.1 L 2300 49.4 L 2350 49.3 L 2400 60.0 L 2400 120 Z" fill="url(#oceanGrad)" stroke="#00D4FF" stroke-width="1.5" filter="url(#glow)" style="animation-duration: 12s;"/>
 </g>
 </svg>

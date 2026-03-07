@@ -1,0 +1,117 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 280" width="100%">
+<style>
+  @keyframes gentleFloat {
+    0%, 100% { transform: translateY(0px); }
+    50% { transform: translateY(-8px); }
+  }
+  @keyframes breathe {
+    0%, 100% { opacity: 0.7; }
+    50% { opacity: 1; }
+  }
+  @keyframes slowSway {
+    0%, 100% { transform: translateX(0px) translateY(0px); }
+    25% { transform: translateX(3px) translateY(-5px); }
+    75% { transform: translateX(-3px) translateY(-3px); }
+  }
+  @keyframes pulseGlow {
+    0%, 100% { filter: drop-shadow(0 0 8px rgba(0,212,255,0.3)); }
+    50% { filter: drop-shadow(0 0 20px rgba(0,212,255,0.6)); }
+  }
+  @keyframes waveFlow {
+    from { transform: translateX(0); }
+    to { transform: translateX(-800px); }
+  }
+  @keyframes particleDrift {
+    0% { transform: translateY(0) translateX(0); opacity: 0; }
+    10% { opacity: 0.6; }
+    90% { opacity: 0.6; }
+    100% { transform: translateY(-250px) translateX(40px); opacity: 0; }
+  }
+</style>
+<defs>
+  <linearGradient id="heroBg" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0%" stop-color="#0a0a1a" stop-opacity="0.95"/>
+    <stop offset="100%" stop-color="#0d1117" stop-opacity="0.98"/>
+  </linearGradient>
+  <linearGradient id="waveGrad" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0%" stop-color="#00D4FF" stop-opacity="0.08"/>
+    <stop offset="100%" stop-color="#9B59B6" stop-opacity="0.03"/>
+  </linearGradient>
+  <linearGradient id="waveStroke" x1="0" y1="0" x2="1" y2="0">
+    <stop offset="0%" stop-color="#00D4FF" stop-opacity="0.15"/>
+    <stop offset="50%" stop-color="#9B59B6" stop-opacity="0.25"/>
+    <stop offset="100%" stop-color="#00D4FF" stop-opacity="0.15"/>
+  </linearGradient>
+</defs>
+
+<!-- Background -->
+<rect width="800" height="280" fill="url(#heroBg)" rx="12"/>
+
+<!-- Animated wave background layers -->
+<path d="M -800 280 L -800 209.6 L -770 211.6 L -740 210.6 L -710 207.7 L -680 207.5 L -650 212.6 L -620 220.1 L -590 224.6 L -560 224.9 L -530 224.7 L -500 227.8 L -470 233.1 L -440 235.5 L -410 232.3 L -380 226.4 L -350 222.7 L -320 222.5 L -290 222.1 L -260 217.7 L -230 210.6 L -200 206.0 L -170 206.9 L -140 210.6 L -110 212.4 L -80 211.1 L -50 210.7 L -20 215.0 L 10 222.6 L 40 228.5 L 70 229.4 L 100 227.8 L 130 228.4 L 160 231.9 L 190 234.3 L 220 231.5 L 250 224.6 L 280 218.9 L 310 217.4 L 340 217.7 L 370 215.3 L 400 209.6 L 430 204.9 L 460 205.5 L 490 210.4 L 520 214.7 L 550 215.4 L 580 215.0 L 610 217.9 L 640 224.9 L 670 231.4 L 700 232.9 L 730 230.4 L 760 228.3 L 790 229.6 L 820 231.5 L 850 229.3 L 880 222.5 L 910 215.4 L 940 212.6 L 970 213.3 L 1000 213.2 L 1030 209.6 L 1060 205.5 L 1090 205.7 L 1120 211.1 L 1150 217.3 L 1180 220.1 L 1210 219.9 L 1240 221.3 L 1270 226.7 L 1300 232.9 L 1330 235.1 L 1360 231.9 L 1390 227.6 L 1420 226.4 L 1450 227.4 L 1480 226.1 L 1510 220.1 L 1540 212.6 L 1570 208.6 L 1600 209.6 L 1600 280 Z" fill="url(#waveGrad)" stroke="url(#waveStroke)" stroke-width="0.8" style="animation: waveFlow 20s linear infinite;"/>
+<path d="M -800 280 L -800 220.7 L -770 227.6 L -740 231.0 L -710 231.4 L -680 234.2 L -650 242.1 L -620 250.8 L -590 253.9 L -560 249.7 L -530 243.5 L -500 240.6 L -470 240.5 L -440 237.6 L -410 229.5 L -380 220.3 L -350 216.6 L -320 220.0 L -290 225.6 L -260 227.9 L -230 227.8 L -200 230.5 L -170 238.8 L -140 248.5 L -110 252.7 L -80 250.0 L -50 245.1 L -20 243.4 L 10 243.9 L 40 241.4 L 70 233.0 L 100 223.0 L 130 218.2 L 160 220.3 L 190 224.4 L 220 225.5 L 250 224.5 L 280 226.8 L 310 235.2 L 340 245.4 L 370 250.7 L 400 249.3 L 430 245.8 L 460 245.4 L 490 247.0 L 520 245.0 L 550 236.7 L 580 226.3 L 610 220.6 L 640 221.4 L 670 224.2 L 700 223.9 L 730 221.7 L 760 223.3 L 790 231.4 L 820 241.9 L 850 248.0 L 880 247.7 L 910 245.6 L 940 246.6 L 970 249.4 L 1000 248.3 L 1030 240.5 L 1060 229.9 L 1090 223.6 L 1120 223.4 L 1150 224.9 L 1180 223.2 L 1210 219.7 L 1240 220.2 L 1270 227.8 L 1300 238.2 L 1330 244.7 L 1360 245.3 L 1390 244.4 L 1420 246.8 L 1450 251.0 L 1480 251.1 L 1510 243.9 L 1540 233.7 L 1570 227.1 L 1600 226.2 L 1600 280 Z" fill="url(#waveGrad)" stroke="url(#waveStroke)" stroke-width="0.8" style="animation: waveFlow 15s linear infinite;"/>
+<path d="M -800 280 L -800 254.3 L -770 254.6 L -740 251.2 L -710 245.3 L -680 241.1 L -650 241.0 L -620 242.9 L -590 242.9 L -560 240.1 L -530 238.0 L -500 240.1 L -470 245.3 L -440 249.5 L -410 250.3 L -380 249.7 L -350 251.6 L -320 256.6 L -290 261.1 L -260 261.6 L -230 258.8 L -200 256.7 L -170 257.7 L -140 259.3 L -110 257.9 L -80 252.7 L -50 247.2 L -20 245.2 L 10 246.0 L 40 245.8 L 70 242.3 L 100 238.1 L 130 237.2 L 160 240.5 L 190 244.4 L 220 245.5 L 250 244.5 L 280 245.2 L 310 249.7 L 340 255.6 L 370 258.6 L 400 257.8 L 430 256.4 L 460 257.8 L 490 261.1 L 520 262.2 L 550 259.0 L 580 253.8 L 610 250.7 L 640 250.9 L 670 251.0 L 700 247.8 L 730 242.3 L 760 238.7 L 790 239.3 L 820 242.1 L 850 243.0 L 880 241.2 L 910 240.0 L 940 242.7 L 970 248.5 L 1000 253.0 L 1030 253.8 L 1060 253.0 L 1090 254.5 L 1120 258.8 L 1150 262.5 L 1180 262.1 L 1210 258.4 L 1240 255.3 L 1270 255.4 L 1300 256.5 L 1330 254.6 L 1360 249.1 L 1390 243.7 L 1420 242.0 L 1450 243.3 L 1480 243.8 L 1510 241.2 L 1540 238.0 L 1570 238.0 L 1600 242.2 L 1600 280 Z" fill="url(#waveGrad)" stroke="url(#waveStroke)" stroke-width="0.8" style="animation: waveFlow 25s linear infinite;"/>
+<circle cx="100" cy="260" r="1.5" fill="#00D4FF" style="animation: particleDrift 12s ease-in-out infinite 0.0s;"/>
+<circle cx="250" cy="270" r="1.5" fill="#FF6B6B" style="animation: particleDrift 15s ease-in-out infinite 1.5s;"/>
+<circle cx="400" cy="255" r="1.5" fill="#FFD93D" style="animation: particleDrift 10s ease-in-out infinite 3.0s;"/>
+<circle cx="550" cy="265" r="1.5" fill="#9B59B6" style="animation: particleDrift 13s ease-in-out infinite 4.5s;"/>
+<circle cx="700" cy="258" r="1.5" fill="#00D4FF" style="animation: particleDrift 11s ease-in-out infinite 6.0s;"/>
+<circle cx="180" cy="268" r="1.5" fill="#FF6B6B" style="animation: particleDrift 14s ease-in-out infinite 2.0s;"/>
+<circle cx="620" cy="262" r="1.5" fill="#FFD93D" style="animation: particleDrift 16s ease-in-out infinite 5.0s;"/>
+<circle cx="350" cy="275" r="1.5" fill="#9B59B6" style="animation: particleDrift 9s ease-in-out infinite 7.0s;"/>
+
+<!-- Living content via foreignObject -->
+<foreignObject x="0" y="0" width="800" height="280">
+  <div xmlns="http://www.w3.org/1999/xhtml" style="
+    width: 100%; height: 100%;
+    display: flex; flex-direction: column;
+    align-items: center; justify-content: center;
+    font-family: 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+    color: #ffffff; text-align: center;
+    box-sizing: border-box; padding: 20px;
+  ">
+    <!-- Name -->
+    <div style="animation: gentleFloat 6s ease-in-out infinite; margin-bottom: 8px;">
+      <div style="
+        font-size: 38px; font-weight: 900;
+        letter-spacing: 8px;
+        background: linear-gradient(135deg, #00D4FF, #FF6B6B, #FFD93D, #9B59B6);
+        -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+        background-clip: text;
+        animation: pulseGlow 4s ease-in-out infinite;
+      ">DΞVΛΠIK</div>
+    </div>
+
+    <!-- Designation -->
+    <div style="animation: slowSway 8s ease-in-out infinite; margin-bottom: 12px;">
+      <div style="
+        font-size: 13px; letter-spacing: 5px;
+        color: #00D4FF; opacity: 0.8;
+        text-transform: uppercase;
+        animation: breathe 3s ease-in-out infinite;
+      ">Artificial Intelligence Researcher</div>
+    </div>
+
+    <!-- Tagline -->
+    <div style="animation: gentleFloat 7s ease-in-out infinite 1s;">
+      <div style="
+        font-size: 11px; letter-spacing: 3px;
+        color: #9B59B6; opacity: 0.6;
+        font-style: italic;
+      ">Neural Network Architect · Quantum Learning Researcher · Synthetic Intelligence Pioneer</div>
+    </div>
+
+    <!-- Fellowship badge -->
+    <div style="animation: slowSway 9s ease-in-out infinite 0.5s; margin-top: 16px;">
+      <div style="
+        display: inline-block;
+        background: linear-gradient(135deg, rgba(0,212,255,0.15), rgba(155,89,182,0.15));
+        border: 1px solid rgba(0,212,255,0.2);
+        border-radius: 20px; padding: 6px 18px;
+        font-size: 10px; letter-spacing: 3px;
+        color: #FFD93D; animation: breathe 5s ease-in-out infinite 1s;
+      ">☆ SAMSUNG FELLOW @ IISc BANGALORE · ECE @ NIT AGARTALA ☆</div>
+    </div>
+  </div>
+</foreignObject>
+</svg>

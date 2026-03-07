@@ -1,0 +1,89 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 220" width="100%">
+<style>
+  @keyframes swayLeft {
+    0%, 100% { transform: translateX(0) translateY(0); }
+    33% { transform: translateX(-4px) translateY(-3px); }
+    66% { transform: translateX(3px) translateY(-5px); }
+  }
+  @keyframes swayRight {
+    0%, 100% { transform: translateX(0) translateY(0); }
+    33% { transform: translateX(4px) translateY(-4px); }
+    66% { transform: translateX(-3px) translateY(-2px); }
+  }
+  @keyframes breatheQuote {
+    0%, 100% { opacity: 0.75; }
+    50% { opacity: 1; }
+  }
+  @keyframes glowPulse {
+    0%, 100% { opacity: 0.1; }
+    50% { opacity: 0.25; }
+  }
+</style>
+<defs>
+  <linearGradient id="philoBg" x1="0" y1="0" x2="1" y2="1">
+    <stop offset="0%" stop-color="#0a0a1a"/>
+    <stop offset="100%" stop-color="#0d1117"/>
+  </linearGradient>
+  <radialGradient id="aura1" cx="25%" cy="50%">
+    <stop offset="0%" stop-color="#FF6B6B" stop-opacity="0.08"/>
+    <stop offset="100%" stop-color="#0a0a1a" stop-opacity="0"/>
+  </radialGradient>
+  <radialGradient id="aura2" cx="75%" cy="50%">
+    <stop offset="0%" stop-color="#00D4FF" stop-opacity="0.08"/>
+    <stop offset="100%" stop-color="#0a0a1a" stop-opacity="0"/>
+  </radialGradient>
+</defs>
+
+<rect width="800" height="220" fill="url(#philoBg)" rx="12"/>
+<!-- Breathing auras behind each quote -->
+<rect width="800" height="220" fill="url(#aura1)" rx="12" style="animation: glowPulse 6s ease-in-out infinite;"/>
+<rect width="800" height="220" fill="url(#aura2)" rx="12" style="animation: glowPulse 6s ease-in-out infinite 3s;"/>
+
+<foreignObject x="0" y="0" width="800" height="220">
+  <div xmlns="http://www.w3.org/1999/xhtml" style="
+    width: 100%; height: 100%;
+    display: flex; align-items: center; justify-content: center;
+    font-family: 'Segoe UI', Georgia, serif;
+    color: #ffffff; text-align: center;
+    box-sizing: border-box; padding: 20px;
+    gap: 30px;
+  ">
+    <!-- Left quote -->
+    <div style="
+      flex: 1; animation: swayLeft 10s ease-in-out infinite;
+      padding: 15px; max-width: 340px;
+    ">
+      <div style="
+        font-size: 10px; letter-spacing: 4px; color: #FF6B6B;
+        text-transform: uppercase; margin-bottom: 10px;
+        animation: breatheQuote 4s ease-in-out infinite;
+      ">◈ CORE BELIEF ◈</div>
+      <div style="
+        font-size: 13px; line-height: 1.6;
+        color: rgba(255,255,255,0.85); font-style: italic;
+        animation: breatheQuote 5s ease-in-out infinite 0.5s;
+      ">"AI, when harnessed correctly, can increase human lifespan to infinity. The convergence of machine learning and biotechnology holds the key to transcending biological limitations."</div>
+    </div>
+
+    <!-- Divider -->
+    <div style="width: 1px; height: 80px; background: linear-gradient(to bottom, transparent, #9B59B6, transparent); opacity: 0.4;"></div>
+
+    <!-- Right quote -->
+    <div style="
+      flex: 1; animation: swayRight 10s ease-in-out infinite;
+      padding: 15px; max-width: 340px;
+    ">
+      <div style="
+        font-size: 10px; letter-spacing: 4px; color: #00D4FF;
+        text-transform: uppercase; margin-bottom: 10px;
+        animation: breatheQuote 4s ease-in-out infinite 1s;
+      ">◈ MISSION ◈</div>
+      <div style="
+        font-size: 13px; line-height: 1.6;
+        color: rgba(255,255,255,0.85); font-style: italic;
+        animation: breatheQuote 5s ease-in-out infinite 1.5s;
+      ">"To architect AI systems that don't just process data, but understand, empathize, and elevate human potential across all dimensions of existence."</div>
+    </div>
+  </div>
+</foreignObject>
+</svg>

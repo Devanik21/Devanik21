@@ -1,0 +1,93 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 240" width="100%">
+<style>
+  @keyframes floatUp {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-6px); }
+  }
+  @keyframes breatheSlow {
+    0%, 100% { opacity: 0.5; }
+    50% { opacity: 1; }
+  }
+  @keyframes glowRotate {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+  @keyframes borderPulse {
+    0%, 100% { border-color: rgba(0,212,255,0.2); }
+    50% { border-color: rgba(0,212,255,0.5); }
+  }
+</style>
+<defs>
+  <linearGradient id="signBg" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0%" stop-color="#0d1117"/>
+    <stop offset="100%" stop-color="#0a0a1a"/>
+  </linearGradient>
+  <radialGradient id="centerGlow">
+    <stop offset="0%" stop-color="#00D4FF" stop-opacity="0.06"/>
+    <stop offset="100%" stop-color="#0a0a1a" stop-opacity="0"/>
+  </radialGradient>
+</defs>
+
+<rect width="800" height="240" fill="url(#signBg)" rx="12"/>
+<ellipse cx="400" cy="120" rx="300" ry="100" fill="url(#centerGlow)" style="animation: breatheSlow 6s ease-in-out infinite;"/>
+
+<!-- Orbiting ring -->
+<g style="transform-origin: 400px 120px; animation: glowRotate 30s linear infinite;">
+  <ellipse cx="400" cy="120" rx="250" ry="80" fill="none" stroke="#00D4FF" stroke-width="0.5" stroke-opacity="0.1" stroke-dasharray="8 12"/>
+</g>
+<g style="transform-origin: 400px 120px; animation: glowRotate 20s linear infinite reverse;">
+  <ellipse cx="400" cy="120" rx="200" ry="60" fill="none" stroke="#9B59B6" stroke-width="0.5" stroke-opacity="0.08" stroke-dasharray="5 10"/>
+</g>
+
+<foreignObject x="0" y="0" width="800" height="240">
+  <div xmlns="http://www.w3.org/1999/xhtml" style="
+    width: 100%; height: 100%;
+    display: flex; flex-direction: column;
+    align-items: center; justify-content: center;
+    font-family: 'Courier New', 'Consolas', monospace;
+    color: #ffffff; text-align: center;
+    box-sizing: border-box; padding: 20px;
+  ">
+    <!-- Manifesto lines -->
+    <div style="animation: floatUp 5s ease-in-out infinite; margin-bottom: 6px;">
+      <div style="
+        font-size: 12px; letter-spacing: 2px;
+        color: #00D4FF;
+        animation: breatheSlow 4s ease-in-out infinite;
+      ">"I am not just writing code. I am encoding consciousness."</div>
+    </div>
+
+    <div style="animation: floatUp 6s ease-in-out infinite 0.8s; margin-bottom: 6px;">
+      <div style="
+        font-size: 12px; letter-spacing: 2px;
+        color: #FF6B6B;
+        animation: breatheSlow 4s ease-in-out infinite 1s;
+      ">"Every algorithm is a step toward understanding reality."</div>
+    </div>
+
+    <div style="animation: floatUp 7s ease-in-out infinite 1.6s; margin-bottom: 16px;">
+      <div style="
+        font-size: 12px; letter-spacing: 2px;
+        color: #FFD93D;
+        animation: breatheSlow 4s ease-in-out infinite 2s;
+      ">"The singularity isn't coming. We're building it."</div>
+    </div>
+
+    <!-- Final tagline -->
+    <div style="animation: floatUp 8s ease-in-out infinite 0.5s;">
+      <div style="
+        font-size: 11px; letter-spacing: 4px;
+        color: #9B59B6; font-style: italic;
+        animation: breatheSlow 6s ease-in-out infinite;
+      ">Transforming data into intelligence, algorithms into consciousness</div>
+    </div>
+
+    <div style="animation: breatheSlow 8s ease-in-out infinite 2s; margin-top: 12px;">
+      <div style="
+        font-size: 9px; letter-spacing: 2px;
+        color: rgba(255,255,255,0.35); font-style: italic;
+      ">This README is a living document. Like biological organisms, it evolves, adapts, and grows.</div>
+    </div>
+  </div>
+</foreignObject>
+</svg>
