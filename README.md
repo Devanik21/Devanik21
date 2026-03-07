@@ -14,9 +14,7 @@
   <img src="https://img.shields.io/github/stars/devanik21?style=for-the-badge&color=FFD93D&labelColor=1A1B27&logo=github&logoColor=white&label=STARS" alt="Stars" />
 </div>
 
-<div align="center">
-  <img src="https://github-profile-trophy.vercel.app/?username=devanik21&theme=radical&no-frame=true&no-bg=true&column=7&margin-w=15&margin-h=15" alt="GitHub Trophies" width="100%" />
-</div>
+
 
 <div align="center">
   
@@ -903,7 +901,7 @@ Impact:
 
 <div align="center">
   <img src="https://github-readme-streak-stats.herokuapp.com/?user=devanik21&theme=radical&hide_border=true&stroke=00D4FF&ring=FF6B6B&fire=FFD93D&currStreakNum=00D4FF&sideNums=00D4FF&currStreakLabel=FF6B6B&sideLabels=FF6B6B&dates=FFFFFF" alt="GitHub Streak" width="49%" />
-  <img src="https://github-readme-stats.vercel.app/api?username=devanik21&show_icons=true&theme=radical&hide_border=true&count_private=true&bg_color=0D1117&title_color=00D4FF&text_color=FFFFFF&icon_color=FF6B6B" alt="GitHub Stats" width="49%" />
+
 </div>
 
 <div align="center">
@@ -911,7 +909,7 @@ Impact:
 </div>
 
 <div align="center">
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=devanik21&layout=compact&theme=radical&hide_border=true&bg_color=0D1117&title_color=00D4FF&text_color=FFFFFF" alt="Top Languages" width="49%" />
+
   <img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=devanik21&theme=radical" alt="Profile Summary" width="49%" />
 </div>
 
@@ -934,18 +932,7 @@ Impact:
   <img src="https://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=devanik21&theme=radical&utcOffset=5.5" alt="Productive Time" width="32%" />
 </div>
 
-<br/>
 
-<div align="center">
-  <h3>🐍 CONTRIBUTION SNAKE DEVOURING THE GRAPH</h3>
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/devanik21/devanik21/output/github-snake-dark.svg" />
-    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/devanik21/devanik21/output/github-snake.svg" />
-    <img alt="github-snake" src="https://raw.githubusercontent.com/devanik21/devanik21/output/github-snake-dark.svg" width="100%" />
-  </picture>
-</div>
-
-<br/>
 
 <div align="center">
   <img src="https://raw.githubusercontent.com/devanik21/devanik21/output/ocean.gif" alt="Snake Ocean Animation" width="100%" />
