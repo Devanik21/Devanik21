@@ -110,6 +110,71 @@ class NeuralArchitect:
 
 <img src="https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png" alt="divider" width="100%">
 
+## 🛠️ NEURAL TECHNOLOGY STACK
+
+<!-- ═══════ CUSTOM SVG: NEURAL CONSTELLATION MAP ═══════ -->
+<div align="center">
+  <img src="./assets/neural-constellation.svg" alt="Neural Constellation Map" width="100%" />
+</div>
+
+<br/>
+
+### 🧠 CORE NEURAL LANGUAGES
+<div align="center">
+  <a href="https://skillicons.dev">
+    <img src="https://skillicons.dev/icons?i=python,cpp,c,matlab,bash&theme=dark&perline=10" alt="Languages" />
+  </a>
+</div>
+
+### 🔬 AI / ML / DL FRAMEWORKS
+<div align="center">
+  <a href="https://skillicons.dev">
+    <img src="https://skillicons.dev/icons?i=tensorflow,pytorch,sklearn,opencv&theme=dark&perline=10" alt="AI Frameworks" />
+  </a>
+</div>
+
+### 📊 DATA, DEVOPS & TOOLS
+<div align="center">
+  <a href="https://skillicons.dev">
+    <img src="https://skillicons.dev/icons?i=docker,git,github,vscode,linux,mysql,mongodb,grafana,prometheus,aws&theme=dark&perline=10" alt="DevOps & Tools" />
+  </a>
+</div>
+
+### 🌐 WEB & MORE
+<div align="center">
+  <a href="https://skillicons.dev">
+    <img src="https://skillicons.dev/icons?i=html,css,js,react,nodejs,flask,fastapi,figma&theme=dark&perline=10" alt="Web & More" />
+  </a>
+</div>
+
+### 🔧 SPECIALIZED EXPERTISE
+```yaml
+AI & Frameworks:
+  - LangChain, LangGraph, LangFlow
+  - RAG (Retrieval-Augmented Generation)
+  - Transformers & Attention Mechanisms
+  - Fine-tuning & RLHF
+
+Backend & DevOps:
+  - RESTful APIs & Microservices
+  - Docker Compose & Container Orchestration
+  - Application Monitoring & Observability Stack
+  - CI/CD Pipeline Development
+
+Core Expertise:
+  - Machine Learning & Deep Learning
+  - Reinforcement Learning
+  - Natural Language Processing
+  - Generative AI & LLMs
+  - Data Visualization & Analytics
+  - Statistics & Probability
+  - Cryptography (Symmetric & Asymmetric)
+  - Cloud Computing & API Integration
+  - Semiconductor TCAD Modeling
+```
+
+<img src="https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png" alt="divider" width="100%">
+
 ## FELLOWSHIPS & HONORS
 
 <div align="center">
@@ -263,7 +328,7 @@ Impact: State-of-the-art classification via quantum-inspired harmonics
 [![DOI](https://img.shields.io/badge/DOI-10.5281/zenodo.18173940-blue?style=for-the-badge)](https://doi.org/10.5281/zenodo.18173940)
 [![Repo](https://img.shields.io/badge/→_Repository-black?style=flat)](https://github.com/devanik21/Harmonic-Resonance-Forest)
 
----
+<img src="https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png" alt="divider" width="100%">
 
 ### 💻 VS CODE EXTENSIONS (.vsix) - PROFESSIONAL TOOLS
 
@@ -311,7 +376,7 @@ Features:
   - In-editor AI consultation
 ```
 
----
+<img src="https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png" alt="divider" width="100%">
 
 ### CONSCIOUSNESS-TIER PROJECTS
 
@@ -346,7 +411,7 @@ Dream Achievement: Generated 47 novel scenarios during sleep cycle
 ```
 [![Repo](https://img.shields.io/badge/→_Repository-black?style=flat)](https://github.com/devanik21/Lucid-Dark-Dreamer)
 
----
+<img src="https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png" alt="divider" width="100%">
 
 ### LONGEVITY & AGI RESEARCH
 
@@ -408,7 +473,7 @@ Focus: Experimental protocols for:
 ```
 [![Repo](https://img.shields.io/badge/→_Repository-black?style=flat)](https://github.com/devanik21/Project-X)
 
----
+<img src="https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png" alt="divider" width="100%">
 
 ### GENEVO - GENETIC EVOLUTIONARY ORGANOID
 
@@ -441,7 +506,7 @@ Features:
 ```
 [![Repo](https://img.shields.io/badge/→_Repository-black?style=flat)](https://github.com/devanik21/GENEVO-GENetic-EVolutionary-Organoid-Benchmarks)
 
----
+<img src="https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png" alt="divider" width="100%">
 
 ### REINFORCEMENT LEARNING MASTERY SUITE
 
@@ -552,7 +617,7 @@ Training Duration: 472 hours
 
 </details>
 
----
+<img src="https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png" alt="divider" width="100%">
 
 ### 🌌 ASTROPHYSICS & PHYSICS RESEARCH
 
@@ -571,7 +636,7 @@ Models: LSTM, Bi-LSTM, GRU, Transformer experiments
 - [**GRB-Light-Curve-Reconstruction-2**](https://github.com/devanik21/GRB-Light-Curve-Reconstruction-2) - 7 models explored (arXiv:2506.23681)
 - [**Gravitational-Time-Dilation**](https://github.com/devanik21/Gravitational-Time-Dilation) - Schwarzschild metric computational proof
 
----
+<img src="https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png" alt="divider" width="100%">
 
 ### 🎨 GENERATIVE & CREATIVE AI
 
@@ -579,7 +644,7 @@ Models: LSTM, Bi-LSTM, GRU, Transformer experiments
 - [**Sophisticated-Palette**](https://github.com/devanik21/Sophisticated-Palette) - Glassy cards, soft vignette, printable exports
 - [**ImageReasoning**](https://github.com/devanik21/ImageReasoning) - Student-teacher framework + Gemini 2.5 Flash evaluator
 
----
+<img src="https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png" alt="divider" width="100%">
 
 ### 🤖 INTELLIGENT SYSTEMS & ARCHITECTURE
 
@@ -590,7 +655,7 @@ Models: LSTM, Bi-LSTM, GRU, Transformer experiments
 - [**Life-Beyond**](https://github.com/devanik21/Life-Beyond) - Universal biology visualization (Melodysheep-inspired)
 - [**Bohrium**](https://github.com/devanik21/Bohrium) - Academic navigation: 170M+ papers, 160M+ patents, 20M+ scholars
 
----
+<img src="https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png" alt="divider" width="100%">
 
 ### 📊 STREAMLIT APPLICATIONS (76+ Apps)
 
@@ -610,14 +675,14 @@ Models: LSTM, Bi-LSTM, GRU, Transformer experiments
 - **QuantumDocs AI** - Document analysis using Gemini API + RAG (Kaggle Capstone)
 - **Orion Search System** - Mode-specific prompt templates (Précis/Synopsis modes)
 
----
+<img src="https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png" alt="divider" width="100%">
 
 ### 👁️ COMPUTER VISION & DETECTION
 
 - [**Yolo_Building-an-Object-Detection-Web-App**](https://github.com/devanik21/Yolo_Building-an-Object-Detection-Web-App) - Scalable YOLO pipeline
 - [**BG-remover**](https://github.com/devanik21/BG-remover) - Background removal system
 
----
+<img src="https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png" alt="divider" width="100%">
 
 ### 🔍 LANGUAGE MODELS & SEARCH
 
@@ -626,14 +691,14 @@ Models: LSTM, Bi-LSTM, GRU, Transformer experiments
 - [**DeepSeek-Math-V2**](https://github.com/devanik21/DeepSeek-Math-V2) - Mathematical reasoning
 - [**Qwen3**](https://github.com/devanik21/Qwen3) - Large language model (Alibaba Cloud)
 
----
+<img src="https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png" alt="divider" width="100%">
 
 ### 🌍 WORLD MODELS & ASSISTANTS
 
 - [**lingbot-world-os-genie-3**](https://github.com/devanik21/lingbot-world-os-genie-3) - Advancing open-source world models
 - [**openclaw**](https://github.com/devanik21/openclaw) - Personal AI assistant, any OS (the lobster way 🦞)
 
----
+<img src="https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png" alt="divider" width="100%">
 
 ### 🏥 SPECIALIZED APPLICATIONS
 
@@ -661,7 +726,7 @@ Models: LSTM, Bi-LSTM, GRU, Transformer experiments
 - [**AlphaFold**](https://github.com/devanik21/AlphaFold) - Protein structure prediction
 - [**Gemini**](https://github.com/devanik21/Gemini) - Gemini API integration
 
----
+<img src="https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png" alt="divider" width="100%">
 
 ## NEURAL ACHIEVEMENTS CONSTELLATION
 
@@ -789,72 +854,9 @@ Models: LSTM, Bi-LSTM, GRU, Transformer experiments
   </table>
 </div>
 
+
+
 <img src="https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png" alt="divider" width="100%">
-
-## 🛠️ NEURAL TECHNOLOGY STACK
-
-<!-- ═══════ CUSTOM SVG: NEURAL CONSTELLATION MAP ═══════ -->
-<div align="center">
-  <img src="./assets/neural-constellation.svg" alt="Neural Constellation Map" width="100%" />
-</div>
-
-<br/>
-
-### 🧠 CORE NEURAL LANGUAGES
-<div align="center">
-  <a href="https://skillicons.dev">
-    <img src="https://skillicons.dev/icons?i=python,cpp,c,matlab,bash&theme=dark&perline=10" alt="Languages" />
-  </a>
-</div>
-
-### 🔬 AI / ML / DL FRAMEWORKS
-<div align="center">
-  <a href="https://skillicons.dev">
-    <img src="https://skillicons.dev/icons?i=tensorflow,pytorch,sklearn,opencv&theme=dark&perline=10" alt="AI Frameworks" />
-  </a>
-</div>
-
-### 📊 DATA, DEVOPS & TOOLS
-<div align="center">
-  <a href="https://skillicons.dev">
-    <img src="https://skillicons.dev/icons?i=docker,git,github,vscode,linux,mysql,mongodb,grafana,prometheus,aws&theme=dark&perline=10" alt="DevOps & Tools" />
-  </a>
-</div>
-
-### 🌐 WEB & MORE
-<div align="center">
-  <a href="https://skillicons.dev">
-    <img src="https://skillicons.dev/icons?i=html,css,js,react,nodejs,flask,fastapi,figma&theme=dark&perline=10" alt="Web & More" />
-  </a>
-</div>
-
-### 🔧 SPECIALIZED EXPERTISE
-```yaml
-AI & Frameworks:
-  - LangChain, LangGraph, LangFlow
-  - RAG (Retrieval-Augmented Generation)
-  - Transformers & Attention Mechanisms
-  - Fine-tuning & RLHF
-
-Backend & DevOps:
-  - RESTful APIs & Microservices
-  - Docker Compose & Container Orchestration
-  - Application Monitoring & Observability Stack
-  - CI/CD Pipeline Development
-
-Core Expertise:
-  - Machine Learning & Deep Learning
-  - Reinforcement Learning
-  - Natural Language Processing
-  - Generative AI & LLMs
-  - Data Visualization & Analytics
-  - Statistics & Probability
-  - Cryptography (Symmetric & Asymmetric)
-  - Cloud Computing & API Integration
-  - Semiconductor TCAD Modeling
-```
-
----
 
 ## LEADERSHIP & RESPONSIBILITIES
 
@@ -1094,7 +1096,7 @@ Impact:
   </table>
 </div>
 
----
+<img src="https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png" alt="divider" width="100%">
 
 ## 🔬 CURRENT RESEARCH FRONTIERS
 
@@ -1148,7 +1150,7 @@ Impact:
   </table>
 </div>
 
----
+<img src="https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png" alt="divider" width="100%">
 
 ## 🎯 NEURAL LEARNING PATHWAYS
 
@@ -1184,7 +1186,7 @@ Current Learning Focus:
     - Semiconductor Physics & TCAD
 ```
 
----
+<img src="https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png" alt="divider" width="100%">
 
 ## 🌟 AI PHILOSOPHY & VISION
 
@@ -1266,7 +1268,7 @@ Current Learning Focus:
   </table>
 </div>
 
----
+<img src="https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png" alt="divider" width="100%">
 
 ## 🎨 CREATIVE AI EXPRESSIONS
 
@@ -1389,7 +1391,7 @@ Current Learning Focus:
   </table>
 </div>
 
----
+<img src="https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png" alt="divider" width="100%">
 
 ## LAUNCH SEQUENCE: CONNECT WITH THE NEURAL ARCHITECT
 
