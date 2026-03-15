@@ -1469,8 +1469,6 @@ Current Learning Focus:
 
 
 
-<div align="center">
-
 
 
 
