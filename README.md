@@ -1,8 +1,10 @@
-#  DΞVΛΠIK
+
 
 <div align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=300&section=header&text=ARTIFICIAL%20INTELLIGENCE%20RESEARCHER&fontSize=40&fontColor=fff&animation=fadeIn&fontAlignY=55&desc=Building%20the%20Future&descAlignY=75&descAlign=62" width="100%"/>
+  <img src="./assets/living-hero.svg" alt="Living Hero — Floating Neural Architect" width="100%" />
 </div>
+
+<img src="./assets/living-neural-pulse.svg" alt="neural pulse divider" width="100%">
 
 <div align="center">
   <img src="https://readme-typing-svg.herokuapp.com?font=Orbitron&weight=900&size=32&duration=2500&pause=1000&color=00D4FF&center=true&vCenter=true&random=false&width=800&lines=Neural+Network+Architect;Quantum+Learning+Researcher;Synthetic+Intelligence+Pioneer;ECE+Student+%40+NIT+Agartala;Samsung+Fellow+%40+IISc+Bangalore;AI+Systems+Engineer;Deep+Learning+Visionary;Reinforcement+Learning+Expert;Machine+Consciousness+Explorer;Digital+Evolution+Catalyst;Future+Intelligence+Designer" alt="AI Typing Animation" />
@@ -28,12 +30,18 @@
 
 <br/>
 
+
+
+
+
 <!-- ═══════ CUSTOM SVG: CONSCIOUSNESS HUD DASHBOARD ═══════ -->
 <div align="center">
   <img src="./assets/consciousness-hud.svg" alt="Consciousness HUD Dashboard" width="100%" />
 </div>
 
 <img src="https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png" alt="divider" width="100%">
+
+
 
 ## CONSCIOUSNESS.INIT()
 
