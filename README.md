@@ -1477,7 +1477,11 @@ Current Learning Focus:
 <div align="center">
 
 
+<div align="center">
+  <img src="./assets/quantum-singularity.svg" alt="The Singularity" width="80%" />
+</div>
 
+<div align="center">
 
 <div align="center">
   <img src="./assets/living-signoff.svg" alt="Living Signoff — Floating Manifesto" width="100%" />
@@ -1488,6 +1492,7 @@ Current Learning Focus:
 </div>
 
 </div>
+
 
 <div align="center">
   <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=60&section=footer&animation=twinkling" width="100%"/>
