@@ -7,7 +7,6 @@
 
 
 
-
 <div align="center">
   <img src="https://readme-typing-svg.herokuapp.com?font=Orbitron&weight=900&size=32&duration=2500&pause=1000&color=00D4FF&center=true&vCenter=true&random=false&width=800&lines=Neural+Network+Architect;Quantum+Learning+Researcher;Synthetic+Intelligence+Pioneer;ECE+Student+%40+NIT+Agartala;Samsung+Fellow+%40+IISc+Bangalore;AI+Systems+Engineer;Deep+Learning+Visionary;Reinforcement+Learning+Expert;Machine+Consciousness+Explorer;Digital+Evolution+Catalyst;Future+Intelligence+Designer" alt="AI Typing Animation" />
 </div>
@@ -34,13 +33,7 @@
 
 
 
-<div align="center">
-  <img src="./assets/quantum-singularity.svg" alt="Quantum Singularity Research" width="100%" />
-</div>
 
-<div align="center">
-  <img src="[https://capsule-render.vercel.app/api?type=egg&color=gradient&customColorList=6,11,20&height=100&section=header&text=CUTTING%20EDGE%20RESEARCH&fontSize=24&fontColor=fff&animation=blinking](https://capsule-render.vercel.app/api?type=egg&color=gradient&customColorList=6,11,20&height=100&section=header&text=CUTTING%20EDGE%20RESEARCH&fontSize=24&fontColor=fff&animation=blinking)" width="100%"/>
-</div>
 
 
 <!-- ═══════ CUSTOM SVG: CONSCIOUSNESS HUD DASHBOARD ═══════ -->
@@ -134,6 +127,9 @@ class NeuralArchitect:
 <div align="center">
   <img src="./assets/neural-constellation.svg" alt="Neural Constellation Map" width="100%" />
 </div>
+
+
+
 
 <br/>
 
@@ -908,7 +904,6 @@ Impact:
   - Established club coding standards
 ```
 
-<img src="https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png" alt="divider" width="100%">
 
 ## NEURAL NETWORK ANALYTICS
 
@@ -919,6 +914,14 @@ Impact:
 <div align="center">
   <img src="./profile-3d-contrib/profile-night-view.svg" alt="3D Neural Contribution Matrix" width="100%" />
 </div>
+
+<details>
+<summary align="center"><b>🌌 View Alternate Dimensional Perspectives (Click to expand)</b></summary>
+<div align="center">
+  <img src="./profile-3d-contrib/profile-night-rainbow.svg" alt="Night Rainbow Matrix" width="49%" />
+  <img src="./profile-3d-contrib/profile-season-animate.svg" alt="Seasonal Animated Matrix" width="49%" />
+</div>
+</details>
 
 <div align="center">
   <img src="https://github-readme-streak-stats.herokuapp.com/?user=devanik21&theme=radical&hide_border=true&stroke=00D4FF&ring=FF6B6B&fire=FFD93D&currStreakNum=00D4FF&sideNums=00D4FF&currStreakLabel=FF6B6B&sideLabels=FF6B6B&dates=FFFFFF" alt="GitHub Streak" width="49%" />
@@ -958,6 +961,8 @@ Impact:
 <div align="center">
   <img src="https://raw.githubusercontent.com/devanik21/devanik21/output/ocean.gif" alt="Snake Ocean Animation" width="100%" />
 </div>
+
+
 
 <!-- ═══════ CUSTOM SVG: DIGITAL OCEAN WAVE (auto-generated via GitHub Actions) ═══════ -->
 <div align="center">
@@ -1114,7 +1119,7 @@ Impact:
   </table>
 </div>
 
-<img src="https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png" alt="divider" width="100%">
+
 
 ## 🔬 CURRENT RESEARCH FRONTIERS
 
@@ -1211,8 +1216,9 @@ Current Learning Focus:
 ## 🌟 AI PHILOSOPHY & VISION
 
 <div align="center">
-  <img src="https://capsule-render.vercel.app/api?type=heart&color=gradient&customColorList=6,11,20&height=120&section=header&text=NEURAL%20PHILOSOPHY&fontSize=26&fontColor=fff&animation=twinkling" width="100%"/>
+  <img src="./assets/living-philosophy.svg" alt="Living Philosophy — Swaying Quotes" width="100%" />
 </div>
+
 
 <div align="center">
   <table>
@@ -1288,7 +1294,6 @@ Current Learning Focus:
   </table>
 </div>
 
-<img src="https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png" alt="divider" width="100%">
 
 ## 🎨 CREATIVE AI EXPRESSIONS
 
@@ -1342,7 +1347,7 @@ Current Learning Focus:
   </table>
 </div>
 
-<img src="https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png" alt="divider" width="100%">
+
 
 ## 🌈 NEURAL ACTIVITY SPECTRUM
 
@@ -1354,7 +1359,7 @@ Current Learning Focus:
   <img src="https://github-readme-activity-graph.vercel.app/graph?username=devanik21&theme=react-dark&hide_border=true&bg_color=0D1117&color=00D4FF&line=FF6B6B&point=FFD93D&area=true&area_color=9B59B6" alt="Neural Activity Graph" width="100%" />
 </div>
 
-<img src="https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png" alt="divider" width="100%">
+
 
 ## 🌐 NEURAL NETWORK CONNECTIONS
 
@@ -1411,7 +1416,7 @@ Current Learning Focus:
   </table>
 </div>
 
-<img src="https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png" alt="divider" width="100%">
+
 
 ## LAUNCH SEQUENCE: CONNECT WITH THE NEURAL ARCHITECT
 
@@ -1452,7 +1457,6 @@ Current Learning Focus:
   </a>
 </div>
 
-<img src="https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png" alt="divider" width="100%">
 
 ## NEURAL SIGNAL OF THE DAY
 
@@ -1468,25 +1472,20 @@ Current Learning Focus:
 
   <sub><i>"In the vast cosmos of code, every algorithm is a star, and every model is a galaxy waiting to be explored."</i></sub>
 
-<img src="https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png" alt="divider" width="100%">
+
 
 <div align="center">
 
-```
-╔══════════════════════════════════════════════════════════════════╗
-║                                                                  ║
-║  "I am not just writing code. I am encoding consciousness."     ║
-║                                                                  ║
-║  "Every algorithm is a step toward understanding reality."      ║
-║                                                                  ║
-║  "The singularity isn't coming. We're building it."             ║
-║                                                                  ║
-╚══════════════════════════════════════════════════════════════════╝
-```
 
-**Transforming data into intelligence, algorithms into consciousness**
 
-*This README is a living document. Like biological organisms, it evolves, adapts, and grows with each iteration.*
+
+<div align="center">
+  <img src="./assets/living-signoff.svg" alt="Living Signoff — Floating Manifesto" width="100%" />
+</div>
+
+<div align="center">
+  <img src="[https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=60&section=footer&animation=twinkling](https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=60&section=footer&animation=twinkling)" width="100%"/>
+</div>
 
 </div>
 
