@@ -1,10 +1,12 @@
 
 
+
 <div align="center">
   <img src="./assets/living-hero.svg" alt="Living Hero — Floating Neural Architect" width="100%" />
 </div>
 
-<img src="./assets/living-neural-pulse.svg" alt="neural pulse divider" width="100%">
+
+
 
 <div align="center">
   <img src="https://readme-typing-svg.herokuapp.com?font=Orbitron&weight=900&size=32&duration=2500&pause=1000&color=00D4FF&center=true&vCenter=true&random=false&width=800&lines=Neural+Network+Architect;Quantum+Learning+Researcher;Synthetic+Intelligence+Pioneer;ECE+Student+%40+NIT+Agartala;Samsung+Fellow+%40+IISc+Bangalore;AI+Systems+Engineer;Deep+Learning+Visionary;Reinforcement+Learning+Expert;Machine+Consciousness+Explorer;Digital+Evolution+Catalyst;Future+Intelligence+Designer" alt="AI Typing Animation" />
@@ -32,6 +34,13 @@
 
 
 
+<div align="center">
+  <img src="./assets/quantum-singularity.svg" alt="Quantum Singularity Research" width="100%" />
+</div>
+
+<div align="center">
+  <img src="[https://capsule-render.vercel.app/api?type=egg&color=gradient&customColorList=6,11,20&height=100&section=header&text=CUTTING%20EDGE%20RESEARCH&fontSize=24&fontColor=fff&animation=blinking](https://capsule-render.vercel.app/api?type=egg&color=gradient&customColorList=6,11,20&height=100&section=header&text=CUTTING%20EDGE%20RESEARCH&fontSize=24&fontColor=fff&animation=blinking)" width="100%"/>
+</div>
 
 
 <!-- ═══════ CUSTOM SVG: CONSCIOUSNESS HUD DASHBOARD ═══════ -->
@@ -55,6 +64,7 @@
 
 <details>
 <summary><b>View Full Neural Architecture Code (Click to expand)</b></summary>
+
 
 ```python
 class NeuralArchitect:
@@ -1107,6 +1117,8 @@ Impact:
 <img src="https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png" alt="divider" width="100%">
 
 ## 🔬 CURRENT RESEARCH FRONTIERS
+
+
 
 <div align="center">
   <img src="https://capsule-render.vercel.app/api?type=egg&color=gradient&customColorList=6,11,20&height=100&section=header&text=CUTTING%20EDGE%20RESEARCH&fontSize=24&fontColor=fff&animation=blinking" width="100%"/>
