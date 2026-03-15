@@ -924,7 +924,7 @@ Impact:
 </div>
 
 <details>
-<summary align="center"><b>🌌 View Alternate Dimensional Perspectives (Click to expand)</b></summary>
+<summary align="center"><b>View Alternate Dimensional Perspectives (Click to expand)</b></summary>
 <div align="center">
   <img src="./profile-3d-contrib/profile-night-rainbow.svg" alt="Night Rainbow Matrix" width="49%" />
   <img src="./profile-3d-contrib/profile-season-animate.svg" alt="Seasonal Animated Matrix" width="49%" />
@@ -1234,26 +1234,7 @@ Current Learning Focus:
 </div>
 
 
-<div align="center">
-  <table>
-    <tr>
-      <td align="center" width="50%">
-        <img src="https://img.shields.io/badge/CORE_BELIEF-FF6B6B?style=for-the-badge&logo=heart&logoColor=white" alt="Core Belief"/>
-        <br/>
-        <blockquote>
-          <p><i>"AI, when harnessed correctly, can increase human lifespan to infinity. The convergence of machine learning and biotechnology holds the key to transcending biological limitations."</i></p>
-        </blockquote>
-      </td>
-      <td align="center" width="50%">
-        <img src="https://img.shields.io/badge/MISSION_STATEMENT-00D4FF?style=for-the-badge&logo=target&logoColor=white" alt="Mission"/>
-        <br/>
-        <blockquote>
-          <p><i>"To architect AI systems that don't just process data, but understand, empathize, and elevate human potential across all dimensions of existence."</i></p>
-        </blockquote>
-      </td>
-    </tr>
-  </table>
-</div>
+
 
 ### 🔮 FUTURE VISION MATRIX
 
