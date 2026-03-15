@@ -47,11 +47,7 @@
   <img src="./assets/consciousness-hud.svg" alt="Consciousness HUD Dashboard" width="100%" />
 </div>
 
-<div align="center">
-  <img src="./assets/quantum-singularity.svg" alt="The Singularity" width="80%" />
-</div>
 
-<div align="center">
   
 <img src="https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/rainbow.png" alt="divider" width="100%">
 
@@ -1131,7 +1127,11 @@ Impact:
   </table>
 </div>
 
+<div align="center">
+  <img src="./assets/quantum-singularity.svg" alt="The Singularity" width="80%" />
+</div>
 
+<div align="center">
 
 ## 🔬 CURRENT RESEARCH FRONTIERS
 
