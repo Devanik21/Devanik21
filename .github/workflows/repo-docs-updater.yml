@@ -420,7 +420,17 @@ jobs:
 
       - name: 05. Commit Intelligence Report
         run: |
+        
+          echo "Cleaning old reports (keeping last 21 days)..."
+          
           find docs/daily-insights -type f -name "*.md" -mtime +21 -delete
+          
+          echo "Files after cleanup:"
+
+          ls -l docs/daily-insights || echo "No reports yet"
+          
+          # Stage changes (IMPORTANT - this tracks deletions)
+          git add docs/
           
           COMMIT_MSG="docs: 🤖 AI Intelligence Report - $(TZ=Asia/Kolkata date +'%Y-%m-%d %H:%M IST')
 
