@@ -423,7 +423,7 @@ jobs:
         
           echo "Cleaning old reports (keeping last 21 days)..."
           
-          find docs/daily-insights -type f -name "*.md" -mtime +21 -delete
+          ls -1t docs/daily-insights/*.md | tail -n +22 | xargs -r rm --
           
           echo "Files after cleanup:"
 
