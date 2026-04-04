@@ -420,7 +420,7 @@ jobs:
 
       - name: 05. Commit Intelligence Report
         run: |
-          git add docs/
+          find docs/daily-insights -type f -name "*.md" -mtime +21 -delete
           
           COMMIT_MSG="docs: 🤖 AI Intelligence Report - $(TZ=Asia/Kolkata date +'%Y-%m-%d %H:%M IST')
 
