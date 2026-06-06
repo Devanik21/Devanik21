@@ -67,7 +67,6 @@
 <summary><b>View Full Neural Architecture Code (Click to expand)</b></summary>
 
 
-```python
 class NeuralArchitect:
     def __init__(self):
         self.identity = {
@@ -78,6 +77,7 @@ class NeuralArchitect:
             "consciousness_level": "Expanding",
             "neural_networks_trained": "1000+",
             "algorithms_mastered": "50+",
+            "bugs_transcended": 0,
             "ai_applications_built": "76+ Streamlit apps",
             "quantum_theories_explored": "∞"
         }
