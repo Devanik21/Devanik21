@@ -66,7 +66,7 @@
 <details>
 <summary><b>View Full Neural Architecture Code (Click to expand)</b></summary>
 
-
+```python
 class NeuralArchitect:
     def __init__(self):
         self.identity = {
